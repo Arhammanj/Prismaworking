@@ -79,50 +79,36 @@ export default function AIAdministrationSection() {
         }
       });
 
-      // Set initial states - all cards start from below with lower opacity
-      gsap.set(card1Ref.current, { opacity: 0, y: 200 });
-      gsap.set(card2Ref.current, { opacity: 0, y: 200 });
-      gsap.set(card3Ref.current, { opacity: 0, y: 200 });
+      // Set initial states - all cards visible at the start
+      gsap.set(card1Ref.current, { opacity: 1, y: 0, scale: 1 });
+      gsap.set(card2Ref.current, { opacity: 1, y: 0, scale: 1 });
+      gsap.set(card3Ref.current, { opacity: 1, y: 0, scale: 1 });
 
-      // First timeline: First card moves with heading
-      tl.to(card1Ref.current, {
-        opacity: 1,
-        y: 0,
-        ease: 'cubic-bezier(0.33, 1, 0.68, 1)'
-      });
-
-      // Second timeline: Remaining cards appear slowly one by one during pin
+      // Timeline: Cards slide away one by one as you scroll
       tl2
-        .to({}, { duration: 0.5 }) // Pause to let first card settle
+        .to({}, { duration: 0.5 }) // Initial pause
 
-        // ===== CARD 2 ENTER (slowly from bottom, stacks on card 1) =====
+        // ===== CARD 1 slides out (moves up and fades) =====
+        .to(card1Ref.current, {
+          y: -800,
+          opacity: 0,
+          scale: 0.95,
+          duration: 1.5,
+          ease: 'power2.inOut'
+        })
+        .to({}, { duration: 0.5 }) // Hold
+
+        // ===== CARD 2 slides out (moves up and fades) =====
         .to(card2Ref.current, {
-          opacity: 1,
-          y: 0,
-          duration: 1.2,
-          ease: 'cubic-bezier(0.33, 1, 0.68, 1)'
+          y: -800,
+          opacity: 0,
+          scale: 0.95,
+          duration: 1.5,
+          ease: 'power2.inOut'
         })
-        // Parallax on card 2 image
-        .to(card2Ref.current.querySelector('.parallax-image'), {
-          y: -15,
-          duration: 0.8,
-          ease: 'none'
-        }, '<')
-        .to({}, { duration: 0.8 }) // Hold card 2
+        .to({}, { duration: 0.5 }) // Hold
 
-        // ===== CARD 3 ENTER (slowly from bottom, stacks on card 2) =====
-        .to(card3Ref.current, {
-          opacity: 1,
-          y: 0,
-          duration: 1.2,
-          ease: 'cubic-bezier(0.33, 1, 0.68, 1)'
-        })
-        // Parallax on card 3 image
-        .to(card3Ref.current.querySelector('.parallax-image'), {
-          y: -15,
-          duration: 0.8,
-          ease: 'none'
-        }, '<')
+        // ===== CARD 3 stays (final card remains visible) =====
         .to({}, { duration: 1 }); // Final hold
 
     }, sectionRef);
@@ -172,16 +158,22 @@ export default function AIAdministrationSection() {
             {/* ==================== CARD 1 (Outer Blue Layer) ==================== */}
             <div
               ref={card1Ref}
-              className="absolute inset-0 flex items-end justify-center"
+              className="absolute flex items-end justify-center"
               style={{
-                transformOrigin: 'center bottom'
+                top: '62px',
+                bottom: 'auto',
+                left: '0',
+                right: '0',
+                transformOrigin: 'center bottom',
+                zIndex: 3
               }}
             >
               <div
                 className="w-full flex flex-col items-center justify-between gap-8 px-8 pt-8"
                 style={{
                   background: '#90A1FA',
-                  height: '92vh',
+                  height: '497px',
+                  maxWidth: '1275px',
                   borderRadius: '20px',
                   overflow: 'hidden'
                 }}
@@ -241,18 +233,20 @@ export default function AIAdministrationSection() {
               ref={card2Ref}
               className="absolute flex items-end justify-center"
               style={{
-                top: '0',
-                bottom: '0',
+                top: '31px',
+                bottom: 'auto',
                 left: '0',
                 right: '0',
-                transformOrigin: 'center bottom'
+                transformOrigin: 'center bottom',
+                zIndex: 2
               }}
             >
               <div
                 className="w-full flex flex-col items-center justify-center gap-8 px-8"
                 style={{
                   background: '#E1EBFF',
-                  height: '90vh',
+                  height: '497px',
+                  maxWidth: '1275px',
                   borderRadius: '20px',
                   overflow: 'hidden'
                 }}
@@ -310,18 +304,20 @@ export default function AIAdministrationSection() {
               ref={card3Ref}
               className="absolute flex items-end justify-center"
               style={{
-                top: '0',
-                bottom: '0',
+                top: '0px',
+                bottom: 'auto',
                 left: '0',
                 right: '0',
-                transformOrigin: 'center bottom'
+                transformOrigin: 'center bottom',
+                zIndex: 1
               }}
             >
               <div
                 className="w-full flex flex-col items-center justify-between gap-8 px-8 pt-8"
                 style={{
                   background: '#1A73E8',
-                  height: '88vh',
+                  height: '497px',
+                  maxWidth: '1275px',
                   borderRadius: '20px',
                   overflow: 'hidden'
                 }}
