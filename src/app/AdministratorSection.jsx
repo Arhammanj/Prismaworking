@@ -87,23 +87,10 @@ export default function AdministratorSection() {
         </div>
 
         {/* Main Content Section */}
-        <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-[14px] w-full mx-auto"
-          style={{
-            width: '1130px',
-            height: '',
-            borderRadius: '20px',
-            opacity: 1
-          }}>
+        <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-[14px] w-full mx-auto" style={{ maxWidth: '1130px', width: '100%', borderRadius: '20px', opacity: 1 }}>
 
           {/* Smart Notifications Section */}
-          <div className="w-full rounded-3xl p-6 sm:p-8 md:p-10 lg:p-[32px]"
-            style={{
-              width: '1130px',
-              height: '367px',
-              borderRadius: '20px',
-              opacity: 1,
-              background: '#E5FFF4'
-            }}>
+          <div className="w-full rounded-3xl p-6 sm:p-8 md:p-10 lg:p-[32px]" style={{ maxWidth: '1130px', width: '100%', height: '367px', borderRadius: '20px', opacity: 1, background: '#E5FFF4' }}>
             <div className="flex flex-col lg:flex-row justify-start items-center w-full">
 
               {/* Left Content */}
@@ -126,7 +113,8 @@ export default function AdministratorSection() {
                 <p className="text-[16px] font-normal leading-[20px] text-left mb-6"
                   style={{
                     fontFamily: 'Roboto',
-                    width: '415px',
+                    maxWidth: '415px',
+                    width: '100%',
                     opacity: 1,
                     letterSpacing: '0%',
                     verticalAlign: 'middle',
@@ -172,7 +160,8 @@ export default function AdministratorSection() {
                 <div className="rounded-base p-2 sm:p-3 md:p-4 lg:p-[10px] mr-8 sm:mr-12 md:mr-16 lg:mr-[52px] ml-12 sm:ml-16 md:ml-20 lg:ml-[80px] transform transition-transform duration-200 ease-out hover:-translate-y-1 hover:translate-x-1 cursor-pointer"
                   style={{
                     background: '#FFFFFFB2',
-                    width: '425px',
+                    maxWidth: '425px',
+                    width: '100%',
                     height: '57px',
                     borderRadius: '5px',
                     opacity: 1
@@ -208,7 +197,8 @@ export default function AdministratorSection() {
                     <div key={notification.id} className="rounded-base p-2 sm:p-3 md:p-4 lg:p-[10px] transform transition-transform duration-200 ease-out hover:-translate-y-1 hover:translate-x-1 cursor-pointer"
                       style={{
                         background: '#FFFFFFB2',
-                        width: '425px',
+                        maxWidth: '425px',
+                        width: '100%',
                         height: '57px',
                         borderRadius: '5px',
                         opacity: 1,
