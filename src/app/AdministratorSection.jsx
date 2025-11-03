@@ -63,7 +63,7 @@ export default function AdministratorSection() {
 
   return (
     <section className="w-full bg-secondary-background">
-  <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-14 py-8 sm:py-12 md:py-16 lg:py-[42px]">
+      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-[56px] py-8 sm:py-12 md:py-16 lg:py-[42px]">
 
         {/* Header Section */}
         <div className="relative w-full max-w-[1186px] mx-auto mb-16 sm:mb-20 md:mb-24 lg:mb-[90px]">
@@ -87,10 +87,23 @@ export default function AdministratorSection() {
         </div>
 
         {/* Main Content Section */}
-        <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-[14px] w-full mx-auto" style={{ maxWidth: '1130px', width: '100%', borderRadius: '20px', opacity: 1 }}>
+        <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-[14px] w-full mx-auto"
+          style={{
+            width: '1130px',
+            height: '',
+            borderRadius: '20px',
+            opacity: 1
+          }}>
 
           {/* Smart Notifications Section */}
-          <div className="w-full rounded-3xl p-6 sm:p-8 md:p-10 lg:p-[32px]" style={{ maxWidth: '1130px', width: '100%', height: '367px', borderRadius: '20px', opacity: 1, background: '#E5FFF4' }}>
+          <div className="w-full rounded-3xl p-6 sm:p-8 md:p-10 lg:p-[32px]"
+            style={{
+              width: '1130px',
+              height: '367px',
+              borderRadius: '20px',
+              opacity: 1,
+              background: '#E5FFF4'
+            }}>
             <div className="flex flex-col lg:flex-row justify-start items-center w-full">
 
               {/* Left Content */}
@@ -113,8 +126,7 @@ export default function AdministratorSection() {
                 <p className="text-[16px] font-normal leading-[20px] text-left mb-6"
                   style={{
                     fontFamily: 'Roboto',
-                    maxWidth: '415px',
-                    width: '100%',
+                    width: '415px',
                     opacity: 1,
                     letterSpacing: '0%',
                     verticalAlign: 'middle',
@@ -160,8 +172,7 @@ export default function AdministratorSection() {
                 <div className="rounded-base p-2 sm:p-3 md:p-4 lg:p-[10px] mr-8 sm:mr-12 md:mr-16 lg:mr-[52px] ml-12 sm:ml-16 md:ml-20 lg:ml-[80px] transform transition-transform duration-200 ease-out hover:-translate-y-1 hover:translate-x-1 cursor-pointer"
                   style={{
                     background: '#FFFFFFB2',
-                    maxWidth: '425px',
-                    width: '100%',
+                    width: '425px',
                     height: '57px',
                     borderRadius: '5px',
                     opacity: 1
@@ -197,8 +208,7 @@ export default function AdministratorSection() {
                     <div key={notification.id} className="rounded-base p-2 sm:p-3 md:p-4 lg:p-[10px] transform transition-transform duration-200 ease-out hover:-translate-y-1 hover:translate-x-1 cursor-pointer"
                       style={{
                         background: '#FFFFFFB2',
-                        maxWidth: '425px',
-                        width: '100%',
+                        width: '425px',
                         height: '57px',
                         borderRadius: '5px',
                         opacity: 1,
@@ -315,7 +325,7 @@ export default function AdministratorSection() {
                 {/* Tax Data Cards */}
                 <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-[14px] self-end w-full lg:w-[34%] mt-2 lg:mt-[8px]">
                   {taxData.map((tax, index) => (
-                    <div key={index} className="group bg-secondary-background border border-border-primary rounded-base p-1 sm:p-2 md:p-3 lg:p-1.5 transform transition-transform duration-200 ease-out hover:-translate-y-1 hover:translate-x-1 cursor-pointer">
+                    <div key={index} className="bg-secondary-background border border-border-primary rounded-base p-1 sm:p-2 md:p-3 lg:p-[6px]">
                       <div className="flex flex-col gap-1 sm:gap-2 md:gap-3 lg:gap-[6px] ml-0.5 sm:ml-1 md:ml-1.5 lg:ml-[4px] mr-0.5 sm:mr-1 md:mr-1.5 lg:mr-[4px] mb-0.5 sm:mb-1 md:mb-1.5 lg:mb-[4px]">
                         <div className="flex items-center gap-x-1 w-full">
                           <h5 className="text-[7px] sm:text-[10px] md:text-[12px] lg:text-[14px] font-medium leading-[8px] sm:leading-[12px] md:leading-[14px] lg:leading-[17px] text-left text-text-muted"
@@ -325,7 +335,7 @@ export default function AdministratorSection() {
                           <img
                             src="/images/circle-info-solid (12) 7.svg"
                             alt="Expand icon"
-                            className="w-[4px] h-[4px] sm:w-[6px] sm:h-[6px] md:w-[7px] md:h-[7px] lg:w-[9px] lg:h-[9px] transform transition-transform duration-200 group-hover:translate-x-1"
+                            className="w-[4px] h-[4px] sm:w-[6px] sm:h-[6px] md:w-[7px] md:h-[7px] lg:w-[9px] lg:h-[9px]"
                           />
                         </div>
                         <p className="text-[8px] sm:text-[11px] md:text-[13px] lg:text-[16px] font-semibold leading-[10px] sm:leading-[14px] md:leading-[17px] lg:leading-[20px] text-left text-text-primary mt-2 lg:mt-[8px]"
@@ -336,7 +346,7 @@ export default function AdministratorSection() {
                           <img
                             src="/images/Growth.svg"
                             alt="Trend icon"
-                            className="w-[8px] h-[8px] sm:w-[11px] sm:h-[11px] md:w-[13px] md:h-[13px] lg:w-[16px] lg:h-[16px] transform transition-transform duration-200 group-hover:translate-x-1"
+                            className="w-[8px] h-[8px] sm:w-[11px] sm:h-[11px] md:w-[13px] md:h-[13px] lg:w-[16px] lg:h-[16px]"
                           />
                           <span className="text-[6px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-normal leading-[7px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted"
                             style={{ fontFamily: 'Roboto' }}>

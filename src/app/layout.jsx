@@ -27,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-full overflow-x-hidden m-0 p-0">
+      <body style={{ overflowX: 'hidden', width: '100%', margin: 0, padding: 0 }}>
         <SmoothScroll />
         {children}
 

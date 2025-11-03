@@ -39,31 +39,31 @@ const Header = () => {
           transition={{ duration: 0.45, ease: "easeOut" }}
           className="flex items-center">
           {/* Logo */}
-          <Image
-            src="/images/erus.svg"
-            alt="Erus Business Management Platform Logo"
-            width={50}
-            height={50}
-          />
-          <p
-            className="ml-[3px]"
-            style={{
-              fontFamily: 'Manrope',
-              fontWeight: 400,
-              fontSize: '24px',
-              lineHeight: '32px',
-              background: 'linear-gradient(107.31deg, #101D36 39.19%, #5588CC 44.72%, #A0B0E4 52.91%, #0FA58F 59.99%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              width: '160px',
-              height: '32px',
-              display: 'flex',
-              alignItems: 'center'
-            }}
-          >
-            prisma
-          </p>
+          <div className="flex items-center relative h-[50px]">
+            <Image
+              src="/images/erus.svg"
+              alt="Erus Business Management Platform Logo"
+              width={50}
+              height={50}
+              className="shrink-0"
+            />
+            <span
+              className="absolute left-[53px] flex items-center"
+              style={{
+                fontFamily: 'Roboto',
+                fontWeight: 400,
+                fontSize: '21px',
+                lineHeight: 1,
+                background: 'linear-gradient(107.31deg, #101D36 39.19%, #5588CC 44.72%, #A0B0E4 52.91%, #0FA58F 59.99%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                top: '12px'
+              }}
+            >
+              prisma
+            </span>
+          </div>
         </motion.div>
 
         {/* Desktop Navigation */}
@@ -71,7 +71,8 @@ const Header = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0, pointerEvents: 'auto' }}
           transition={{ duration: 0.35, delay: 0, ease: "easeOut" }}
-          className="hidden lg:flex items-center justify-center bg-white/15 backdrop-blur-sm border border-white/30 rounded-[30px] mx-auto min-w-[480px] h-10 px-8 gap-8 z-50"
+          className="hidden lg:flex items-center justify-center bg-white/15 backdrop-blur-sm border border-white/30 rounded-[30px] min-w-[480px] h-10 px-8 gap-8 z-50"
+          style={{ marginLeft: '-100px' }}
         >
           {navigationItems.map((item, index) => (
             <motion.a
@@ -103,22 +104,44 @@ const Header = () => {
           animate={hideMenuOnScroll ? { opacity: 0, x: 20, pointerEvents: 'none' } : { opacity: 1, x: 0, pointerEvents: 'auto' }}
           transition={{ duration: 0.45, delay: 0.05, ease: "easeOut" }}
           className="hidden lg:flex items-center gap-3 justify-end">
-          <div className="flex items-center  cursor-pointer">
+          <motion.button 
+            whileHover={{ scale: 1.05 }} 
+            whileTap={{ scale: 0.95 }} 
+            className="flex items-center gap-2 border border-white/30 rounded-[15px] px-4 py-2 hover:bg-white/5 transition-all duration-200"
+          >
             <Image
               src="/images/Vector.svg"
-              alt="phone icon"
+              alt="Calendar icon"
               width={12}
               height={12}
             />
-            <span className="hover:text-[#4379EE] transition-colors duration-200 ml-2 text-[#485264] font-medium text-sm leading-6">
+            <span className="text-[#485264] font-medium text-sm leading-6 whitespace-nowrap">
+              Comenzar
+            </span>
+          </motion.button>
+          <motion.button 
+            whileHover={{ scale: 1.05 }} 
+            whileTap={{ scale: 0.95 }} 
+            className="flex items-center gap-2 border border-white/30 rounded-[15px] px-4 py-2 hover:bg-white/5 transition-all duration-200"
+          >
+            <Image
+              src="/images/Vector.svg"
+              alt="Calendar icon"
+              width={12}
+              height={12}
+            />
+            <span className="text-[#485264] font-medium text-sm leading-6 whitespace-nowrap">
               Agendar demo
             </span>
-          </div>
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="flex items-center justify-center cursor-pointer w-[140px] h-[34px] bg-[#4379EE] rounded-[15px]"
-            onClick={() => console.log('Empieza ahora clicked')}
+          </motion.button>
+          <motion.button 
+            whileHover={{ scale: 1.05 }} 
+            whileTap={{ scale: 0.95 }} 
+            className="flex items-center justify-center w-[140px] h-[34px] bg-[#4379EE] rounded-[15px]"
+            onClick={() => console.log('Prisma te habla clicked')}
           >
-            <span className="text-white font-medium text-sm">Empieza ahora</span>
-          </motion.div>
+            <span className="text-white font-medium text-sm">Prisma te habla</span>
+          </motion.button>
         </motion.div>
 
   {/* Scroll listener to hide central nav but keep logo and CTA visible */}

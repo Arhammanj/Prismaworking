@@ -72,14 +72,22 @@ export default function WorkingSection() {
                 transition: { duration: 0.2 }
               }}
               transition={{ duration: 0.7, delay: 0.1, ease: [0.215, 0.61, 0.355, 1] }}
-              className="group bg-secondary-background border border-border-primary relative overflow-hidden cursor-pointer w-full lg:w-[653px] h-[367px] rounded-[20px] pr-5"
+              className="bg-secondary-background border border-border-primary relative overflow-hidden cursor-pointer"
+              style={{
+                width: '653px',
+                height: '367px',
+                borderRadius: '20px',
+
+                opacity: 1,
+                paddingRight: '20px'
+              }}
             >
 
-              <h3 className="text-[15px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-medium leading-[18px] sm:leading-[24px] md:leading-[30px] lg:leading-[36px] text-left text-[#1a3866] mt-4 sm:mt-6 md:mt-7 lg:mt-[28px] ml-2 pl-10"
-                style={{ fontFamily: 'Roboto' }}>
+              <h3 className="text-[15px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-medium leading-[18px] sm:leading-[24px] md:leading-[30px] lg:leading-[36px] text-left text-[#1a3866] mt-4 sm:mt-6 md:mt-7 lg:mt-[28px] ml-2"
+                style={{ fontFamily: 'Roboto', position: 'relative', left: '40px' }}>
                 Your numbers, instantly
               </h3>
-              <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-[10px] mt-1 sm:mt-2 md:mt-3 lg:mt-[6px] mr-2 sm:mr-4 md:mr-6 lg:mr-[18px] ml-2 pl-10 pr-10">
+              <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-[10px] mt-1 sm:mt-2 md:mt-3 lg:mt-[6px] mr-2 sm:mr-4 md:mr-6 lg:mr-[18px] ml-2" style={{ position: 'relative', left: '40px', paddingRight: '40px' }}>
                 <p className="text-[9px] sm:text-[12px] md:text-[13px] lg:text-[16px] font-normal leading-[11px] sm:leading-[15px] md:leading-[17px] lg:leading-[20px] text-left text-text-muted"
                   style={{ fontFamily: 'Roboto' }}>
                   What one person used to do, Prisma does alone. You don't pay salaries,
@@ -91,15 +99,30 @@ export default function WorkingSection() {
                   <span className="italic"> Your business updates itself, every day.</span>
                 </p>
               </div>
-              <div className="transform transition-transform duration-200 group-hover:translate-x-2 group-hover:-translate-y-1">
+              <motion.div
+                whileHover={{ 
+                  scale: 1.02,
+                  transition: { duration: 0.2 }
+                }}
+              >
                 <Image
                   src="/images/image754.svg"
                   alt="Business analytics dashboard"
                   width={437}
                   height={210}
-                  className="absolute bottom-0 left-10 w-[437px] max-w-full h-auto max-h-[191px] object-cover"
+                  style={{
+                    position: 'absolute',
+                    bottom: 0,
+                    left: '40px',
+                    width: '437px',
+                    height: 'auto',
+                    maxHeight: '191px',
+                    opacity: 1,
+                    objectFit: 'cover',
+                    objectPosition: 'top'
+                  }}
                 />
-              </div>
+              </motion.div>
             </motion.div>
 
             {/* Right Column - Phone Section */}
@@ -112,25 +135,31 @@ export default function WorkingSection() {
                 transition: { duration: 0.2 }
               }}
               transition={{ duration: 0.7, delay: 0.15, ease: [0.215, 0.61, 0.355, 1] }}
-              className="group relative bg-[#e3f2ff] overflow-hidden cursor-pointer w-full lg:w-[653px] h-[367px] rounded-[20px]"
+              className="relative bg-[#e3f2ff] overflow-hidden cursor-pointer"
+              style={{
+                width: '653px',
+                height: '367px',
+                borderRadius: '20px',
+                opacity: 1
+              }}
             >
-              <h3 className="text-[30px] font-medium leading-[36px] text-left text-[#032a48] mt-7 pl-10 max-w-[361px] w-full"
-                style={{ fontFamily: 'Roboto' }}>
+              <h3 className="text-[30px] font-medium leading-[36px] text-left text-[#032a48] mt-[28px]"
+                style={{ fontFamily: 'Roboto', position: 'relative', left: '40px', width: '361px', height: '80px', opacity: 1 }}>
                 Sin exceles, desde tu teléfono.
               </h3>
-              <div className="flex flex-col gap-2.5 mt-1.5 pl-10 pr-10">
-                <p className="text-[16px] font-normal leading-[20px] text-left text-[#032a48] max-w-[314px] w-full"
-                  style={{ fontFamily: 'Roboto' }}>
+              <div className="flex flex-col gap-[10px] mt-[6px]" style={{ position: 'relative', left: '40px', paddingRight: '40px' }}>
+                <p className="text-[16px] font-normal leading-[20px] text-left text-[#032a48]"
+                  style={{ fontFamily: 'Roboto', width: '314px', height: '92px', opacity: 1 }}>
                   Lo que antes lo hacia una persona,<br />
                   Prisma lo hace solo.No pagas salarios,
                   <br />no das instrucciones, no corriges <br /> errores.
                 </p>
-                <p className="text-[18px] font-normal leading-[23px] text-left text-[#032a48] max-w-[599px] w-full"
-                  style={{ fontFamily: 'Roboto', letterSpacing: '0%', verticalAlign: 'middle' }}>
+                <p className="text-[18px] font-normal leading-[23px] text-left text-[#032a48]"
+                  style={{ fontFamily: 'Roboto', width: '599px', height: '46px', opacity: 1, letterSpacing: '0%', verticalAlign: 'middle' }}>
                   ✨ Así de fácil.
                 </p>
               </div>
-              <div className="absolute bottom-7 left-10">
+              <div style={{ position: 'absolute', bottom: '28px', left: '40px' }}>
                 <Button
                   text="Comenzar"
                   text_font_size="text-md"
@@ -141,20 +170,27 @@ export default function WorkingSection() {
                   className=""
                   onClick={handleGetStarted}
                   style={{
+                    width: '151px',
+                    height: '34px',
                     borderRadius: '50px',
                     opacity: 1
                   }}
                 />
               </div>
-              <div className="transform transition-transform duration-200 group-hover:translate-x-2 group-hover:-translate-y-1">
+              <motion.div
+                whileHover={{ 
+                  scale: 1.02,
+                  transition: { duration: 0.2 }
+                }}
+              >
                 <Image
                   src="/images/image772.svg"
                   alt="Mobile phone interface"
                   width={208}
                   height={320}
-                  className="absolute top-8 sm:top-12 md:top-14 lg:top-14 right-8 sm:right-10 md:right-12 lg:right-[50px] w-20 h-[123px] sm:w-[120px] sm:h-[185px] md:w-40 md:h-[246px] lg:w-52 lg:h-80 object-cover rounded-lg"
+                  className="absolute top-8 sm:top-12 md:top-14 lg:top-[56px] right-8 sm:right-10 md:right-12 lg:right-[50px] w-[80px] h-[123px] sm:w-[120px] sm:h-[185px] md:w-[160px] md:h-[246px] lg:w-[208px] lg:h-[320px] object-cover rounded-lg"
                 />
-              </div>
+              </motion.div>
             </motion.div>
           </div>
         </div>

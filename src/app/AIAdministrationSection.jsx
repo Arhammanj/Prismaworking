@@ -224,7 +224,7 @@ export default function AIAdministrationSection() {
                   </p>
                 </div>
 
-                <div className="parallax-image" style={{ width: '100%', maxWidth: '833px', height: 'auto' }}>
+                <div className="parallax-image" style={{ width: '833px', maxWidth: '90%', height: 'auto' }}>
                   <Image
                     src="/images/image756.svg"
                     alt="Automatic reports generation"
@@ -293,7 +293,7 @@ export default function AIAdministrationSection() {
                   </span>
                 </p>
 
-                <div className="parallax-image" style={{ width: '100%', maxWidth: '633px', height: 'auto' }}>
+                <div className="parallax-image" style={{ width: '633px', maxWidth: '90%', height: 'auto' }}>
                   {/* <Image
                     src="/images/image756.svg"
                     alt="Intelligent classification system"
@@ -346,9 +346,9 @@ export default function AIAdministrationSection() {
                     </h3>
                   </div>
 
-                  <div
+                  <p
                     style={{
-                      maxWidth: '575px',
+                      maxWidth: '',
                       fontFamily: 'Roboto',
                       fontWeight: 400,
                       fontSize: '23px',
@@ -357,9 +357,9 @@ export default function AIAdministrationSection() {
                       color: '#FFFFFF'
                     }}
                   >
-                    <p style={{ margin: 0 }}>Ve cuánto compraste, cuánto gastaste y cuánto vendiste este</p>
-                    <p style={{ margin: 0 }}>mes. Todo ordenado y actualizado automáticamente.</p>
-                  </div>
+                    <p>Ve cuánto compraste, cuánto gastaste y cuánto vendiste este</p>
+                    <p> mes. Todo ordenado y actualizado automáticamente.</p>
+                  </p>
                 </div>
 
                 <div className='flex justify-between gap-10 mt-[70px]'>
@@ -372,7 +372,7 @@ export default function AIAdministrationSection() {
                       style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                     />
                   </div>
-                  <div className="parallax-image" style={{ width: '100%', maxWidth: '833px', height: 'auto' }}>
+                  <div className="parallax-image" style={{ width: '833px', maxWidth: '90%', height: 'auto' }}>
                     <Image
                       src="/images/image 7733.svg"
                       alt="Reports and analysis"

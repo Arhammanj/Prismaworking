@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function HeroSection() {
   return (
     <section className="w-full bg-white" style={{ overflowX: 'hidden' }}>
-  <div className="max-w-[1440px] w-full mx-auto relative" style={{ height: '850px', overflow: 'hidden' }}>
+      <div className="w-[1440px] mx-auto relative" style={{ height: '850px', overflow: 'hidden' }}>
 
         {/* Main Heading */}
         <motion.h1
@@ -123,7 +123,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, x: 0 }}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
           transition={{ duration: 0.7, delay: 0.6, ease: "easeOut" }}
-          className="absolute cursor-pointer hidden lg:block" style={{ width: '383px', height: '257px', left: '17px', top: '386px' }}>
+          className="absolute cursor-pointer" style={{ width: '383px', height: '257px', left: '17px', top: '386px' }}>
           <Image
             src="/images/image754.svg"
             alt="Product Screenshot 1"
@@ -143,7 +143,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
           transition={{ duration: 0.7, delay: 0.7, ease: "easeOut" }}
-          className="absolute cursor-pointer hidden lg:block" style={{ width: '162px', height: '354px', left: '424px', top: '466px' }}>
+          className="absolute cursor-pointer" style={{ width: '162px', height: '354px', left: '424px', top: '466px' }}>
           <Image
             src="/images/image755.svg"
             alt="Product Screenshot 2"
@@ -163,7 +163,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, scale: 1 }}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
           transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
-          className="absolute cursor-pointer hidden lg:block" style={{ width: '384px', height: '251px', left: '610px', top: '491px' }}>
+          className="absolute cursor-pointer" style={{ width: '384px', height: '251px', left: '610px', top: '491px' }}>
           <Image
             src="/images/image756.svg"
             alt="Product Screenshot 3"
@@ -183,7 +183,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
           transition={{ duration: 0.7, delay: 0.9, ease: "easeOut" }}
-          className="absolute cursor-pointer hidden lg:block" style={{ width: '167px', height: '360px', left: '1022px', top: '413px' }}>
+          className="absolute cursor-pointer" style={{ width: '167px', height: '360px', left: '1022px', top: '413px' }}>
           <Image
             src="/images/image777.svg"
             alt="Product Screenshot 4"
@@ -203,7 +203,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, x: 0 }}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
           transition={{ duration: 0.7, delay: 1, ease: "easeOut" }}
-          className="absolute cursor-pointer hidden lg:block" style={{ width: '222px', height: '258px', left: '1217px', top: '466px' }}>
+          className="absolute cursor-pointer" style={{ width: '222px', height: '258px', left: '1217px', top: '466px' }}>
           <Image
             src="/images/image756.svg"
             alt="Product Screenshot 5"
