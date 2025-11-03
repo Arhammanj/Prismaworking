@@ -121,9 +121,7 @@ const Header = () => {
           </motion.div>
         </motion.div>
 
-      {/* Scroll listener to hide central nav but keep logo and CTA visible */}
-      <style jsx>{``}</style>
-      
+  {/* Scroll listener to hide central nav but keep logo and CTA visible */}
 
         {/* Mobile Menu Button - Hidden on desktop (1440px) */}
         <button
