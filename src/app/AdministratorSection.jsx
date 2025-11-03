@@ -63,7 +63,7 @@ export default function AdministratorSection() {
 
   return (
     <section className="w-full bg-secondary-background">
-      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-[56px] py-8 sm:py-12 md:py-16 lg:py-[42px]">
+  <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-14 py-8 sm:py-12 md:py-16 lg:py-[42px]">
 
         {/* Header Section */}
         <div className="relative w-full max-w-[1186px] mx-auto mb-16 sm:mb-20 md:mb-24 lg:mb-[90px]">
