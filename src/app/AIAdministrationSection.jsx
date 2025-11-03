@@ -346,9 +346,9 @@ export default function AIAdministrationSection() {
                     </h3>
                   </div>
 
-                  <p
+                  <div
                     style={{
-                      maxWidth: '',
+                      maxWidth: '575px',
                       fontFamily: 'Roboto',
                       fontWeight: 400,
                       fontSize: '23px',
@@ -357,9 +357,9 @@ export default function AIAdministrationSection() {
                       color: '#FFFFFF'
                     }}
                   >
-                    <p>Ve cuánto compraste, cuánto gastaste y cuánto vendiste este</p>
-                    <p> mes. Todo ordenado y actualizado automáticamente.</p>
-                  </p>
+                    <p style={{ margin: 0 }}>Ve cuánto compraste, cuánto gastaste y cuánto vendiste este</p>
+                    <p style={{ margin: 0 }}>mes. Todo ordenado y actualizado automáticamente.</p>
+                  </div>
                 </div>
 
                 <div className='flex justify-between gap-10 mt-[70px]'>
