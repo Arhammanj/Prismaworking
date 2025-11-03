@@ -176,8 +176,8 @@ export default function AIAdministrationSection() {
                 style={{
                   background: '#90A1FA',
                   height: '497px', 
-                  width: '1275px',
-                  maxWidth: '1275px',
+                  width: '1120px',
+                  maxWidth: '1120px',
                   borderRadius: '20px 20px 0 0',
                   overflow: 'hidden'
                 }}
@@ -250,8 +250,8 @@ export default function AIAdministrationSection() {
                 style={{
                   background: '#E1EBFF',
                   height: '528px',
-                  width: '1275px',
-                  maxWidth: '1275px',
+                  width: '1120px',
+                  maxWidth: '1120px',
                   borderRadius: '20px 20px 0 0',
                   overflow: 'hidden'
                 }}
@@ -322,8 +322,8 @@ export default function AIAdministrationSection() {
                 style={{
                   background: '#1A73E8',
                   height: '559px',
-                  width: '1275px',
-                  maxWidth: '1275px',
+                  width: '1120px',
+                  maxWidth: '1120px',
                   borderRadius: '20px 20px 0 0',
                   overflow: 'hidden'
                 }}
