@@ -246,7 +246,7 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-center gap-8 px-8"
+                className="w-full flex flex-col items-center justify-center gap-6 px-8 py-8"
                 style={{
                   background: '#E1EBFF',
                   height: '528px',
@@ -280,10 +280,11 @@ export default function AIAdministrationSection() {
                     maxWidth: '575px',
                     fontFamily: 'Roboto',
                     fontWeight: 400,
-                    fontSize: '23px',
-                    lineHeight: '30px',
+                    fontSize: '20px',
+                    lineHeight: '26px',
                     textAlign: 'center',
-                    color: '#1a3866'
+                    color: '#1a3866',
+                    margin: 0
                   }}
                 >
                   Pagaste algo sin factura? Solo tómale una foto. {' '}Prisma reconoce la información y {' '}
@@ -292,14 +293,20 @@ export default function AIAdministrationSection() {
                   </span>
                 </p>
 
-                <div className="parallax-image" style={{ width: '633px', maxWidth: '90%', height: 'auto' }}>
-                  {/* <Image
-                    src="/images/image756.svg"
+                <div className="parallax-image" style={{ width: '320px', height: '320px', maxWidth: '90%' }}>
+                  <Image
+                    src="/images/2ff787b93c4e4adba399f7ac24d7545c84bb22b2 (1).png"
                     alt="Intelligent classification system"
-                    width={633}
-                    height={311}
-                    style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
-                  /> */}
+                    width={320}
+                    height={320}
+                    style={{ 
+                      width: '100%', 
+                      height: '100%', 
+                      objectFit: 'contain',
+                      transform: 'rotate(-0.48deg)',
+                      opacity: 1
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -348,7 +355,7 @@ export default function AIAdministrationSection() {
                     </h3>
                   </div>
 
-                  <p
+                  <div
                     style={{
                       maxWidth: '',
                       fontFamily: 'Roboto',
@@ -361,7 +368,7 @@ export default function AIAdministrationSection() {
                   >
                     <p>Ve cuánto compraste, cuánto gastaste y cuánto vendiste este</p>
                     <p> mes. Todo ordenado y actualizado automáticamente.</p>
-                  </p>
+                  </div>
                 </div>
 
                 <div className='flex justify-between gap-10 mt-[70px]'>

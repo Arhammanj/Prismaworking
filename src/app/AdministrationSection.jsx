@@ -135,30 +135,47 @@ export default function AdministratorSection() {
                   Prisma no solo muestra tus resultados: te avisa cuando algo cambia. Sabrás si tus ventas suben, si gastas más o si hay algo que revisar.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-start items-center gap-4 sm:gap-6 md:gap-8 lg:gap-[36px]">
-                  <Button
-                    text="Comenzar"
-                    text_font_size="text-md"
-                    text_font_weight="font-medium"
-                    fill_background_color="bg-[#1daa61]"
-                    border_border_radius="roun ded-2xl"
-                    padding=""
+                  <div className="transition-all duration-200 hover:shadow-[0_0_15px_rgba(255,255,255,0.6)]"
                     style={{
-                      width: '151px',
-                      height: '34px',
+                      border: '3px solid white',
                       borderRadius: '50px',
-                      opacity: 1
+                      display: 'inline-block',
+                      boxShadow: '0 0 0 1px rgba(255,255,255,0.3)'
                     }}
-                    onClick={handleGetStarted}
-                  />
-                  <div className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-[10px]">
+                  >
+                    <Button
+                      text="Comenzar"
+                      text_font_size="text-md"
+                      text_font_weight="font-medium"
+                      fill_background_color="bg-[#1daa61]"
+                      border_border_radius="rounded-[50px]"
+                      padding=""
+                      className="hover:bg-[#189850] transition-colors duration-200"
+                      style={{
+                        width: '151px',
+                        height: '34px',
+                        borderRadius: '50px',
+                        opacity: 1
+                      }}
+                      onClick={handleGetStarted}
+                    />
+                  </div>
+                  <div className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-[10px] px-4 py-2 transition-all duration-200 hover:shadow-[0_0_15px_rgba(255,255,255,0.6)] hover:bg-white/10 cursor-pointer"
+                    style={{
+                      border: '3px solid white',
+                      borderRadius: '50px',
+                      boxShadow: '0 0 0 1px rgba(255,255,255,0.3)'
+                    }}
+                    onClick={handleScheduleDemo}
+                  >
                     <img
                       src="/images/phone.svg"
                       alt="Calendar icon"
                       className="w-[6px] h-[6px] sm:w-[8px] sm:h-[8px] md:w-[10px] md:h-[10px] lg:w-[12px] lg:h-[12px]"
                     />
-                    <span className="text-md font-medium leading-md text-center text-[#1daa61] cursor-pointer hover:text-accent-green-light transition-colors duration-200"
+                    <span className="text-md font-medium leading-md text-center text-[#1daa61]"
                       style={{ fontFamily: 'Roboto' }}
-                      onClick={handleScheduleDemo}>
+                    >
                       Agendar demo
                     </span>
                   </div>

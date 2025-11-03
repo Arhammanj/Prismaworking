@@ -112,10 +112,11 @@ export default function WorkingSection() {
                   width: '580px',
                   height: '80px',
                   position: 'absolute',
-                  top: '-11px',
+                  top: '25px',
                   left: '51px',
                   opacity: 1,
-                  transform: 'rotate(0deg)'
+                  transform: 'rotate(0deg)',
+                  zIndex: 10
                 }}>
                 Tus números, al instante
               </h3>
@@ -124,19 +125,26 @@ export default function WorkingSection() {
                 style={{ 
                   fontFamily: 'Roboto',
                   fontWeight: 400,
-                  fontSize: '18px',
-                  lineHeight: '23px',
+                  fontSize: '15px',
+                  lineHeight: '22px',
                   letterSpacing: '0%',
                   verticalAlign: 'middle',
-                  width: '599px',
-                  height: '46px',
+                  width: '600px',
+                  maxWidth: 'calc(100% - 102px)',
+                  height: 'auto',
                   position: 'absolute',
-                  top: '78px',
+                  top: '80px',
                   left: '51px',
+                  right: '51px',
                   opacity: 1,
-                  transform: 'rotate(0deg)'
+                  transform: 'rotate(0deg)',
+                  whiteSpace: 'normal',
+                  wordWrap: 'break-word',
+                  zIndex: 10
                 }}>
                 Lo que antes lo hacía una persona, Prisma lo hace solo. No pagas salarios, no das instrucciones, no corriges errores.
+                <br /><br />
+                🤖 Tu empresa se actualiza sola, todos los días
               </p>
 
               <motion.div
@@ -151,7 +159,8 @@ export default function WorkingSection() {
                   height: '191px',
                   overflow: 'hidden',
                   opacity: 1,
-                  transform: 'rotate(0deg)'
+                  transform: 'rotate(0deg)',
+                  zIndex: 1
                 }}
               >
                 <Image
@@ -192,7 +201,7 @@ export default function WorkingSection() {
                 borderRadius: '20px',
                 opacity: 1,
                 transform: 'rotate(0deg)',
-                overflow: 'visible'
+                overflow: 'hidden'
               }}
             >
               <h3 className="font-medium text-left text-[#032a48]"
@@ -233,6 +242,20 @@ export default function WorkingSection() {
                 Lo que antes lo hacía una persona, Prisma lo hace solo. No pagas salarios, no das instrucciones, no corriges errores.
               </p>
 
+              <p style={{ 
+                  fontFamily: 'Roboto',
+                  fontWeight: 400,
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  position: 'absolute',
+                  bottom: '75px',
+                  left: '29px',
+                  opacity: 1,
+                  color: '#032a48'
+                }}>
+                ✨ Así de fácil.
+              </p>
+
               <div style={{ position: 'absolute', bottom: '28px', left: '29px' }}>
                 <Button
                   text="Comenzar"
@@ -258,23 +281,24 @@ export default function WorkingSection() {
                 transition={{ duration: 0.6, delay: 0.35, ease: "easeOut" }}
                 style={{
                   position: 'absolute',
-                  top: '47px',
-                  left: '378px',
-                  width: '208px',
-                  height: '320px',
+                  bottom: '0px',
+                  right: '60px',
+                  width: '200px',
+                  height: '280px',
                   opacity: 1,
-                  transform: 'rotate(0deg)'
+                  transform: 'rotate(0deg)',
+                  zIndex: 1
                 }}
               >
                 <Image
                   src="/images/image772.svg"
                   alt="Mobile phone interface"
-                  width={208}
-                  height={320}
+                  width={200}
+                  height={280}
                   className="rounded-lg"
                   style={{
-                    width: '208px',
-                    height: '320px',
+                    width: '100%',
+                    height: '100%',
                     objectFit: 'contain',
                     opacity: 1
                   }}
