@@ -72,7 +72,7 @@ export default function AIAdministrationSection() {
         scrollTrigger: {
           trigger: cardsContainerRef.current,
           start: 'top top',
-          end: '+=4000',
+          end: '+=3500', // Reduced for shorter scroll duration
           scrub: 1.5,
           pin: true,
           anticipatePin: 1,
@@ -86,30 +86,30 @@ export default function AIAdministrationSection() {
 
       // Timeline: Cards slide away one by one as you scroll
       tl2
-        .to({}, { duration: 0.5 }) // Initial pause
+        .to({}, { duration: 0.2 }) // Initial pause - reduced
 
         // ===== CARD 1 slides out (moves up and fades) =====
         .to(card1Ref.current, {
           y: -800,
           opacity: 0,
           scale: 0.95,
-          duration: 1.5,
+          duration: 0.8,
           ease: 'power2.inOut'
         })
-        .to({}, { duration: 0.5 }) // Hold
+        .to({}, { duration: 0.05 }) // Minimal pause - quick transition
 
         // ===== CARD 2 slides out (moves up and fades) =====
         .to(card2Ref.current, {
           y: -800,
           opacity: 0,
           scale: 0.95,
-          duration: 1.5,
+          duration: 0.8,
           ease: 'power2.inOut'
         })
-        .to({}, { duration: 0.5 }) // Hold
+        .to({}, { duration: 0.05 }) // Minimal pause - quick transition
 
         // ===== CARD 3 stays (final card remains visible) =====
-        .to({}, { duration: 1 }); // Final hold
+        .to({}, { duration: 0.3 }); // Final hold - reduced
 
     }, sectionRef);
 
