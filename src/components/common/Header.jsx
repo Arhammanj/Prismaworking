@@ -104,21 +104,7 @@ const Header = () => {
           animate={hideMenuOnScroll ? { opacity: 0, x: 20, pointerEvents: 'none' } : { opacity: 1, x: 0, pointerEvents: 'auto' }}
           transition={{ duration: 0.45, delay: 0.05, ease: "easeOut" }}
           className="hidden lg:flex items-center gap-3 justify-end">
-          <motion.button 
-            whileHover={{ scale: 1.05 }} 
-            whileTap={{ scale: 0.95 }} 
-            className="flex items-center gap-2 border border-white/30 rounded-[15px] px-4 py-2 hover:bg-white/5 transition-all duration-200"
-          >
-            <Image
-              src="/images/Vector.svg"
-              alt="Calendar icon"
-              width={12}
-              height={12}
-            />
-            <span className="text-[#485264] font-medium text-sm leading-6 whitespace-nowrap">
-              Comenzar
-            </span>
-          </motion.button>
+         
           <motion.button 
             whileHover={{ scale: 1.05 }} 
             whileTap={{ scale: 0.95 }} 
@@ -140,7 +126,7 @@ const Header = () => {
             className="flex items-center justify-center w-[140px] h-[34px] bg-[#4379EE] rounded-[15px]"
             onClick={() => console.log('Prisma te habla clicked')}
           >
-            <span className="text-white font-medium text-sm">Prisma te habla</span>
+            <span className="text-white font-medium text-sm">Empieza ahora</span>
           </motion.button>
         </motion.div>
 

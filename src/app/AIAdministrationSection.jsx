@@ -120,7 +120,7 @@ export default function AIAdministrationSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full bg-secondary-background">
+    <section ref={sectionRef} className="w-full bg-secondary-background overflow-x-hidden">
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         {/* -------------------- HEADER -------------------- */}
         <div ref={headerRef} className="flex flex-col justify-start items-center gap-16 w-full pt-16 pb-8">
@@ -163,8 +163,8 @@ export default function AIAdministrationSection() {
               ref={card1Ref}
               className="absolute flex items-end justify-center"
               style={{
-                top: '62px',
-                bottom: 'auto',
+                top: 'auto',
+                bottom: '0',
                 left: '0',
                 right: '0',
                 transformOrigin: 'center bottom',
@@ -175,7 +175,8 @@ export default function AIAdministrationSection() {
                 className="w-full flex flex-col items-center justify-between gap-8 px-8 pt-8"
                 style={{
                   background: '#90A1FA',
-                  height: '497px',
+                  height: '497px', 
+                  width: '1275px',
                   maxWidth: '1275px',
                   borderRadius: '20px 20px 0 0',
                   overflow: 'hidden'
@@ -236,8 +237,8 @@ export default function AIAdministrationSection() {
               ref={card2Ref}
               className="absolute flex items-end justify-center"
               style={{
-                top: '31px',
-                bottom: 'auto',
+                top: 'auto',
+                bottom: '0',
                 left: '0',
                 right: '0',
                 transformOrigin: 'center bottom',
@@ -248,7 +249,8 @@ export default function AIAdministrationSection() {
                 className="w-full flex flex-col items-center justify-center gap-8 px-8"
                 style={{
                   background: '#E1EBFF',
-                  height: '497px',
+                  height: '528px',
+                  width: '1275px',
                   maxWidth: '1275px',
                   borderRadius: '20px 20px 0 0',
                   overflow: 'hidden'
@@ -307,8 +309,8 @@ export default function AIAdministrationSection() {
               ref={card3Ref}
               className="absolute flex items-end justify-center"
               style={{
-                top: '0px',
-                bottom: 'auto',
+                top: 'auto',
+                bottom: '0',
                 left: '0',
                 right: '0',
                 transformOrigin: 'center bottom',
@@ -319,7 +321,8 @@ export default function AIAdministrationSection() {
                 className="w-full flex flex-col items-center justify-between gap-8 px-8 pt-8"
                 style={{
                   background: '#1A73E8',
-                  height: '497px',
+                  height: '559px',
+                  width: '1275px',
                   maxWidth: '1275px',
                   borderRadius: '20px 20px 0 0',
                   overflow: 'hidden'

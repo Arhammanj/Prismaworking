@@ -11,9 +11,9 @@ import Header from'../components/common/Header';
 
 export default function ErusBusinessPage() {
   return (
-    <>
+    <div style={{ overflowX: 'hidden', width: '100%' }}>
       <Header />
-      <main>
+      <main style={{ overflowX: 'hidden', width: '100%' }}>
         <HeroSection />
         {/* <AdministrationSection /> */}
         <AIAdministrationSection/>
@@ -23,6 +23,6 @@ export default function ErusBusinessPage() {
         <FAQSection />
         <Footer/>
       </main>
-    </>
+    </div>
   )
 }

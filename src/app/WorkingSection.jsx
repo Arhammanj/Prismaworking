@@ -23,9 +23,9 @@ export default function WorkingSection() {
   }
 
   return (
-    <section ref={ref} className="w-full bg-secondary-background ">
+    <section ref={ref} className="w-full bg-secondary-background overflow-x-hidden">
       <div className="w-full max-w-[1382px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-start items-center gap-16 sm:gap-20 md:gap-24 lg:gap-[112px] w-full py-8 sm:py-12 md:py-16">
+        <div className="flex flex-col justify-start items-center gap-12 sm:gap-16 md:gap-20 lg:gap-[64px] w-full py-6 sm:py-8 md:py-10">
 
           {/* Header Section with Badge */}
           <motion.div
