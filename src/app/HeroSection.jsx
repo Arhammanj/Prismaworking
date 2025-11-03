@@ -4,19 +4,17 @@ import { motion } from 'framer-motion';
 
 export default function HeroSection() {
   return (
-    <section className="w-full bg-white" style={{ overflowX: 'hidden' }}>
-      <div className="w-[1440px] mx-auto relative" style={{ height: '850px', overflow: 'hidden' }}>
+    <section className="w-full bg-white overflow-x-hidden">
+      <div className="w-full max-w-[1440px] mx-auto relative" style={{ height: '850px', overflow: 'hidden' }}>
 
         {/* Main Heading */}
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="absolute"
+          className="absolute left-1/2 transform -translate-x-1/2"
           style={{
             width: '680px',
-            height: '25px',
-            left: '387px',
             top: '149px',
             fontFamily: 'Roboto',
             fontWeight: 700,
@@ -24,6 +22,7 @@ export default function HeroSection() {
             lineHeight: '24px',
             display: 'flex',
             alignItems: 'center',
+            justifyContent: 'center',
             textAlign: 'center',
             letterSpacing: '0.18px',
             color: '#013264'
@@ -37,11 +36,11 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-          className="absolute"
+          className="absolute left-1/2 transform -translate-x-1/2"
           style={{
             width: '1100px',
+            maxWidth: '90%',
             height: '80px',
-            left: '170px',
             top: '214px',
             fontFamily: 'Roboto',
             fontSize: '28px',
@@ -86,11 +85,10 @@ export default function HeroSection() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="absolute cursor-pointer flex items-center justify-center"
+          className="absolute left-1/2 transform -translate-x-1/2 cursor-pointer flex items-center justify-center"
           style={{
             width: '251px',
             height: '40px',
-            left: '586px',
             top: '324px',
             background: '#4379EE',
             borderRadius: '15px'
@@ -116,106 +114,153 @@ export default function HeroSection() {
           </span>
         </motion.div>
 
-        {/* Product Images */}
-        {/* Image 1 - Left */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-          transition={{ duration: 0.7, delay: 0.6, ease: "easeOut" }}
-          className="absolute cursor-pointer" style={{ width: '383px', height: '257px', left: '17px', top: '386px' }}>
-          <Image
-            src="/images/image754.svg"
-            alt="Product Screenshot 1"
-            width={383}
-            height={257}
-            style={{
-              width: '100%',
-              height: '100%',
-              filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
-            }}
-          />
-        </motion.div>
+        {/* Product Images Container - positioned relative to section */}
+        
+          {/* Image 1 - Dashboard (Left) */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+            transition={{ duration: 0.7, delay: 0.6, ease: "easeOut" }}
+            className="absolute cursor-pointer" 
+            style={{ 
+              width: '356px', 
+              height: '239px', 
+              left: '13px', 
+              top: '386px',
+              opacity: 1,
+              transform: 'rotate(0deg)',
+              zIndex: 4
+            }}>
+            <Image
+              src="/images/image754.svg"
+              alt="Product Screenshot 1"
+              width={356}
+              height={239}
+              style={{
+                width: '100%',
+                height: '100%',
+                filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
+              }}
+            />
+          </motion.div>
 
-        {/* Image 2 */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-          transition={{ duration: 0.7, delay: 0.7, ease: "easeOut" }}
-          className="absolute cursor-pointer" style={{ width: '162px', height: '354px', left: '424px', top: '466px' }}>
-          <Image
-            src="/images/image755.svg"
-            alt="Product Screenshot 2"
-            width={162}
-            height={354}
-            style={{
-              width: '100%',
-              height: '100%',
-              filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
-            }}
-          />
-        </motion.div>
+          {/* Image 2 - Mobile Interface */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+            transition={{ duration: 0.7, delay: 0.7, ease: "easeOut" }}
+            className="absolute cursor-pointer" 
+            style={{ 
+              width: '151px', 
+              height: '329px', 
+              left: '380px', 
+              top: '466px',
+              opacity: 1,
+              transform: 'rotate(0deg)',
+              zIndex: 5
+            }}>
+            <Image
+              src="/images/image755.svg"
+              alt="Product Screenshot 2"
+              width={151}
+              height={329}
+              style={{
+                width: '100%',
+                height: '100%',
+                filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
+              }}
+            />
+          </motion.div>
 
-        {/* Image 3 - Center */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-          transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
-          className="absolute cursor-pointer" style={{ width: '384px', height: '251px', left: '610px', top: '491px' }}>
-          <Image
-            src="/images/image756.svg"
-            alt="Product Screenshot 3"
-            width={384}
-            height={251}
-            style={{
-              width: '100%',
-              height: '100%',
-              boxShadow: '0px 4px 4px 0px #00000040'
-            }}
-          />
-        </motion.div>
+          {/* Image 3 - Center Document */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+            transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
+            className="absolute cursor-pointer" 
+            style={{ 
+              width: '357px', 
+              height: '233px', 
+              left: '550px', 
+              top: '491px',
+              opacity: 1,
+              transform: 'rotate(0deg)',
+              zIndex: 3
+            }}>
+            <Image
+              src="/images/image756.svg"
+              alt="Product Screenshot 3"
+              width={357}
+              height={233}
+              style={{
+                width: '100%',
+                height: '100%',
+                boxShadow: '0px 4px 4px 0px #00000040'
+              }}
+            />
+          </motion.div>
 
-        {/* Image 4 */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-          transition={{ duration: 0.7, delay: 0.9, ease: "easeOut" }}
-          className="absolute cursor-pointer" style={{ width: '167px', height: '360px', left: '1022px', top: '413px' }}>
-          <Image
-            src="/images/image777.svg"
-            alt="Product Screenshot 4"
-            width={167}
-            height={360}
-            style={{
-              width: '100%',
-              height: '100%',
-              filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
-            }}
-          />
-        </motion.div>
+          {/* Image 4 - Right Document */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+            transition={{ duration: 0.7, delay: 0.9, ease: "easeOut" }}
+            className="absolute cursor-pointer" 
+            style={{ 
+              width: '155px', 
+              height: '335px', 
+              left: '925px', 
+              top: '413px',
+              opacity: 1,
+              transform: 'rotate(0deg)',
+              zIndex: 2
+            }}>
+            <Image
+              src="/images/image777.svg"
+              alt="Product Screenshot 4"
+              width={155}
+              height={335}
+              style={{
+                width: '100%',
+                height: '100%',
+                filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
+              }}
+            />
+          </motion.div>
 
-        {/* Image 5 - Right */}
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-          transition={{ duration: 0.7, delay: 1, ease: "easeOut" }}
-          className="absolute cursor-pointer" style={{ width: '222px', height: '258px', left: '1217px', top: '466px' }}>
-          <Image
-            src="/images/image756.svg"
-            alt="Product Screenshot 5"
-            width={222}
-            height={258}
-            style={{
-              width: '100%',
-              height: '100%',
-              // boxShadow: '0px 4px 4px 0px #00000040'
-            }}
-          />
-        </motion.div>
+          {/* Image 5 - Purple Mobile App (50% visible on right edge) */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+            transition={{ duration: 0.7, delay: 1, ease: "easeOut" }}
+            className="absolute cursor-pointer" 
+            style={{ 
+              width: '367px', 
+              height: '240px', 
+              left: '1095px', 
+              top: '466px',
+              opacity: 1,
+              transform: 'rotate(0deg)',
+              zIndex: 1
+            }}>
+            <Image
+              src="/images/image756.svg"
+              alt="Product Screenshot 5"
+              width={367}
+              height={240}
+              style={{
+                width: '100%',
+                height: '100%',
+                filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
+              }}
+            />
+          </motion.div>
+
 
       </div>
     </section>
