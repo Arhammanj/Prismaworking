@@ -32,30 +32,46 @@ export default function WorkingSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={sectionInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative w-full max-w-[728px] mx-auto">
-            <h2 className="text-[25px] sm:text-[35px] md:text-[40px] lg:text-[50px] font-medium leading-[35px] sm:leading-[49px] md:leading-[56px] lg:leading-[70px] text-center text-[#1a3866] w-full"
-              style={{ fontFamily: 'Roboto' }}>
-              Mientras tu
-              <span className="inline-flex items-center align-middle relative" style={{ marginLeft: '0.3em', marginRight: '0.5em' }}>
-                <Image
-                  src="/images/tarab.svg"
-                  alt="Work icon"
-                  width={50}
-                  height={50}
-                  className="inline-block"
-                  style={{ height: '1.4em', width: 'auto' }}
-                />
+            className="relative w-full mx-auto"
+            style={{
+              width: '1260px',
+              height: '71px'
+            }}>
+            <h2 className="font-medium text-center text-[#1a3866] whitespace-nowrap"
+              style={{ 
+                fontFamily: 'Roboto',
+                fontWeight: 500,
+                fontSize: '45px',
+                lineHeight: '70.4px',
+                letterSpacing: '0%',
+                textAlign: 'center',
+                verticalAlign: 'middle',
+                width: '1260px',
+                height: '71px',
+                opacity: 1,
+                transform: 'rotate(0deg)'
+              }}>
+              Mientras tu <span className="inline-flex items-center align-middle relative" style={{ 
+              
+                padding: '2px 30px',
+                backgroundColor: '#FFF4E6',
+                borderRadius: '50px',
+                position: 'relative',
+                display: 'inline-flex'
+              }}>
                 <Image
                   src="/images/brief.svg"
                   alt="Brief icon"
-                  width={30}
-                  height={30}
-                  className="absolute"
-                  style={{ height: '0.6em', width: 'auto', top: '50%', left: '10%', transform: 'translateY(-50%)' }}
+                  width={29}
+                  height={29}
+                  style={{ 
+                    marginRight: '8px',
+                    width: '29px',
+                    height: '29px'
+                  }}
                 />
-              </span>
-              <br />
-              Prisma administra tu empresa.
+                <span style={{ color: '#D56E0C', fontFamily: 'Roboto', fontWeight: 500, fontSize: '38px', lineHeight: '56px' }}>trabajas</span>
+              </span> Prisma administra tu empresa.
             </h2>
           </motion.div>
 
@@ -65,61 +81,94 @@ export default function WorkingSection() {
             {/* Left Column - Numbers Section */}
             <motion.div
               ref={leftRef}
-              initial={{ opacity: 0, y: 40 }}
-              animate={isLeftInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 50 }}
+              animate={isLeftInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+              transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
               whileHover={{ 
-                y: -5,
-                transition: { duration: 0.2 }
+                y: -3,
+                boxShadow: "0 8px 24px rgba(0, 0, 0, 0.08)",
+                transition: { duration: 0.3, ease: "easeOut" }
               }}
-              transition={{ duration: 0.7, delay: 0.1, ease: [0.215, 0.61, 0.355, 1] }}
-              className="bg-secondary-background border border-border-primary relative overflow-hidden cursor-pointer"
+              className="bg-secondary-background border border-border-primary relative cursor-pointer"
               style={{
-                width: '653px',
+                width: '710px',
                 height: '367px',
                 borderRadius: '20px',
-
+                borderWidth: '1px',
                 opacity: 1,
-                paddingRight: '20px'
+                transform: 'rotate(0deg)',
+                overflow: 'visible'
               }}
             >
 
-              <h3 className="text-[15px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-medium leading-[18px] sm:leading-[24px] md:leading-[30px] lg:leading-[36px] text-left text-[#1a3866] mt-4 sm:mt-6 md:mt-7 lg:mt-[28px] ml-2"
-                style={{ fontFamily: 'Roboto', position: 'relative', left: '40px' }}>
-                Your numbers, instantly
+              <h3 className="font-medium text-left text-[#1a3866]"
+                style={{ 
+                  fontFamily: 'Roboto', 
+                  fontWeight: 500,
+                  fontSize: '30px',
+                  lineHeight: '40px',
+                  letterSpacing: '0%',
+                  verticalAlign: 'middle',
+                  width: '580px',
+                  height: '80px',
+                  position: 'absolute',
+                  top: '-11px',
+                  left: '51px',
+                  opacity: 1,
+                  transform: 'rotate(0deg)'
+                }}>
+                Tus números, al instante
               </h3>
-              <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-[10px] mt-1 sm:mt-2 md:mt-3 lg:mt-[6px] mr-2 sm:mr-4 md:mr-6 lg:mr-[18px] ml-2" style={{ position: 'relative', left: '40px', paddingRight: '40px' }}>
-                <p className="text-[9px] sm:text-[12px] md:text-[13px] lg:text-[16px] font-normal leading-[11px] sm:leading-[15px] md:leading-[17px] lg:leading-[20px] text-left text-text-muted"
-                  style={{ fontFamily: 'Roboto' }}>
-                  What one person used to do, Prisma does alone. You don't pay salaries,
-                  <br />you don't give instructions, you don't correct mistakes.
-                </p>
-                <p className="text-[7px] sm:text-[10px] md:text-[11px] lg:text-[13px] font-normal leading-[9px] sm:leading-[13px] md:leading-[15px] lg:leading-[18px] text-left text-text-muted"
-                  style={{ fontFamily: 'Roboto' }}>
-                  <span className="text-[7px] sm:text-[10px] md:text-[11px] lg:text-[13px]">🤖</span>
-                  <span className="italic"> Your business updates itself, every day.</span>
-                </p>
-              </div>
+              
+              <p className="font-normal text-left text-text-muted"
+                style={{ 
+                  fontFamily: 'Roboto',
+                  fontWeight: 400,
+                  fontSize: '18px',
+                  lineHeight: '23px',
+                  letterSpacing: '0%',
+                  verticalAlign: 'middle',
+                  width: '599px',
+                  height: '46px',
+                  position: 'absolute',
+                  top: '78px',
+                  left: '51px',
+                  opacity: 1,
+                  transform: 'rotate(0deg)'
+                }}>
+                Lo que antes lo hacía una persona, Prisma lo hace solo. No pagas salarios, no das instrucciones, no corriges errores.
+              </p>
+
               <motion.div
-                whileHover={{ 
-                  scale: 1.02,
-                  transition: { duration: 0.2 }
+                initial={{ opacity: 0, y: 30 }}
+                animate={isLeftInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.6, delay: 0.25, ease: "easeOut" }}
+                style={{
+                  position: 'absolute',
+                  bottom: 0,
+                  left: '42px',
+                  width: '437px',
+                  height: '191px',
+                  overflow: 'hidden',
+                  opacity: 1,
+                  transform: 'rotate(0deg)'
                 }}
               >
                 <Image
                   src="/images/image754.svg"
                   alt="Business analytics dashboard"
                   width={437}
-                  height={210}
+                  height={191}
                   style={{
-                    position: 'absolute',
-                    bottom: 0,
-                    left: '40px',
                     width: '437px',
-                    height: 'auto',
-                    maxHeight: '191px',
+                    height: '191px',
                     opacity: 1,
                     objectFit: 'cover',
-                    objectPosition: 'top'
+                    objectPosition: 'top left',
+                    transform: 'rotate(0deg)',
+                    display: 'block',
+                    boxShadow: 'none',
+                    filter: 'none'
                   }}
                 />
               </motion.div>
@@ -128,38 +177,63 @@ export default function WorkingSection() {
             {/* Right Column - Phone Section */}
             <motion.div
               ref={rightRef}
-              initial={{ opacity: 0, y: 40 }}
-              animate={isRightInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 50 }}
+              animate={isRightInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+              transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
               whileHover={{ 
-                y: -5,
-                transition: { duration: 0.2 }
+                y: -3,
+                boxShadow: "0 8px 24px rgba(3, 42, 72, 0.12)",
+                transition: { duration: 0.3, ease: "easeOut" }
               }}
-              transition={{ duration: 0.7, delay: 0.15, ease: [0.215, 0.61, 0.355, 1] }}
-              className="relative bg-[#e3f2ff] overflow-hidden cursor-pointer"
+              className="relative bg-[#e3f2ff] cursor-pointer"
               style={{
                 width: '653px',
                 height: '367px',
                 borderRadius: '20px',
-                opacity: 1
+                opacity: 1,
+                transform: 'rotate(0deg)',
+                overflow: 'visible'
               }}
             >
-              <h3 className="text-[30px] font-medium leading-[36px] text-left text-[#032a48] mt-[28px]"
-                style={{ fontFamily: 'Roboto', position: 'relative', left: '40px', width: '361px', height: '80px', opacity: 1 }}>
+              <h3 className="font-medium text-left text-[#032a48]"
+                style={{ 
+                  fontFamily: 'Roboto',
+                  fontWeight: 500,
+                  fontSize: '30px',
+                  lineHeight: '40px',
+                  letterSpacing: '0%',
+                  verticalAlign: 'middle',
+                  width: '361px',
+                  height: '80px',
+                  position: 'absolute',
+                  top: '29px',
+                  left: '29px',
+                  opacity: 1,
+                  transform: 'rotate(0deg)'
+                }}>
                 Sin exceles, desde tu teléfono.
               </h3>
-              <div className="flex flex-col gap-[10px] mt-[6px]" style={{ position: 'relative', left: '40px', paddingRight: '40px' }}>
-                <p className="text-[16px] font-normal leading-[20px] text-left text-[#032a48]"
-                  style={{ fontFamily: 'Roboto', width: '314px', height: '92px', opacity: 1 }}>
-                  Lo que antes lo hacia una persona,<br />
-                  Prisma lo hace solo.No pagas salarios,
-                  <br />no das instrucciones, no corriges <br /> errores.
-                </p>
-                <p className="text-[18px] font-normal leading-[23px] text-left text-[#032a48]"
-                  style={{ fontFamily: 'Roboto', width: '599px', height: '46px', opacity: 1, letterSpacing: '0%', verticalAlign: 'middle' }}>
-                  ✨ Así de fácil.
-                </p>
-              </div>
-              <div style={{ position: 'absolute', bottom: '28px', left: '40px' }}>
+              
+              <p className="font-normal text-left text-[#032a48]"
+                style={{ 
+                  fontFamily: 'Roboto',
+                  fontWeight: 400,
+                  fontSize: '18px',
+                  lineHeight: '23px',
+                  letterSpacing: '0%',
+                  verticalAlign: 'middle',
+                  width: '314px',
+                  height: '92px',
+                  position: 'absolute',
+                  top: '133px',
+                  left: '29px',
+                  opacity: 1,
+                  transform: 'rotate(0deg)'
+                }}>
+                Lo que antes lo hacía una persona, Prisma lo hace solo. No pagas salarios, no das instrucciones, no corriges errores.
+              </p>
+
+              <div style={{ position: 'absolute', bottom: '28px', left: '29px' }}>
                 <Button
                   text="Comenzar"
                   text_font_size="text-md"
@@ -177,10 +251,19 @@ export default function WorkingSection() {
                   }}
                 />
               </div>
+              
               <motion.div
-                whileHover={{ 
-                  scale: 1.02,
-                  transition: { duration: 0.2 }
+                initial={{ opacity: 0, y: 40 }}
+                animate={isRightInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+                transition={{ duration: 0.6, delay: 0.35, ease: "easeOut" }}
+                style={{
+                  position: 'absolute',
+                  top: '47px',
+                  left: '378px',
+                  width: '208px',
+                  height: '320px',
+                  opacity: 1,
+                  transform: 'rotate(0deg)'
                 }}
               >
                 <Image
@@ -188,7 +271,13 @@ export default function WorkingSection() {
                   alt="Mobile phone interface"
                   width={208}
                   height={320}
-                  className="absolute top-8 sm:top-12 md:top-14 lg:top-[56px] right-8 sm:right-10 md:right-12 lg:right-[50px] w-[80px] h-[123px] sm:w-[120px] sm:h-[185px] md:w-[160px] md:h-[246px] lg:w-[208px] lg:h-[320px] object-cover rounded-lg"
+                  className="rounded-lg"
+                  style={{
+                    width: '208px',
+                    height: '320px',
+                    objectFit: 'contain',
+                    opacity: 1
+                  }}
                 />
               </motion.div>
             </motion.div>

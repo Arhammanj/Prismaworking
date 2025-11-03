@@ -72,10 +72,13 @@ export default function AIAdministrationSection() {
         scrollTrigger: {
           trigger: cardsContainerRef.current,
           start: 'top top',
-          end: '+=3500', // Reduced for shorter scroll duration
-          scrub: 1.5,
+          end: '+=2500', // Shorter for quicker transitions
+          scrub: 0.1, // Very low scrub for immediate response - feels more natural
           pin: true,
-          anticipatePin: 1,
+          pinSpacing: true, // Maintains spacing to prevent layout shifts
+          anticipatePin: 1, // Starts pinning slightly early for seamless transition
+          invalidateOnRefresh: true, // Recalculates on resize for smooth behavior
+          smoothChildTiming: true, // Makes child animations smoother
         }
       });
 
@@ -86,30 +89,30 @@ export default function AIAdministrationSection() {
 
       // Timeline: Cards slide away one by one as you scroll
       tl2
-        .to({}, { duration: 0.2 }) // Initial pause - reduced
+        .to({}, { duration: 0.15, ease: 'none' }) // Minimal initial pause
 
         // ===== CARD 1 slides out (moves up and fades) =====
         .to(card1Ref.current, {
           y: -800,
           opacity: 0,
           scale: 0.95,
-          duration: 0.8,
-          ease: 'power2.inOut'
+          duration: 0.7,
+          ease: 'sine.inOut' // Sine easing for ultra-smooth, natural motion
         })
-        .to({}, { duration: 0.05 }) // Minimal pause - quick transition
+        .to({}, { duration: 0.02, ease: 'none' }) // Tiny pause
 
         // ===== CARD 2 slides out (moves up and fades) =====
         .to(card2Ref.current, {
           y: -800,
           opacity: 0,
           scale: 0.95,
-          duration: 0.8,
-          ease: 'power2.inOut'
+          duration: 0.7,
+          ease: 'sine.inOut' // Sine easing for ultra-smooth, natural motion
         })
-        .to({}, { duration: 0.05 }) // Minimal pause - quick transition
+        .to({}, { duration: 0.02, ease: 'none' }) // Tiny pause
 
         // ===== CARD 3 stays (final card remains visible) =====
-        .to({}, { duration: 0.3 }); // Final hold - reduced
+        .to({}, { duration: 0.2, ease: 'none' }); // Short final hold
 
     }, sectionRef);
 
@@ -174,7 +177,7 @@ export default function AIAdministrationSection() {
                   background: '#90A1FA',
                   height: '497px',
                   maxWidth: '1275px',
-                  borderRadius: '20px',
+                  borderRadius: '20px 20px 0 0',
                   overflow: 'hidden'
                 }}
               >
@@ -247,7 +250,7 @@ export default function AIAdministrationSection() {
                   background: '#E1EBFF',
                   height: '497px',
                   maxWidth: '1275px',
-                  borderRadius: '20px',
+                  borderRadius: '20px 20px 0 0',
                   overflow: 'hidden'
                 }}
               >
@@ -318,7 +321,7 @@ export default function AIAdministrationSection() {
                   background: '#1A73E8',
                   height: '497px',
                   maxWidth: '1275px',
-                  borderRadius: '20px',
+                  borderRadius: '20px 20px 0 0',
                   overflow: 'hidden'
                 }}
               >
