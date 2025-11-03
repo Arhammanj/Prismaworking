@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <header className="w-full fixed top-0 left-0 z-40">
-      <div className="max-w-[1440px] w-full mx-auto px-8 grid grid-cols-3 items-center" style={{ height: '80px' }}>
+  <div className="max-w-[1440px] w-full mx-auto px-8 grid grid-cols-3 items-center h-20">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={hideMenuOnScroll ? { opacity: 0, x: -20, pointerEvents: 'none' } : { opacity: 1, x: 0, pointerEvents: 'auto' }}
@@ -71,21 +71,7 @@ const Header = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0, pointerEvents: 'auto' }}
           transition={{ duration: 0.35, delay: 0, ease: "easeOut" }}
-          className="hidden lg:flex items-center justify-center bg-white/15 backdrop-blur-sm border border-white/30 rounded-[30px] mx-auto"
-          style={{
-            width: 'auto',
-            minWidth: '480px',
-            height: '42px',
-            padding: '0 32px',
-            gap: '32px',
-            padding: '16px 32px',
-            gap: '32px',
-            boxShadow: '0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(255, 255, 255, 0.08)',
-            zIndex: 1000,
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center'
-          }}
+          className="hidden lg:flex items-center justify-center bg-white/15 backdrop-blur-sm border border-white/30 rounded-[30px] mx-auto min-w-[480px] h-10 px-8 gap-8 z-50"
         >
           {navigationItems.map((item, index) => (
             <motion.a
@@ -124,55 +110,14 @@ const Header = () => {
               width={12}
               height={12}
             />
-            <span
-              className="hover:text-[#4379EE] transition-colors  duration-200"
-              style={{
-                fontFamily: 'Roboto',
-                fontWeight: 500,
-                fontSize: '14px',
-                lineHeight: '24px',
-                letterSpacing: '0.18px',
-                color: '#485264',
-                marginLeft: '8px',
-                height: '25px',
-                display: 'flex',
-                alignItems: 'center',
-                textAlign: 'center',
-                whiteSpace: 'nowrap'
-              }}
-            >
+            <span className="hover:text-[#4379EE] transition-colors duration-200 ml-2 text-[#485264] font-medium text-sm leading-6">
               Agendar demo
             </span>
           </div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="flex items-center justify-center cursor-pointer"
-            style={{
-              width: '140px',
-              height: '34px',
-              background: '#4379EE',
-              borderRadius: '15px'
-            }}
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="flex items-center justify-center cursor-pointer w-[140px] h-[34px] bg-[#4379EE] rounded-[15px]"
             onClick={() => console.log('Empieza ahora clicked')}
           >
-            <span
-              style={{
-                fontFamily: 'Roboto',
-                fontWeight: 500,
-                fontSize: '14px',
-                lineHeight: '24px',
-                letterSpacing: '0.18px',
-                color: '#FFFFFF',
-                height: '25px',
-                display: 'flex',
-                alignItems: 'center',
-                textAlign: 'center',
-                whiteSpace: 'nowrap'
-              }}
-            >
-              Empieza ahora
-            </span>
+            <span className="text-white font-medium text-sm">Empieza ahora</span>
           </motion.div>
         </motion.div>
 
