@@ -3,14 +3,14 @@ import { cva } from 'class-variance-authority';
 import { twMerge } from 'tailwind-merge';
 
 const buttonClasses = cva(
-  'inline-flex items-center justify-center font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed',
+  'inline-flex items-center justify-center font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95',
   {
     variants: {
       variant: {
-        primary: 'bg-accent-blue text-primary-foreground hover:bg-primary-light focus:ring-accent-blue',
-        secondary: 'bg-button-secondary-bg text-button-secondary-text hover:bg-secondary-light focus:ring-accent-blue',
-        outline: 'border-2 border-accent-blue text-accent-blue bg-transparent hover:bg-secondary-light focus:ring-accent-blue',
-        success: 'bg-accent-green text-primary-foreground hover:bg-accent-green-light focus:ring-accent-green',
+        primary: 'bg-accent-blue text-primary-foreground hover:bg-primary-light hover:brightness-110 focus:ring-accent-blue shadow-md hover:shadow-lg active:shadow-sm',
+        secondary: 'bg-button-secondary-bg text-button-secondary-text hover:bg-secondary-light hover:brightness-105 focus:ring-accent-blue shadow-md hover:shadow-lg active:shadow-sm',
+        outline: 'border-2 border-accent-blue text-accent-blue bg-transparent hover:bg-secondary-light hover:border-primary-light focus:ring-accent-blue shadow-sm hover:shadow-md active:shadow-sm',
+        success: 'bg-accent-green text-primary-foreground hover:bg-accent-green-light hover:brightness-110 focus:ring-accent-green shadow-md hover:shadow-lg active:shadow-sm',
       },
       size: {
         small: 'text-sm px-3 py-1.5',

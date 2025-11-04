@@ -139,23 +139,23 @@ export default function PricingSection() {
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                   transition={{ duration: 0.6, delay: 0.3 + index * 0.1, ease: "easeOut" }}
                   whileHover={{ y: -10, transition: { duration: 0.2 } }}
-                  className={`w-full lg:h-[520px] lg:w-[400px] border rounded-xl shadow-[0px_2px_4px_#0000003f] p-4 sm:p-6 md:p-8 lg:p-[32px] lg:pt-[16px] lg:pb-[32px] lg:px-[26px] ${plan.cardStyle} ${plan.textColor} ${plan.name === 'Negocio' ? plan.cardStyle : 'bg-secondary-background'}`}>
+                  className={`w-full lg:h-[520px] lg:w-[400px] border rounded-xl shadow-[0px_2px_4px_#0000003f] p-4 sm:p-6 md:p-8 lg:p-[32px] lg:pt-[16px] lg:pb-[32px] lg:px-[26px] ${plan.cardStyle} ${plan.textColor} ${plan.name === 'Negocio' ? plan.cardStyle : 'bg-secondary-background'} flex flex-col`}>
 
                   {/* Plan Header */}
-                  <div className="flex flex-col gap-0.5 sm:gap-1 md:gap-1.5 lg:gap-[2px] justify-start items-start w-full mb-4 sm:mb-6 md:mb-8 lg:mb-[78px]">
+                  <div className="flex flex-col gap-0.5 sm:gap-1 md:gap-1.5 lg:gap-[2px] justify-start items-start w-full mb-4 sm:mb-6 md:mb-8 lg:mb-[24px]">
                     <div className="flex justify-between items-start w-full ml-1 sm:ml-2 md:ml-3 lg:ml-[6px]">
-                      <h3 className={`text-[12px] sm:text-[17px] md:text-[21px] lg:text-[25px] font-bold leading-[15px] sm:leading-[21px] md:leading-[26px] lg:leading-[31px] text-center ${plan.textColor}`}
+                      <h3 className={`text-[12px] sm:text-[17px] md:text-[21px] lg:text-[25px] font-bold leading-[15px] sm:leading-[21px] md:leading-[26px] lg:leading-[31px] text-center mt-1 ${plan.textColor}`}
                         style={{ fontFamily: 'Inter' }}>
                         {plan.name}
                       </h3>
                       {plan.isRecommended && (
-                        <span className="text-[7px] text-white bg-[#FFFFFF80] sm:text-[10px] md:text-[12px] lg:text-[14px] font-bold leading-[8px] sm:leading-[12px] md:leading-[14px] lg:leading-[17px] text-center text-secondary-background bg-background-overlay rounded-lg px-2 sm:px-3 md:px-4 lg:px-[12px] py-0.5 sm:py-1 md:py-1.5 lg:py-[2px]"
+                        <span className="text-[7px] text-white bg-[#FFFFFF80] sm:text-[10px] md:text-[12px] lg:text-[14px] font-bold leading-[8px] sm:leading-[12px] md:leading-[14px] lg:leading-[17px] text-center text-secondary-background bg-background-overlay rounded-lg px-2 sm:px-3 md:px-4 lg:px-[12px] py-0.5 sm:py-1 md:py-1.5 lg:py-[2px] -mt-1"
                           style={{ fontFamily: 'Inter' }}>
                           Recomendado
                         </span>
                       )}
                     </div>
-                    <div className={`text-[12px] sm:text-[17px] md:text-[21px] lg:text-[25px] font-bold leading-[15px] sm:leading-[21px] md:leading-[26px] lg:leading-[31px] text-center mt-2 ${plan.priceColor} ml-0`}
+                    <div className={`text-[12px] sm:text-[17px] md:text-[21px] lg:text-[25px] font-bold leading-[15px] sm:leading-[21px] md:leading-[26px] lg:leading-[31px] text-center mt-2 sm:mt-2.5 md:mt-3 lg:mt-4 ${plan.priceColor} ml-0`}
                       style={{ fontFamily: 'Inter' }}>
                       <span className="text-[17px] sm:text-[24px] md:text-[29px] lg:text-[35px] font-black leading-[15px] sm:leading-[21px] md:leading-[26px] lg:leading-[31px]">
                         {plan.price}
@@ -167,17 +167,17 @@ export default function PricingSection() {
                   </div>
 
                   {/* Features List */}
-                  <div className="flex flex-col justify-start items-center w-full mb-4 sm:mb-6 md:mb-8 lg:mb-[26px] mr-2 sm:mr-3 md:mr-4 lg:mr-[12px]">
-                    <div className="flex flex-col w-full">
+                  <div className="flex flex-col justify-start items-center w-full mr-2 sm:mr-3 md:mr-4 lg:mr-[12px] flex-grow">
+                    <div className="flex flex-col w-full gap-2 sm:gap-2.5 md:gap-3 lg:gap-[12px]">
                       {plan.features.map((feature, featureIndex) => (
                         <div key={featureIndex}
-                          className={`flex justify-start items-start w-full ${featureIndex > 0 ? 'mt-2 sm:mt-3 md:mt-4 lg:mt-[12px]' : ''} ${featureIndex === 3 ? 'mt-3 sm:mt-4 md:mt-5 lg:mt-[18px]' : ''} ${featureIndex === 4 ? 'mt-2 sm:mt-3 md:mt-4 lg:mt-[14px]' : ''}`}>
+                          className="flex justify-start items-start w-full">
                           <img
                             src={plan.iconColor}
                             alt="Feature check"
-                            className={`w-[8px] h-[5px] sm:w-[11px] sm:h-[7px] md:w-[13px] md:h-[8px] lg:w-[16px] lg:h-[10px] ${featureIndex > 0 ? 'mt-1 sm:mt-1.5 md:mt-2 lg:mt-[4px]' : ''}`}
+                            className="w-[8px] h-[5px] sm:w-[11px] sm:h-[7px] md:w-[13px] md:h-[8px] lg:w-[16px] lg:h-[10px] mt-1"
                           />
-                          <p className={`text-[8px] sm:text-[11px] md:text-[13px] lg:text-[16px] font-normal leading-[10px] sm:leading-[14px] md:leading-[17px] lg:leading-[20px] text-left ${plan.textColor} self-center ml-2 sm:ml-3 md:ml-4 lg:ml-[12px] ${featureIndex === 4 ? 'w-full lg:w-[94%]' : 'w-auto'}`}
+                          <p className={`text-[8px] sm:text-[11px] md:text-[13px] lg:text-[16px] font-normal leading-[10px] sm:leading-[14px] md:leading-[17px] lg:leading-[20px] text-left ${plan.textColor} self-center ml-2 sm:ml-3 md:ml-4 lg:ml-[12px] w-full`}
                             style={{ fontFamily: 'Inter' }}>
                             {feature}
                           </p>
@@ -187,11 +187,11 @@ export default function PricingSection() {
                   </div>
 
                   {/* CTA Button */}
-                  <div className={`flex justify-start items-center`}>
+                  <div className="flex justify-start items-center mt-auto pt-4 sm:pt-5 md:pt-6 lg:pt-[20px]">
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className={`${plan.buttonStyle} lg:h-[34px]  rounded-2xl flex items-center justify-start gap-x-2 font-medium px-4 sm:px-5 md:px-6 lg:px-[24px] py-2 sm:py-2.5 md:py-3 lg:py-[10px] ${plan.name === 'Negocio' ? 'mb-4 sm:mb-5 md:mb-6 lg:mb-[20px]' : ''}`}
+                      className={`${plan.buttonStyle} lg:h-[34px] rounded-2xl flex items-center justify-start gap-x-2 font-medium px-4 sm:px-5 md:px-6 lg:px-[24px] py-2 sm:py-2.5 md:py-3 lg:py-[10px]`}
                       onClick={() => handlePlanSelect(plan.name)}
                     >
                       {plan.buttonText}

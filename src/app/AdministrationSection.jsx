@@ -1,6 +1,7 @@
 'use client';
 import Button from '../components/ui/Button';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function AdministratorSection() {
   const handleGetStarted = () => {
@@ -135,12 +136,14 @@ export default function AdministratorSection() {
                   Prisma no solo muestra tus resultados: te avisa cuando algo cambia. Sabrás si tus ventas suben, si gastas más o si hay algo que revisar.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-start items-center gap-4 sm:gap-6 md:gap-8 lg:gap-[36px]">
-                  <div className="transition-all duration-200 hover:shadow-[0_0_15px_rgba(255,255,255,0.6)]"
-                    style={{
-                      border: '3px solid white',
-                      borderRadius: '50px',
-                      display: 'inline-block',
-                      boxShadow: '0 0 0 1px rgba(255,255,255,0.3)'
+                  <motion.div
+                    whileHover={{ 
+                      scale: 1.08,
+                      transition: { duration: 0.2, ease: "easeOut" }
+                    }}
+                    whileTap={{ 
+                      scale: 0.95,
+                      transition: { duration: 0.1 }
                     }}
                   >
                     <Button
@@ -150,7 +153,7 @@ export default function AdministratorSection() {
                       fill_background_color="bg-[#1daa61]"
                       border_border_radius="rounded-[50px]"
                       padding=""
-                      className="hover:bg-[#189850] transition-colors duration-200"
+                      className="cursor-pointer transition-all duration-300 hover:brightness-110 active:brightness-95 shadow-[0_4px_12px_rgba(29,170,97,0.25)] hover:shadow-[0_6px_20px_rgba(29,170,97,0.35)] active:shadow-[0_2px_8px_rgba(29,170,97,0.3)]"
                       style={{
                         width: '151px',
                         height: '34px',
@@ -159,12 +162,24 @@ export default function AdministratorSection() {
                       }}
                       onClick={handleGetStarted}
                     />
-                  </div>
-                  <div className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-[10px] px-4 py-2 transition-all duration-200 hover:shadow-[0_0_15px_rgba(255,255,255,0.6)] hover:bg-white/10 cursor-pointer"
+                  </motion.div>
+                  <motion.div 
+                    className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-[10px] px-4 py-2 cursor-pointer transition-all duration-300"
                     style={{
                       border: '3px solid white',
                       borderRadius: '50px',
-                      boxShadow: '0 0 0 1px rgba(255,255,255,0.3)'
+                      boxShadow: '0 4px 12px rgba(255,255,255,0.3)'
+                    }}
+                    whileHover={{ 
+                      scale: 1.08,
+                      boxShadow: '0 6px 20px rgba(255,255,255,0.5)',
+                      backgroundColor: 'rgba(255,255,255,0.15)',
+                      transition: { duration: 0.2, ease: "easeOut" }
+                    }}
+                    whileTap={{ 
+                      scale: 0.95,
+                      boxShadow: '0 2px 8px rgba(255,255,255,0.3)',
+                      transition: { duration: 0.1 }
                     }}
                     onClick={handleScheduleDemo}
                   >
@@ -178,7 +193,7 @@ export default function AdministratorSection() {
                     >
                       Agendar demo
                     </span>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
 
@@ -186,13 +201,17 @@ export default function AdministratorSection() {
               <div className="w-full lg:w-[574px] flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-[12px] px-2 lg:px-[8px]">
 
                 {/* First Notification */}
-                <div className="rounded-base p-2 sm:p-3 md:p-4 lg:p-[10px] mr-8 sm:mr-12 md:mr-16 lg:mr-[52px] ml-12 sm:ml-16 md:ml-20 lg:ml-[80px]"
+                <motion.div 
+                  className="rounded-base p-2 sm:p-3 md:p-4 lg:p-[10px] mr-8 sm:mr-12 md:mr-16 lg:mr-[52px] ml-12 sm:ml-16 md:ml-20 lg:ml-[80px]"
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.5, delay: 0 }}
                   style={{
                     background: '#FFFFFFB2',
                     width: '425px',
                     height: '57px',
-                    borderRadius: '5px',
-                    opacity: 1
+                    borderRadius: '5px'
                   }}>
                   <div className="flex justify-between items-start w-full mb-0 sm:mb-1 md:mb-2 lg:mb-[4px]">
                     <div className="flex items-start gap-1 sm:gap-2 md:gap-3 lg:gap-[6px]">
@@ -217,18 +236,22 @@ export default function AdministratorSection() {
                     style={{ fontFamily: 'Inter' }}>
                     Erus  | $18,000.00 |  Walmart sa de cv |  14/03/2025  |  G00003
                   </p>
-                </div>
+                </motion.div>
 
                 {/* Notifications List */}
-                <div className="flex flex-col gap-4 sm:gap-6 md:gap-7 lg:gap-[26px] ml-8 sm:ml-12 md:ml-16 lg:ml-[62px]">
-                  {notifications.slice(1).map((notification, index) => (
-                    <div key={notification.id} className="rounded-base p-2 sm:p-3 md:p-4 lg:p-[10px]"
-                      style={{
+                {notifications.slice(1).map((notification, index) => (
+                  <motion.div 
+                    key={notification.id} 
+                    className="rounded-base p-2 sm:p-3 md:p-4 lg:p-[10px] ml-8 sm:ml-12 md:ml-16 lg:ml-[62px]"
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.5, delay: (index + 1) * 0.3 }}
+                    style={{
                         background: '#FFFFFFB2',
                         width: '425px',
                         height: '57px',
                         borderRadius: '5px',
-                        opacity: 1,
                         marginLeft: index === 1 ? '18px' : '49px'
                       }}>
                       <div className="flex justify-between items-start w-full mb-0 sm:mb-1 md:mb-2 lg:mb-[4px]">
@@ -258,9 +281,8 @@ export default function AdministratorSection() {
                           {notification.description}
                         </p>
                       </div>
-                    </div>
+                    </motion.div>
                   ))}
-                </div>
               </div>
             </div>
           </div>
@@ -342,7 +364,16 @@ export default function AdministratorSection() {
                 {/* Tax Data Cards */}
                 <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-[14px] self-end w-full lg:w-[34%] mt-2 lg:mt-[8px]">
                   {taxData.map((tax, index) => (
-                    <div key={index} className="bg-secondary-background border border-border-primary rounded-base p-1 sm:p-2 md:p-3 lg:p-[6px]">
+                    <motion.div 
+                      key={index} 
+                      className="bg-secondary-background border border-border-primary rounded-base p-1 sm:p-2 md:p-3 lg:p-[6px] cursor-pointer"
+                      whileHover={{ 
+                        y: -4,
+                        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
+                        transition: { duration: 0.2, ease: "easeOut" }
+                      }}
+                      transition={{ duration: 0.2 }}
+                    >
                       <div className="flex flex-col gap-1 sm:gap-2 md:gap-3 lg:gap-[6px] ml-0.5 sm:ml-1 md:ml-1.5 lg:ml-[4px] mr-0.5 sm:mr-1 md:mr-1.5 lg:mr-[4px] mb-0.5 sm:mb-1 md:mb-1.5 lg:mb-[4px]">
                         <div className="flex items-center gap-x-1 w-full">
                           <h5 className="text-[7px] sm:text-[10px] md:text-[12px] lg:text-[14px] font-medium leading-[8px] sm:leading-[12px] md:leading-[14px] lg:leading-[17px] text-left text-text-muted"
@@ -375,7 +406,7 @@ export default function AdministratorSection() {
                           </span>
                         </div>
                       </div>
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
               </div>

@@ -26,8 +26,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="overflow-x-hidden w-full m-0 p-0">
+    <html lang="en" translate="no">
+      <head>
+        <meta name="google" content="notranslate" />
+      </head>
+      <body className="overflow-x-hidden w-full m-0 p-0" translate="no">
         <SmoothScroll />
         {children}
 

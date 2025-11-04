@@ -23,19 +23,19 @@ export default function WorkingSection() {
   }
 
   return (
-    <section ref={ref} className="w-full bg-secondary-background overflow-x-hidden">
+    <section ref={ref} className="w-full bg-secondary-background overflow-x-hidden pt-8 sm:pt-12 md:pt-16 lg:pt-20 pb-16 sm:pb-20 md:pb-24 lg:pb-32">
       <div className="w-full max-w-[1382px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-start items-center gap-12 sm:gap-16 md:gap-20 lg:gap-[64px] w-full py-6 sm:py-8 md:py-10">
+        <div className="flex flex-col justify-start items-center gap-12 sm:gap-16 md:gap-20 lg:gap-[64px] w-full">
 
           {/* Header Section with Badge */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={sectionInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative w-full mx-auto"
+            className="relative w-full flex justify-center items-center mx-auto"
             style={{
-              width: '1260px',
-              height: '71px'
+              maxWidth: '1260px',
+              minHeight: '71px'
             }}>
             <h2 className="font-medium text-center text-[#1a3866] whitespace-nowrap"
               style={{ 
@@ -46,8 +46,6 @@ export default function WorkingSection() {
                 letterSpacing: '0%',
                 textAlign: 'center',
                 verticalAlign: 'middle',
-                width: '1260px',
-                height: '71px',
                 opacity: 1,
                 transform: 'rotate(0deg)'
               }}>
@@ -76,7 +74,7 @@ export default function WorkingSection() {
           </motion.div>
 
           {/* Two Column Layout */}
-          <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-[18px] w-full">
+          <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-[18px] w-full justify-center items-center">
 
             {/* Left Column - Numbers Section */}
             <motion.div
@@ -256,7 +254,17 @@ export default function WorkingSection() {
                 ✨ Así de fácil.
               </p>
 
-              <div style={{ position: 'absolute', bottom: '28px', left: '29px' }}>
+              <motion.div 
+                style={{ position: 'absolute', bottom: '28px', left: '29px' }}
+                whileHover={{ 
+                  scale: 1.08,
+                  transition: { duration: 0.2, ease: "easeOut" }
+                }}
+                whileTap={{ 
+                  scale: 0.95,
+                  transition: { duration: 0.1 }
+                }}
+              >
                 <Button
                   text="Comenzar"
                   text_font_size="text-md"
@@ -264,7 +272,7 @@ export default function WorkingSection() {
                   fill_background_color="bg-accent-blue"
                   border_border_radius=""
                   padding=""
-                  className=""
+                  className="cursor-pointer transition-all duration-300 hover:brightness-110 active:brightness-95 shadow-[0_4px_12px_rgba(26,56,102,0.25)] hover:shadow-[0_6px_20px_rgba(26,56,102,0.35)] active:shadow-[0_2px_8px_rgba(26,56,102,0.3)]"
                   onClick={handleGetStarted}
                   style={{
                     width: '151px',
@@ -273,7 +281,7 @@ export default function WorkingSection() {
                     opacity: 1
                   }}
                 />
-              </div>
+              </motion.div>
               
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
