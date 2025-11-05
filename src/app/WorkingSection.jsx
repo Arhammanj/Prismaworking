@@ -23,7 +23,7 @@ export default function WorkingSection() {
   }
 
   return (
-    <section ref={ref} className="w-full bg-secondary-background overflow-x-hidden pt-8 sm:pt-12 md:pt-16 lg:pt-20 pb-16 sm:pb-20 md:pb-24 lg:pb-32">
+    <section id="como-funciona" ref={ref} className="w-full bg-secondary-background overflow-x-hidden pt-8 sm:pt-12 md:pt-16 lg:pt-20 pb-16 sm:pb-20 md:pb-24 lg:pb-32">
       <div className="w-full max-w-[1382px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-start items-center gap-12 sm:gap-16 md:gap-20 lg:gap-[64px] w-full">
 

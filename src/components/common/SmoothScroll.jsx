@@ -16,6 +16,9 @@ export default function SmoothScroll() {
             infinite: false,
         });
 
+        // Expose lenis instance globally for navigation
+        window.lenis = lenis;
+
         function raf(time) {
             lenis.raf(time);
             requestAnimationFrame(raf);
@@ -25,6 +28,7 @@ export default function SmoothScroll() {
 
         return () => {
             lenis.destroy();
+            delete window.lenis;
         };
     }, []);
 

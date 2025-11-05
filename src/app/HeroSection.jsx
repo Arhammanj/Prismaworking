@@ -43,8 +43,8 @@ export default function HeroSection() {
             height: '80px',
             top: '214px',
             fontFamily: 'Roboto',
-            fontSize: '28px',
-            lineHeight: '40px',
+            fontSize: '30px',
+            lineHeight: '30px',
             letterSpacing: '0.18px',
             textAlign: 'center',
             display: 'flex',
@@ -54,7 +54,7 @@ export default function HeroSection() {
             color: '#485264'
           }}
         >
-          <div className="flex items-center justify-center gap-2 flex-wrap">
+          <div className="flex items-center justify-center gap-1 flex-wrap">
             <span
               style={{
                 fontWeight: 700,
@@ -66,14 +66,14 @@ export default function HeroSection() {
             >
               Prisma
             </span>
-            <span style={{ fontWeight: 300, marginRight: '4px' }}>
+            <span style={{ fontWeight: 300, marginRight: '2px' }}>
               registra tus compras, gastos y ventas
             </span>
             <span style={{ fontWeight: 700 }}>
               sin que captures nada.
             </span>
           </div>
-          <div style={{ fontWeight: 300, marginTop: '8px' }}>
+          <div style={{ fontWeight: 300, marginTop: '2px' }}>
             Te muestra cuánto ganaste este mes, en segundos.
           </div>
         </motion.div>

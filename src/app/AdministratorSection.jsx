@@ -63,7 +63,7 @@ export default function AdministratorSection() {
   ]
 
   return (
-    <section className="w-full bg-secondary-background overflow-x-hidden">
+    <section id="otras-soluciones" className="w-full bg-secondary-background overflow-x-hidden">
       <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-[56px] py-8 sm:py-12 md:py-16 lg:py-[42px]">
 
         {/* Header Section */}
