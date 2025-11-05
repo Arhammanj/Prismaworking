@@ -67,18 +67,17 @@ export default function AdministratorSection() {
       <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-[56px] py-8 sm:py-12 md:py-16 lg:py-[42px]">
 
         {/* Header Section */}
-        <div className="relative w-full max-w-[1186px] mx-auto mb-16 sm:mb-20 md:mb-24 lg:mb-[90px]">
-          <h2 className="text-[25px] sm:text-[35px] md:text-[40px] lg:text-[50px] font-medium leading-[35px] sm:leading-[49px] md:leading-[56px] lg:leading-[70px] text-center text-[#1a3866] w-full"
+        <div className="relative w-full max-w-[1186px] mx-auto mb-16 sm:mb-20 md:mb-24 lg:mb-[90px] overflow-x-auto">
+          <h2 className="text-[14px] sm:text-[35px] md:text-[40px] lg:text-[50px] font-medium leading-[22px] sm:leading-[49px] md:leading-[56px] lg:leading-[70px] text-center text-[#1a3866] w-full whitespace-nowrap"
             style={{ fontFamily: 'Roboto' }}>
-            <br />
             Como tener un{' '}
-            <span className="inline-flex items-center align-middle gap-2 sm:gap-3 md:gap-4 lg:gap-[10px] bg-[#e5e6ff] rounded-full px-4 sm:px-6 md:px-8 lg:px-[30px] py-1 sm:py-1.5 md:py-2">
+            <span className="inline-flex items-center align-middle gap-1.5 sm:gap-3 md:gap-4 lg:gap-[10px] bg-[#e5e6ff] rounded-full px-2.5 sm:px-6 md:px-8 lg:px-[30px] py-0.5 sm:py-1.5 md:py-2">
               <img
                 src="/images/picon.svg"
                 alt="Administrator icon"
-                className="w-[13px] h-[15px] sm:w-[18px] sm:h-[21px] md:w-[22px] md:h-[26px] lg:w-[26px] lg:h-[30px]"
+                className="w-[8px] h-[10px] sm:w-[18px] sm:h-[21px] md:w-[22px] md:h-[26px] lg:w-[26px] lg:h-[30px]"
               />
-              <span className="text-[20px] sm:text-[28px] md:text-[32px] lg:text-[40px] font-medium leading-[24px] sm:leading-[33px] md:leading-[38px] lg:leading-[47px] text-[#353df0]"
+              <span className="text-[13px] sm:text-[28px] md:text-[32px] lg:text-[40px] font-medium leading-[18px] sm:leading-[33px] md:leading-[38px] lg:leading-[47px] text-[#353df0]"
                 style={{ fontFamily: 'Roboto' }}>
                 administrador
               </span>
@@ -97,46 +96,43 @@ export default function AdministratorSection() {
           }}>
 
           {/* Smart Notifications Section */}
-          <div className="w-full rounded-3xl p-6 sm:p-8 md:p-10 lg:p-[32px]"
+          <div className="w-full max-w-[1130px] rounded-3xl p-3 sm:p-6 md:p-8 lg:p-[32px] mx-auto min-h-[300px] sm:min-h-[400px] lg:min-h-0 flex items-center"
             style={{
-              width: '1130px',
-              height: '367px',
               borderRadius: '20px',
               opacity: 1,
               background: '#E5FFF4'
             }}>
-            <div className="flex flex-col lg:flex-row justify-start items-center w-full">
+            <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start w-full gap-3 sm:gap-4 md:gap-6 lg:gap-4">
 
-              {/* Left Content */}
-              <div className="w-full lg:w-[46%] mb-8 lg:mb-0 mt-1 lg:mt-[4px]">
-                <div className="flex items-start gap-2 sm:gap-3 md:gap-4 lg:gap-[8px] mb-4 sm:mb-6 md:mb-8 lg:mb-[22px]">
+              {/* Left Content - Full Screen Mobile Promo */}
+              <div className="w-full lg:w-[46%] mb-0 mt-0 lg:mt-[4px] shrink-0 flex flex-col justify-center items-center max-w-[340px] lg:max-w-none mx-auto lg:mx-0 text-center lg:text-left px-2 lg:px-0">
+                <div className="flex items-center justify-center lg:justify-start gap-1.5 sm:gap-3 md:gap-4 lg:gap-[8px] mb-2 sm:mb-4 md:mb-6 lg:mb-[22px]">
                   <img
                     src="/images/message.svg"
                     alt="AI notification icon"
-                    className="w-[10px] h-[9px] sm:w-[14px] sm:h-[13px] md:w-[17px] md:h-[15px] lg:w-[20px] lg:h-[18px] mt-1"
+                    className="w-[8px] h-[7px] sm:w-[14px] sm:h-[13px] md:w-[17px] md:h-[15px] lg:w-[20px] lg:h-[18px]"
                   />
-                  <h3 className="text-[9px] sm:text-[12px] md:text-[15px] lg:text-[18px] font-extrabold leading-[11px] sm:leading-[15px] md:leading-[18px] lg:leading-[22px] text-left text-[#047043]"
+                  <h3 className="text-[8px] sm:text-[12px] md:text-[15px] lg:text-[18px] font-extrabold leading-tight sm:leading-[15px] md:leading-[18px] lg:leading-[22px] text-[#047043]"
                     style={{ fontFamily: 'Roboto' }}>
                     Prisma te habla
                   </h3>
                 </div>
-                <h4 className="text-[15px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-medium leading-[20px] sm:leading-[27px] md:leading-[33px] lg:leading-[40px] text-left text-[#033c24] mb-4 w-full lg:w-[84%]"
+                <h4 className="text-[13px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-medium leading-[18px] sm:leading-[27px] md:leading-[33px] lg:leading-[40px] text-[#033c24] mb-2 sm:mb-3 w-full lg:w-[84%]"
                   style={{ fontFamily: 'Roboto' }}>
                   Tener tus números en tiempo real es un superpoder
                 </h4>
-                <p className="text-[16px] font-normal leading-[20px] text-left mb-6"
+                <p className="text-[10px] sm:text-base lg:text-[16px] font-normal leading-[13px] sm:leading-5 lg:leading-[20px] mb-3 sm:mb-4 lg:mb-6 w-full lg:w-[415px] line-clamp-2 lg:line-clamp-none"
                   style={{
                     fontFamily: 'Roboto',
-                    width: '415px',
                     opacity: 1,
                     letterSpacing: '0%',
-                    verticalAlign: 'middle',
                     color: '#033D25'
                   }}>
-                  Prisma no solo muestra tus resultados: te avisa cuando algo cambia. Sabrás si tus ventas suben, si gastas más o si hay algo que revisar.
+                  Prisma no solo muestra tus resultados: te avisa cuando algo cambia.
                 </p>
-                <div className="flex flex-col sm:flex-row justify-start items-center gap-4 sm:gap-6 md:gap-8 lg:gap-[36px]">
+                <div className="flex flex-col w-full sm:flex-row justify-center lg:justify-start items-center gap-2.5 sm:gap-4 md:gap-6 lg:gap-[36px]">
                   <motion.div
+                    className="w-full sm:w-auto"
                     whileHover={{ 
                       scale: 1.08,
                       transition: { duration: 0.2, ease: "easeOut" }
@@ -148,15 +144,16 @@ export default function AdministratorSection() {
                   >
                     <Button
                       text="Comenzar"
-                      text_font_size="text-md"
+                      text_font_size="text-sm sm:text-md"
                       text_font_weight="font-medium"
                       fill_background_color="bg-[#1daa61]"
                       border_border_radius="rounded-[50px]"
                       padding=""
-                      className="cursor-pointer transition-all duration-300 hover:brightness-110 active:brightness-95 shadow-[0_4px_12px_rgba(29,170,97,0.25)] hover:shadow-[0_6px_20px_rgba(29,170,97,0.35)] active:shadow-[0_2px_8px_rgba(29,170,97,0.3)]"
+                      className="cursor-pointer transition-all duration-300 hover:brightness-110 active:brightness-95 shadow-[0_4px_12px_rgba(29,170,97,0.25)] hover:shadow-[0_6px_20px_rgba(29,170,97,0.35)] active:shadow-[0_2px_8px_rgba(29,170,97,0.3)] w-full sm:w-auto min-h-[44px] sm:min-h-0"
                       style={{
-                        width: '151px',
-                        height: '34px',
+                        width: '100%',
+                        maxWidth: '280px',
+                        height: '44px',
                         borderRadius: '50px',
                         opacity: 1
                       }}
@@ -164,7 +161,7 @@ export default function AdministratorSection() {
                     />
                   </motion.div>
                   <motion.div 
-                    className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-[10px] cursor-pointer transition-all duration-300"
+                    className="flex items-center justify-center gap-1.5 sm:gap-2 md:gap-4 lg:gap-[10px] cursor-pointer transition-all duration-300 min-h-[44px]"
                     whileHover={{ 
                       scale: 1.08,
                       transition: { duration: 0.2, ease: "easeOut" }
@@ -179,9 +176,9 @@ export default function AdministratorSection() {
                     <img
                       src="/images/phone.svg"
                       alt="Calendar icon"
-                      className="w-[6px] h-[6px] sm:w-[8px] sm:h-[8px] md:w-[10px] md:h-[10px] lg:w-[12px] lg:h-[12px]"
+                      className="w-[10px] h-[10px] sm:w-[8px] sm:h-[8px] md:w-[10px] md:h-[10px] lg:w-[12px] lg:h-[12px]"
                     />
-                    <span className="text-md font-medium leading-md text-center text-[#1daa61]"
+                    <span className="text-sm sm:text-md font-medium leading-tight text-center text-[#1daa61]"
                       style={{ fontFamily: 'Roboto' }}
                     >
                       Agendar demo
@@ -190,77 +187,76 @@ export default function AdministratorSection() {
                 </div>
               </div>
 
-              {/* Right Content - Notifications */}
-              <div className="w-full lg:w-[574px] flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-[12px] px-2 lg:px-[8px]">
+              {/* Right Content - Notifications - 2/3 width */}
+              <div className="hidden lg:flex w-2/3 lg:w-[574px] flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-3 px-0 lg:px-2 overflow-x-hidden">
 
                 {/* First Notification */}
                 <motion.div 
-                  className="rounded-base p-2 sm:p-3 md:p-4 lg:p-[10px] mr-8 sm:mr-12 md:mr-16 lg:mr-[52px] ml-12 sm:ml-16 md:ml-20 lg:ml-[80px] cursor-pointer"
+                  className="rounded-base p-1.5 sm:p-3 md:p-4 lg:p-[10px] cursor-pointer"
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.5, delay: 0 }}
                   style={{
                     background: '#FFFFFFB2',
-                    width: '425px',
-                    height: '57px',
+                    width: '100%',
+                    minHeight: '45px',
                     borderRadius: '5px',
                     opacity: 1
                   }}>
                   <div className="flex justify-between items-start w-full mb-0 sm:mb-1 md:mb-2 lg:mb-[4px]">
                     <div className="flex items-start gap-1 sm:gap-2 md:gap-3 lg:gap-[6px]">
-                      <div className="w-[6px] h-[6px] sm:w-[6px] sm:h-[6px] md:w-[6px] md:h-[6px] lg:w-[6px] lg:h-[6px] rounded-full mt-0.5 sm:mt-1 md:mt-1.5 lg:mt-[4px]"
+                      <div className="w-[5px] h-[5px] sm:w-[6px] sm:h-[6px] md:w-[6px] md:h-[6px] lg:w-[6px] lg:h-[6px] rounded-full mt-0.5 sm:mt-1 md:mt-1.5 lg:mt-[4px]"
                         style={{ background: '#FF0000' }}></div>
-                      <h5 className="text-[6px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-bold leading-[7px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted"
+                      <h5 className="text-[5px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-bold leading-[6px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted"
                         style={{ fontFamily: 'Inter' }}>
                         Gasto inusualmente alto
                       </h5>
-                      <span className="text-[7px] font-bold leading-[20px] text-center bg-[#0080ff] rounded-[5px] px-1 sm:px-1.5 md:px-2 lg:px-[4px]"
-                        style={{ fontFamily: 'Inter', width: '31px', height: '10px', opacity: 1, letterSpacing: '0%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', paddingBottom: '1px' }}>
+                      <span className="text-[6px] font-bold leading-[20px] text-center bg-[#0080ff] rounded-[5px] px-0.5 sm:px-1.5 md:px-2 lg:px-[4px]"
+                        style={{ fontFamily: 'Inter', width: '28px', height: '9px', opacity: 1, letterSpacing: '0%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', paddingBottom: '1px' }}>
                         Nuevo
                       </span>
                     </div>
                     <img
                       src="/images/search.svg"
                       alt="Search icon"
-                      className="w-[7px] h-[7px] sm:w-[10px] sm:h-[10px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px] self-end"
+                      className="w-[6px] h-[6px] sm:w-[10px] sm:h-[10px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px] self-end"
                     />
                   </div>
-                  <p className="text-[6px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-normal leading-[7px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted -mt-0.5 sm:-mt-1 md:-mt-1.5 lg:-mt-[2px]"
+                  <p className="text-[5px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-normal leading-[6px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted -mt-0.5 sm:-mt-1 md:-mt-1.5 lg:-mt-[2px]"
                     style={{ fontFamily: 'Inter' }}>
                     Erus  | $18,000.00 |  Walmart sa de cv |  14/03/2025  |  G00003
                   </p>
                 </motion.div>
 
                 {/* Notifications List */}
-                <div className="flex flex-col gap-4 sm:gap-6 md:gap-7 lg:gap-[26px] ml-8 sm:ml-12 md:ml-16 lg:ml-[62px]">
+                <div className="flex flex-col gap-2 sm:gap-6 md:gap-7 lg:gap-[26px]">
                   {notifications.slice(1).map((notification, index) => (
                     <motion.div 
                       key={notification.id} 
-                      className="rounded-base p-2 sm:p-3 md:p-4 lg:p-[10px] cursor-pointer"
+                      className="rounded-base p-1.5 sm:p-3 md:p-4 lg:p-[10px] cursor-pointer"
                       initial={{ opacity: 0, x: -50 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true, amount: 0.3 }}
                       transition={{ duration: 0.5, delay: (index + 1) * 0.3 }}
                       style={{
                         background: '#FFFFFFB2',
-                        width: '425px',
-                        height: '57px',
+                        width: '100%',
+                        minHeight: '45px',
                         borderRadius: '5px',
-                        opacity: 1,
-                        marginLeft: index === 1 ? '18px' : '49px'
+                        opacity: 1
                       }}>
                       <div className="flex justify-between items-start w-full mb-0 sm:mb-1 md:mb-2 lg:mb-[4px]">
                         <div className="flex items-start gap-1 sm:gap-2 md:gap-3 lg:gap-[6px]">
-                          <div className={`w-[6px] h-[6px] sm:w-[6px] sm:h-[6px] md:w-[6px] md:h-[6px] lg:w-[6px] lg:h-[6px] rounded-full mt-0.5 sm:mt-1 md:mt-1.5 lg:mt-[4px]`}
+                          <div className={`w-[5px] h-[5px] sm:w-[6px] sm:h-[6px] md:w-[6px] md:h-[6px] lg:w-[6px] lg:h-[6px] rounded-full mt-0.5 sm:mt-1 md:mt-1.5 lg:mt-[4px]`}
                             style={{ backgroundColor: notification.color }}></div>
-                          <h5 className="text-[6px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-bold leading-[7px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted"
+                          <h5 className="text-[5px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-bold leading-[6px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted"
                             style={{ fontFamily: 'Inter' }}>
                             {notification.title}
                           </h5>
                           {notification.isNew && (
-                            <span className="text-[7px] font-bold leading-[20px] text-center bg-[#0080ff] rounded-[5px] px-1 sm:px-1.5 md:px-2 lg:px-[4px]"
-                              style={{ fontFamily: 'Inter', width: '31px', height: '10px', opacity: 1, letterSpacing: '0%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', paddingBottom: '2px' }}>
+                            <span className="text-[6px] font-bold leading-[20px] text-center bg-[#0080ff] rounded-[5px] px-0.5 sm:px-1.5 md:px-2 lg:px-[4px]"
+                              style={{ fontFamily: 'Inter', width: '28px', height: '9px', opacity: 1, letterSpacing: '0%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', paddingBottom: '2px' }}>
                               Nuevo
                             </span>
                           )}
@@ -268,11 +264,11 @@ export default function AdministratorSection() {
                         <img
                           src="/images/search.svg"
                           alt="Search icon"
-                          className="w-[7px] h-[7px] sm:w-[10px] sm:h-[10px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px]"
+                          className="w-[6px] h-[6px] sm:w-[10px] sm:h-[10px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px]"
                         />
                       </div>
                       <div className="flex justify-between items-start w-full -mt-0.5 sm:-mt-1 md:-mt-1.5 lg:-mt-[4px]">
-                        <p className="text-[6px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-normal leading-[7px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted self-end mt-2 lg:mt-[8px]"
+                        <p className="text-[5px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-normal leading-[6px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted self-end mt-2 lg:mt-[8px]"
                           style={{ fontFamily: 'Inter' }}>
                           {notification.description}
                         </p>
@@ -288,46 +284,41 @@ export default function AdministratorSection() {
           <div className="flex flex-col lg:flex-row gap-2 sm:gap-3 md:gap-4 lg:gap-[8px] w-full">
 
             {/* Left Column - Quotations */}
-            <div className="w-full lg:w-[560px] bg-[#e3f2ff] rounded-3xl p-4 sm:p-6 md:p-8 lg:p-[26px]">
-              <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-[20px] mb-16 sm:mb-20 md:mb-24 lg:mb-[98px] ml-2 sm:ml-3 md:ml-4 lg:ml-[12px]">
-                <div className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-[8px]">
+            <div className="w-full lg:w-[560px] bg-[#e3f2ff] rounded-3xl p-3 sm:p-6 md:p-8 lg:p-[26px] min-h-[220px] sm:min-h-[280px] lg:min-h-0 flex flex-col relative">
+              <div className="flex flex-col gap-2 sm:gap-5 md:gap-6 lg:gap-[20px] mb-4 sm:mb-20 md:mb-24 lg:mb-[98px] ml-1 sm:ml-3 md:ml-4 lg:ml-[12px]">
+                <div className="flex items-center gap-1.5 sm:gap-3 md:gap-4 lg:gap-[8px]">
                   <img
                     src="/images/file-icon.svg"
                     alt="Calendar icon"
-                    className="w-[16px] h-[14px] sm:w-[8px] sm:h-[8px] md:w-[10px] md:h-[10px] lg:w-[16px] lg:h-[14px]"
+                    className="w-[14px] h-[13px] sm:w-[8px] sm:h-[8px] md:w-[10px] md:h-[10px] lg:w-[16px] lg:h-[14px]"
                   />
-                  <h3 className="text-[9px] sm:text-[12px] md:text-[15px] lg:text-[18px] font-extrabold leading-[11px] sm:leading-[15px] md:leading-[18px] lg:leading-[22px] text-left text-[#007adb]"
+                  <h3 className="text-[10px] sm:text-[12px] md:text-[15px] lg:text-[18px] font-extrabold leading-tight sm:leading-[15px] md:leading-[18px] lg:leading-[22px] text-left text-[#007adb]"
                     style={{ fontFamily: 'Roboto' }}>
                     Cotizaciones con un clic
                   </h3>
                 </div>
                 <div className='relative'>
-                  <h4 className="text-[12px] sm:text-[17px] md:text-[21px] lg:text-[25px] font-medium leading-[15px] sm:leading-[21px] md:leading-[26px] lg:leading-[30px] text-left text-[#00355f] w-full lg:w-[86%]"
+                  <h4 className="text-[13px] sm:text-[17px] md:text-[21px] lg:text-[25px] font-medium leading-[16px] sm:leading-[21px] md:leading-[26px] lg:leading-[30px] text-left text-[#00355f] w-full lg:w-[86%] mb-0 sm:mb-0"
                     style={{ fontFamily: 'Roboto' }}>
                     Envía cotizaciones formales a tus clientes en segundos.
                   </h4>
-                  {/* Inner Image */}
-                  <div style={{
-                    position: 'absolute',
-                    top: '105px',
-                    left: '0px',
-                    width: '365px',
-                    height: '114px',
-                    opacity: 1
-                  }}>
-                    <Image
-                      src="/images/Envía-cotizaciones.png"
-                      alt="Automatic invoice download system"
-                      width={365}
-                      height={114}
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'contain'
-                      }}
-                    />
-                  </div>
                 </div>
+              </div>
+              {/* Inner Image - Positioned at bottom */}
+              <div className="absolute bottom-0 left-0 w-full sm:w-[365px] h-auto sm:h-[114px] max-w-[300px] sm:max-w-none sm:left-[26px] lg:left-[38px]"
+                style={{
+                  opacity: 1
+                }}>
+                <Image
+                  src="/images/Envía-cotizaciones.png"
+                  alt="Automatic invoice download system"
+                  width={365}
+                  height={114}
+                  className="w-full h-auto"
+                  style={{
+                    objectFit: 'contain'
+                  }}
+                />
               </div>
             </div>
 

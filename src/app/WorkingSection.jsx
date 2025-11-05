@@ -32,26 +32,23 @@ export default function WorkingSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={sectionInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative w-full flex justify-center items-center mx-auto"
+            className="relative w-full flex justify-center items-center mx-auto overflow-x-auto"
             style={{
               maxWidth: '1260px',
               minHeight: '71px'
             }}>
-            <h2 className="font-medium text-center text-[#1a3866] whitespace-nowrap"
+            <h2 className="font-medium text-center text-[#1a3866] whitespace-nowrap text-[15px] sm:text-xl md:text-2xl lg:text-[45px] leading-snug sm:leading-[50px] md:leading-[60px] lg:leading-[70.4px]"
               style={{ 
                 fontFamily: 'Roboto',
                 fontWeight: 500,
-                fontSize: '45px',
-                lineHeight: '70.4px',
                 letterSpacing: '0%',
                 textAlign: 'center',
                 verticalAlign: 'middle',
                 opacity: 1,
                 transform: 'rotate(0deg)'
               }}>
-              Mientras tu <span className="inline-flex items-center align-middle relative" style={{ 
+              Mientras tu <span className="inline-flex items-center align-middle relative px-2 py-0.5 sm:px-3 sm:py-0.5 md:px-6 md:py-1 lg:px-[30px] lg:py-[2px]" style={{ 
               
-                padding: '2px 30px',
                 backgroundColor: '#FFF4E6',
                 borderRadius: '50px',
                 position: 'relative',
@@ -62,19 +59,15 @@ export default function WorkingSection() {
                   alt="Brief icon"
                   width={29}
                   height={29}
-                  style={{ 
-                    marginRight: '8px',
-                    width: '29px',
-                    height: '29px'
-                  }}
+                  className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-[29px] lg:h-[29px] mr-1 sm:mr-1.5 md:mr-2 lg:mr-[8px]"
                 />
-                <span style={{ color: '#D56E0C', fontFamily: 'Roboto', fontWeight: 500, fontSize: '38px', lineHeight: '56px' }}>trabajas</span>
+                <span className="text-[13px] sm:text-lg md:text-2xl lg:text-[38px] leading-tight sm:leading-normal md:leading-loose lg:leading-[56px]" style={{ color: '#D56E0C', fontFamily: 'Roboto', fontWeight: 500 }}>trabajas</span>
               </span> Prisma administra tu empresa.
             </h2>
           </motion.div>
 
           {/* Two Column Layout */}
-          <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-[18px] w-full justify-center items-center">
+          <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-[18px] w-full justify-center items-center">
 
             {/* Left Column - Numbers Section */}
             <motion.div
@@ -87,10 +80,8 @@ export default function WorkingSection() {
                 boxShadow: "0 8px 24px rgba(0, 0, 0, 0.08)",
                 transition: { duration: 0.3, ease: "easeOut" }
               }}
-              className="bg-secondary-background border border-border-primary relative cursor-pointer"
+              className="bg-secondary-background border border-border-primary relative cursor-pointer w-full sm:w-[90%] md:w-[600px] lg:w-[710px] min-h-[480px] sm:min-h-[500px] md:min-h-[420px] lg:h-[367px]"
               style={{
-                width: '710px',
-                height: '367px',
                 borderRadius: '20px',
                 borderWidth: '1px',
                 opacity: 1,
@@ -99,46 +90,30 @@ export default function WorkingSection() {
               }}
             >
 
-              <h3 className="font-medium text-left text-[#1a3866]"
+              <h3 className="font-medium text-left text-[#1a3866] absolute top-5 left-5 sm:top-6 sm:left-6 md:top-6 md:left-8 lg:top-[25px] lg:left-[51px] text-lg sm:text-xl md:text-2xl lg:text-[30px] leading-snug lg:leading-[40px] w-[calc(100%-40px)] sm:w-[calc(100%-48px)] md:w-[calc(100%-64px)] lg:w-[580px] z-10"
                 style={{ 
                   fontFamily: 'Roboto', 
                   fontWeight: 500,
-                  fontSize: '30px',
-                  lineHeight: '40px',
                   letterSpacing: '0%',
                   verticalAlign: 'middle',
-                  width: '580px',
-                  height: '80px',
-                  position: 'absolute',
-                  top: '25px',
-                  left: '51px',
                   opacity: 1,
-                  transform: 'rotate(0deg)',
-                  zIndex: 10
+                  transform: 'rotate(0deg)'
                 }}>
                 Tus números, al instante
               </h3>
               
-              <p className="font-normal text-left text-text-muted"
+              <p className="font-normal text-left text-text-muted absolute top-16 left-5 right-5 sm:top-20 sm:left-6 sm:right-6 md:top-20 md:left-8 md:right-8 lg:top-[80px] lg:left-[51px] lg:right-[51px] text-sm sm:text-base md:text-base lg:text-[15px] leading-relaxed lg:leading-[22px] z-10 pb-56 sm:pb-56 md:pb-48 lg:pb-0"
                 style={{ 
                   fontFamily: 'Roboto',
                   fontWeight: 400,
-                  fontSize: '15px',
-                  lineHeight: '22px',
                   letterSpacing: '0%',
                   verticalAlign: 'middle',
-                  width: '600px',
-                  maxWidth: 'calc(100% - 102px)',
-                  height: 'auto',
-                  position: 'absolute',
-                  top: '80px',
-                  left: '51px',
-                  right: '51px',
+                  width: 'calc(100% - 40px)',
+                  maxWidth: 'calc(100% - 40px)',
                   opacity: 1,
                   transform: 'rotate(0deg)',
                   whiteSpace: 'normal',
-                  wordWrap: 'break-word',
-                  zIndex: 10
+                  wordWrap: 'break-word'
                 }}>
                 Lo que antes lo hacía una persona, Prisma lo hace solo. No pagas salarios, no das instrucciones, no corriges errores.
                 <br /><br />
@@ -149,16 +124,11 @@ export default function WorkingSection() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isLeftInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                 transition={{ duration: 0.6, delay: 0.25, ease: "easeOut" }}
+                className="absolute bottom-0 left-5 sm:left-6 md:left-8 lg:left-[42px] w-[calc(100%-40px)] sm:w-[calc(100%-48px)] md:w-[400px] lg:w-[437px] h-auto lg:h-[191px] z-1"
                 style={{
-                  position: 'absolute',
-                  bottom: 0,
-                  left: '42px',
-                  width: '437px',
-                  height: '191px',
                   overflow: 'hidden',
                   opacity: 1,
-                  transform: 'rotate(0deg)',
-                  zIndex: 1
+                  transform: 'rotate(0deg)'
                 }}
               >
                 <Image
@@ -166,9 +136,8 @@ export default function WorkingSection() {
                   alt="Business analytics dashboard"
                   width={437}
                   height={191}
+                  className="w-full h-auto lg:w-[437px] lg:h-[191px]"
                   style={{
-                    width: '437px',
-                    height: '191px',
                     opacity: 1,
                     objectFit: 'cover',
                     objectPosition: 'top left',
@@ -192,62 +161,34 @@ export default function WorkingSection() {
                 boxShadow: "0 8px 24px rgba(3, 42, 72, 0.12)",
                 transition: { duration: 0.3, ease: "easeOut" }
               }}
-              className="relative bg-[#e3f2ff] cursor-pointer"
+              className="relative bg-[#e3f2ff] cursor-pointer w-full sm:w-[90%] md:w-[600px] lg:w-[653px] min-h-[420px] sm:min-h-[450px] md:min-h-[400px] lg:h-[367px]"
               style={{
-                width: '653px',
-                height: '367px',
                 borderRadius: '20px',
                 opacity: 1,
                 transform: 'rotate(0deg)',
                 overflow: 'hidden'
               }}
             >
-              <h3 className="font-medium text-left text-[#032a48]"
+              <h3 className="font-medium text-left text-[#032a48] absolute top-5 left-5 sm:top-6 sm:left-6 md:top-6 md:left-8 lg:top-[29px] lg:left-[29px] text-lg sm:text-xl md:text-2xl lg:text-[30px] leading-snug lg:leading-[40px] w-[calc(100%-140px)] sm:w-[calc(100%-48px)] md:w-[calc(100%-220px)] lg:w-[361px]"
                 style={{ 
                   fontFamily: 'Roboto',
-                  fontWeight: 500,
-                  fontSize: '30px',
-                  lineHeight: '40px',
-                  letterSpacing: '0%',
-                  verticalAlign: 'middle',
-                  width: '361px',
-                  height: '80px',
-                  position: 'absolute',
-                  top: '29px',
-                  left: '29px',
-                  opacity: 1,
-                  transform: 'rotate(0deg)'
+                  fontWeight: 500
                 }}>
                 Sin exceles, desde tu teléfono.
               </h3>
               
-              <p className="font-normal text-left text-[#032a48]"
+              <p className="font-normal text-left text-[#032a48] absolute top-20 left-5 right-5 sm:top-24 sm:left-6 sm:right-6 md:top-24 md:left-8 md:right-8 lg:top-[133px] lg:left-[29px] text-base sm:text-lg md:text-lg lg:text-[18px] leading-relaxed lg:leading-[23px] w-[calc(100%-150px)] sm:w-[calc(100%-60px)] md:w-[calc(100%-240px)] lg:w-[314px]"
                 style={{ 
                   fontFamily: 'Roboto',
-                  fontWeight: 400,
-                  fontSize: '18px',
-                  lineHeight: '23px',
-                  letterSpacing: '0%',
-                  verticalAlign: 'middle',
-                  width: '314px',
-                  height: '92px',
-                  position: 'absolute',
-                  top: '133px',
-                  left: '29px',
-                  opacity: 1,
-                  transform: 'rotate(0deg)'
+                  fontWeight: 400
                 }}>
                 Lo que antes lo hacía una persona, Prisma lo hace solo. No pagas salarios, no das instrucciones, no corriges errores.
               </p>
 
-              <p style={{ 
+              <p className="absolute bottom-24 left-5 sm:bottom-28 sm:left-6 md:bottom-24 md:left-8 lg:bottom-[75px] lg:left-[29px] text-sm sm:text-base lg:text-[16px]" style={{ 
                   fontFamily: 'Roboto',
                   fontWeight: 400,
-                  fontSize: '16px',
                   lineHeight: '24px',
-                  position: 'absolute',
-                  bottom: '75px',
-                  left: '29px',
                   opacity: 1,
                   color: '#032a48'
                 }}>
@@ -255,7 +196,7 @@ export default function WorkingSection() {
               </p>
 
               <motion.div 
-                style={{ position: 'absolute', bottom: '28px', left: '29px' }}
+                className="absolute bottom-5 left-5 sm:bottom-6 sm:left-6 md:bottom-7 md:left-8 lg:bottom-[28px] lg:left-[29px]"
                 whileHover={{ 
                   scale: 1.08,
                   transition: { duration: 0.2, ease: "easeOut" }
@@ -287,28 +228,16 @@ export default function WorkingSection() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={isRightInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
                 transition={{ duration: 0.6, delay: 0.35, ease: "easeOut" }}
-                style={{
-                  position: 'absolute',
-                  bottom: '0px',
-                  right: '60px',
-                  width: '200px',
-                  height: '280px',
-                  opacity: 1,
-                  transform: 'rotate(0deg)',
-                  zIndex: 1
-                }}
+                className="absolute bottom-0 right-5 sm:right-8 md:right-12 lg:right-[60px] w-40 sm:w-48 md:w-56 lg:w-[200px] h-auto lg:h-[280px] z-1"
               >
                 <Image
                   src="/images/image772.svg"
                   alt="Mobile phone interface"
                   width={200}
                   height={280}
-                  className="rounded-lg"
+                  className="rounded-lg w-full h-auto lg:w-full lg:h-full"
                   style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'contain',
-                    opacity: 1
+                    objectFit: 'contain'
                   }}
                 />
               </motion.div>
