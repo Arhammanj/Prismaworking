@@ -12,20 +12,21 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="absolute left-1/2 transform -translate-x-1/2"
+          className="absolute left-1/2 transform -translate-x-1/2 px-4"
           style={{
-            width: '680px',
-            top: '149px',
+            width: 'clamp(300px, 680px, 90vw)',
+            top: 'clamp(100px, 169px, 11.7vw)',
             fontFamily: 'Roboto',
             fontWeight: 700,
-            fontSize: '50px',
-            lineHeight: '24px',
+            fontSize: 'clamp(24px, 50px, 3.47vw)',
+            lineHeight: 'clamp(12px, 24px, 1.67vw)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             textAlign: 'center',
             letterSpacing: '0.18px',
-            color: '#013264'
+            color: '#013264',
+            whiteSpace: 'nowrap'
           }}
         >
           Tu negocio se administra solo
@@ -36,15 +37,15 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-          className="absolute left-1/2 transform -translate-x-1/2"
+          className="absolute left-1/2 transform -translate-x-1/2 px-4"
           style={{
-            width: '1100px',
-            maxWidth: '90%',
-            height: '80px',
-            top: '214px',
+            width: 'clamp(350px, 1100px, 95vw)',
+            maxWidth: '95%',
+            height: 'clamp(60px, 80px, 5.5vw)',
+            top: 'clamp(150px, 234px, 16.25vw)',
             fontFamily: 'Roboto',
-            fontSize: '30px',
-            lineHeight: '30px',
+            fontSize: 'clamp(14px, 30px, 2.08vw)',
+            lineHeight: 'clamp(18px, 30px, 2.08vw)',
             letterSpacing: '0.18px',
             textAlign: 'center',
             display: 'flex',
@@ -87,34 +88,33 @@ export default function HeroSection() {
           whileTap={{ scale: 0.95 }}
           className="absolute left-1/2 transform -translate-x-1/2 cursor-pointer flex items-center justify-center"
           style={{
-            width: '251px',
-            height: '40px',
-            top: '324px',
+            width: 'clamp(180px, 251px, 17.43vw)',
+            height: 'clamp(32px, 40px, 2.78vw)',
+            top: 'clamp(230px, 344px, 23.9vw)',
             background: '#4379EE',
-            borderRadius: '15px'
+            borderRadius: 'clamp(10px, 15px, 1.04vw)'
           }}
           onClick={() => console.log('Activa Prisma clicked')}
         >
           <span
             style={{
-              width: '206px',
-              height: '25px',
               fontFamily: 'Roboto',
               fontWeight: 500,
-              fontSize: '16px',
-              lineHeight: '24px',
+              fontSize: 'clamp(12px, 16px, 1.11vw)',
+              lineHeight: 'clamp(18px, 24px, 1.67vw)',
               display: 'flex',
               alignItems: 'center',
               textAlign: 'center',
               letterSpacing: '0.18px',
-              color: '#FFFFFF'
+              color: '#FFFFFF',
+              whiteSpace: 'nowrap'
             }}
           >
             Activa Prisma en tu negocio
           </span>
         </motion.div>
 
-        {/* Product Images Container - positioned relative to section */}
+        {/* Product Images Container - All 5 images scaled proportionally */}
         
           {/* Image 1 - Dashboard (Left) */}
           <motion.div
@@ -124,10 +124,10 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.6, ease: "easeOut" }}
             className="absolute cursor-pointer" 
             style={{ 
-              width: '356px', 
-              height: '239px', 
-              left: '13px', 
-              top: '386px',
+              width: 'clamp(120px, 356px, 24.72vw)', 
+              height: 'clamp(80px, 239px, 16.6vw)', 
+              left: 'clamp(5px, 13px, 0.9vw)', 
+              top: 'clamp(280px, 386px, 26.8vw)',
               opacity: 1,
               transform: 'rotate(0deg)',
               zIndex: 4
@@ -153,10 +153,10 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.7, ease: "easeOut" }}
             className="absolute cursor-pointer" 
             style={{ 
-              width: '151px', 
-              height: '329px', 
-              left: '380px', 
-              top: '466px',
+              width: 'clamp(50px, 151px, 10.49vw)', 
+              height: 'clamp(110px, 329px, 22.85vw)', 
+              left: 'clamp(130px, 380px, 26.39vw)', 
+              top: 'clamp(330px, 466px, 32.36vw)',
               opacity: 1,
               transform: 'rotate(0deg)',
               zIndex: 5
@@ -182,10 +182,10 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
             className="absolute cursor-pointer" 
             style={{ 
-              width: '357px', 
-              height: '233px', 
-              left: '550px', 
-              top: '491px',
+              width: 'clamp(120px, 357px, 24.79vw)', 
+              height: 'clamp(80px, 233px, 16.18vw)', 
+              left: 'clamp(185px, 550px, 38.19vw)', 
+              top: 'clamp(345px, 491px, 34.1vw)',
               opacity: 1,
               transform: 'rotate(0deg)',
               zIndex: 3
@@ -211,10 +211,10 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.9, ease: "easeOut" }}
             className="absolute cursor-pointer" 
             style={{ 
-              width: '155px', 
-              height: '335px', 
-              left: '925px', 
-              top: '413px',
+              width: 'clamp(52px, 155px, 10.76vw)', 
+              height: 'clamp(112px, 335px, 23.26vw)', 
+              left: 'clamp(310px, 925px, 64.24vw)', 
+              top: 'clamp(290px, 413px, 28.68vw)',
               opacity: 1,
               transform: 'rotate(0deg)',
               zIndex: 2
@@ -240,10 +240,10 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 1, ease: "easeOut" }}
             className="absolute cursor-pointer" 
             style={{ 
-              width: '367px', 
-              height: '240px', 
-              left: '1095px', 
-              top: '466px',
+              width: 'clamp(123px, 367px, 25.49vw)', 
+              height: 'clamp(80px, 240px, 16.67vw)', 
+              left: 'clamp(365px, 1095px, 76.04vw)', 
+              top: 'clamp(330px, 466px, 32.36vw)',
               opacity: 1,
               transform: 'rotate(0deg)',
               zIndex: 1

@@ -126,8 +126,12 @@ export default function AIAdministrationSection() {
         <div ref={headerRef} className="flex flex-col justify-start items-center gap-16 w-full pt-16 pb-8">
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <h2
-              className="text-[#1a3866] text-center font-medium text-[50px] leading-[59px]"
-              style={{ fontFamily: 'Roboto' }}
+              className="text-[#1a3866] text-center font-medium whitespace-nowrap"
+              style={{ 
+                fontFamily: 'Roboto',
+                fontSize: 'clamp(24px, 50px, 3.47vw)',
+                lineHeight: 'clamp(28px, 59px, 4.1vw)'
+              }}
             >
               Tu administración hecha con
             </h2>
@@ -135,7 +139,11 @@ export default function AIAdministrationSection() {
               ref={iaBadgeRef}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-3 bg-[#edf1fe] text-[#353df0] rounded-full text-[40px] font-medium px-[26px] py-[6px] cursor-pointer"
+              className="flex items-center gap-3 bg-[#edf1fe] text-[#353df0] rounded-full font-medium cursor-pointer"
+              style={{
+                fontSize: 'clamp(20px, 40px, 2.78vw)',
+                padding: 'clamp(4px, 6px, 0.42vw) clamp(14px, 26px, 1.81vw)'
+              }}
               onClick={handleLearnMore}
             >
               <Image
@@ -143,6 +151,10 @@ export default function AIAdministrationSection() {
                 alt="AI icon"
                 width={30}
                 height={30}
+                style={{
+                  width: 'clamp(16px, 30px, 2.08vw)',
+                  height: 'clamp(16px, 30px, 2.08vw)'
+                }}
               />
               <span>{badgeText}</span>
             </motion.div>
