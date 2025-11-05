@@ -123,7 +123,11 @@ export default function AIAdministrationSection() {
     <section ref={sectionRef} className="w-full bg-secondary-background overflow-x-hidden">
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         {/* -------------------- HEADER -------------------- */}
-        <div ref={headerRef} className="flex flex-col justify-start items-center gap-16 w-full pt-16 pb-8">
+        <div ref={headerRef} className="flex flex-col justify-start items-center w-full pt-2 sm:pt-4 lg:pt-16 pb-0 lg:pb-8"
+          style={{
+            gap: 'clamp(8px, 64px, 4.44vw)'
+          }}
+        >
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <h2
               className="text-[#1a3866] text-center font-medium whitespace-nowrap"
@@ -165,10 +169,10 @@ export default function AIAdministrationSection() {
         <div
           ref={cardsContainerRef}
           className="relative w-full"
-          style={{ minHeight: '100vh' }}
+          style={{ minHeight: 'clamp(10vh, 10vh, 10vh)' }}
         >
           {/* All three cards stacked with offset positioning */}
-          <div className="relative w-full" style={{ height: '100vh' }}>
+          <div className="relative w-full h-[40vh] lg:h-[100vh]">
 
             {/* ==================== CARD 1 (Outer Blue Layer) ==================== */}
             <div
@@ -184,27 +188,36 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-between gap-8 px-8 pt-8"
+                className="w-full flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8"
                 style={{
                   background: '#90A1FA',
-                  height: '497px', 
-                  width: '1120px',
+                  height: 'clamp(252px, 497px, 34.5vw)', 
+                  width: 'clamp(320px, 1120px, 77.78vw)',
                   maxWidth: '1120px',
-                  borderRadius: '20px 20px 0 0',
-                  overflow: 'hidden'
+                  borderRadius: 'clamp(12px, 20px, 1.39vw) clamp(12px, 20px, 1.39vw) 0 0',
+                  overflow: 'hidden',
+                  gap: 'clamp(16px, 32px, 2.22vw)',
+                  paddingTop: 'clamp(16px, 32px, 2.22vw)'
                 }}
               >
-                <div className="flex flex-col items-center gap-8">
-                  <div className="flex items-center justify-center gap-[10px]">
-                    <div className="bg-[#ABFC00] text-[#90A1FA] font-extrabold text-xl rounded-full w-[30px] h-[30px] flex items-center justify-center">
+                <div className="flex flex-col items-center" style={{ gap: 'clamp(8px, 32px, 2.22vw)', paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
+                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)' }}>
+                    <div 
+                      className="bg-[#ABFC00] text-[#90A1FA] font-extrabold rounded-full flex items-center justify-center"
+                      style={{
+                        fontSize: 'clamp(12px, 20px, 1.39vw)',
+                        width: 'clamp(20px, 30px, 2.08vw)',
+                        height: 'clamp(20px, 30px, 2.08vw)'
+                      }}
+                    >
                       1
                     </div>
                     <h3
                       style={{
                         fontFamily: 'Roboto',
                         fontWeight: 800,
-                        fontSize: '30px',
-                        lineHeight: '40px',
+                        fontSize: 'clamp(16px, 30px, 2.08vw)',
+                        lineHeight: 'clamp(20px, 40px, 2.78vw)',
                         color: '#ADFF00',
                         whiteSpace: 'nowrap',
                         margin: 0
@@ -216,13 +229,14 @@ export default function AIAdministrationSection() {
 
                   <p
                     style={{
-                      maxWidth: '575px',
+                      maxWidth: 'clamp(280px, 575px, 39.93vw)',
                       fontFamily: 'Roboto',
                       fontWeight: 400,
-                      fontSize: '23px',
-                      lineHeight: '30px',
+                      fontSize: 'clamp(12px, 23px, 1.6vw)',
+                      lineHeight: 'clamp(16px, 30px, 2.08vw)',
                       textAlign: 'center',
-                      color: '#FFFFFF'
+                      color: '#FFFFFF',
+                      padding: '0 clamp(8px, 16px, 1.11vw)'
                     }}
                   >
                     Cada vez que emites o recibes una factura, Prisma la descarga y la{' '}
@@ -232,7 +246,7 @@ export default function AIAdministrationSection() {
                   </p>
                 </div>
 
-                <div className="parallax-image" style={{ width: '833px', maxWidth: '90%', height: 'auto' }}>
+                <div className="parallax-image" style={{ width: 'clamp(280px, 833px, 57.85vw)', maxWidth: '90%', height: 'auto' }}>
                   <Image
                     src="/images/image756.svg"
                     alt="Automatic reports generation"
@@ -258,26 +272,36 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-center gap-6 px-8 py-8"
+                className="w-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8"
                 style={{
                   background: '#E1EBFF',
-                  height: '528px',
-                  width: '1120px',
+                  height: 'clamp(267px, 528px, 36.67vw)',
+                  width: 'clamp(320px, 1120px, 77.78vw)',
                   maxWidth: '1120px',
-                  borderRadius: '20px 20px 0 0',
-                  overflow: 'hidden'
+                  borderRadius: 'clamp(12px, 20px, 1.39vw) clamp(12px, 20px, 1.39vw) 0 0',
+                  overflow: 'hidden',
+                  gap: 'clamp(12px, 24px, 1.67vw)',
+                  paddingTop: 'clamp(16px, 32px, 2.22vw)',
+                  paddingBottom: 'clamp(16px, 32px, 2.22vw)'
                 }}
               >
-                <div className="flex items-center justify-center gap-[10px]">
-                  <div className="bg-[#485264] text-[#E1EBFF] font-extrabold text-xl rounded-full w-[30px] h-[30px] flex items-center justify-center">
+                <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
+                  <div 
+                    className="bg-[#485264] text-[#E1EBFF] font-extrabold rounded-full flex items-center justify-center"
+                    style={{
+                      fontSize: 'clamp(12px, 20px, 1.39vw)',
+                      width: 'clamp(20px, 30px, 2.08vw)',
+                      height: 'clamp(20px, 30px, 2.08vw)'
+                    }}
+                  >
                     2
                   </div>
                   <h3
                     style={{
                       fontFamily: 'Roboto',
                       fontWeight: 800,
-                      fontSize: '30px',
-                      lineHeight: '40px',
+                      fontSize: 'clamp(16px, 30px, 2.08vw)',
+                      lineHeight: 'clamp(20px, 40px, 2.78vw)',
                       color: '#485264',
                       whiteSpace: 'nowrap',
                       margin: 0
@@ -289,14 +313,15 @@ export default function AIAdministrationSection() {
 
                 <p
                   style={{
-                    maxWidth: '575px',
+                    maxWidth: 'clamp(280px, 575px, 39.93vw)',
                     fontFamily: 'Roboto',
                     fontWeight: 400,
-                    fontSize: '20px',
-                    lineHeight: '26px',
+                    fontSize: 'clamp(11px, 20px, 1.39vw)',
+                    lineHeight: 'clamp(15px, 26px, 1.81vw)',
                     textAlign: 'center',
                     color: '#1a3866',
-                    margin: 0
+                    margin: 0,
+                    padding: '0 clamp(8px, 16px, 1.11vw)'
                   }}
                 >
                   Pagaste algo sin factura? Solo tómale una foto. {' '}Prisma reconoce la información y {' '}
@@ -305,7 +330,7 @@ export default function AIAdministrationSection() {
                   </span>
                 </p>
 
-                <div className="parallax-image" style={{ width: '320px', height: '320px', maxWidth: '90%' }}>
+                <div className="parallax-image" style={{ width: 'clamp(160px, 320px, 22.22vw)', height: 'clamp(160px, 320px, 22.22vw)', maxWidth: '90%' }}>
                   <Image
                     src="/images/2ff787b93c4e4adba399f7ac24d7545c84bb22b2 (1).png"
                     alt="Intelligent classification system"
@@ -337,27 +362,37 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-between gap-8 px-8 pt-8"
+                className="w-full flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8"
                 style={{
                   background: '#1A73E8',
-                  height: '559px',
-                  width: '1120px',
+                  height: 'clamp(289px, 559px, 38.82vw)',
+                  width: 'clamp(320px, 1120px, 77.78vw)',
                   maxWidth: '1120px',
-                  borderRadius: '20px 20px 0 0',
-                  overflow: 'hidden'
+                  borderRadius: 'clamp(12px, 20px, 1.39vw) clamp(12px, 20px, 1.39vw) 0 0',
+                  overflow: 'visible',
+                  gap: 'clamp(16px, 32px, 2.22vw)',
+                  paddingTop: 'clamp(16px, 32px, 2.22vw)',
+                  paddingBottom: '0'
                 }}
               >
-                <div className="flex flex-col items-center gap-8">
-                  <div className="flex items-center justify-center gap-[10px]">
-                    <div className="bg-white text-[#1A73E8] font-extrabold text-xl rounded-full w-[30px] h-[30px] flex items-center justify-center">
+                <div className="flex flex-col items-center" style={{ gap: 'clamp(8px, 32px, 2.22vw)', paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
+                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)' }}>
+                    <div 
+                      className="bg-white text-[#1A73E8] font-extrabold rounded-full flex items-center justify-center"
+                      style={{
+                        fontSize: 'clamp(12px, 20px, 1.39vw)',
+                        width: 'clamp(20px, 30px, 2.08vw)',
+                        height: 'clamp(20px, 30px, 2.08vw)'
+                      }}
+                    >
                       3
                     </div>
                     <h3
                       style={{
                         fontFamily: 'Roboto',
                         fontWeight: 800,
-                        fontSize: '30px',
-                        lineHeight: '40px',
+                        fontSize: 'clamp(16px, 30px, 2.08vw)',
+                        lineHeight: 'clamp(20px, 40px, 2.78vw)',
                         color: '#FFFFFF',
                         whiteSpace: 'nowrap',
                         margin: 0
@@ -372,10 +407,11 @@ export default function AIAdministrationSection() {
                       maxWidth: '',
                       fontFamily: 'Roboto',
                       fontWeight: 400,
-                      fontSize: '23px',
-                      lineHeight: '30px',
+                      fontSize: 'clamp(11px, 23px, 1.6vw)',
+                      lineHeight: 'clamp(15px, 30px, 2.08vw)',
                       textAlign: 'center',
-                      color: '#FFFFFF'
+                      color: '#FFFFFF',
+                      padding: '0 clamp(8px, 16px, 1.11vw)'
                     }}
                   >
                     <p>Ve cuánto compraste, cuánto gastaste y cuánto vendiste este</p>
@@ -383,21 +419,36 @@ export default function AIAdministrationSection() {
                   </div>
                 </div>
 
-                <div className='flex justify-between gap-10 mt-[70px]'>
-                  <div className="parallax-image">
+                <div className='flex justify-between items-end' style={{ 
+                  marginTop: 'clamp(8px, 70px, 4.86vw)',
+                  gap: 'clamp(8px, 40px, 2.78vw)',
+                  width: '100%',
+                  maxWidth: 'clamp(280px, 1000px, 69.44vw)',
+                  position: 'relative'
+                }}>
+                  <div className="parallax-image" style={{ 
+                    width: 'clamp(90px, 273px, 18.96vw)',
+                    flexShrink: 0,
+                    position: 'relative',
+                    marginBottom: 'clamp(-20px, -50px, -3.47vw)'
+                  }}>
                     <Image
-                      src="/images/7676.png"
+                      src="/images/image772.svg"
                       alt="Reports and analysis"
                       width={273}
                       height={0}
                       style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                     />
                   </div>
-                  <div className="parallax-image" style={{ width: '833px', maxWidth: '90%', height: 'auto' }}>
+                  <div className="parallax-image" style={{ 
+                    width: 'clamp(180px, 600px, 41.67vw)',
+                    flexShrink: 0,
+                    marginBottom: '0'
+                  }}>
                     <Image
                       src="/images/image 7733.svg"
                       alt="Reports and analysis"
-                      width={300}
+                      width={600}
                       height={700}
                       style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                     />

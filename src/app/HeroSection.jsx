@@ -5,7 +5,8 @@ import { motion } from 'framer-motion';
 export default function HeroSection() {
   return (
     <section className="w-full bg-white overflow-x-hidden">
-      <div className="w-full max-w-[1440px] mx-auto relative" style={{ height: '850px', overflow: 'hidden' }}>
+      <div className="w-full max-w-[1440px] mx-auto relative overflow-hidden" 
+        style={{ height: 'clamp(500px, 850px, 59vw)' }}>
 
         {/* Main Heading */}
         <motion.h1
