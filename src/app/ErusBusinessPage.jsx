@@ -1,7 +1,6 @@
 'use client';
 import Header from'../components/common/Header';
  import HeroSection from'./HeroSection';
- import AdministrationSection from'./AdministrationSection';
  import WorkingSection from'./WorkingSection';
  import AdministratorSection from'./AdministratorSection';
  import PricingSection from'./PricingSection';
