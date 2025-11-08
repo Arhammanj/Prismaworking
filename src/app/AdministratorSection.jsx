@@ -288,31 +288,31 @@ export default function AdministratorSection() {
           </div>
 
           {/* Two Column Section */}
-          <div className="flex flex-col lg:flex-row gap-2 sm:gap-3 md:gap-4 lg:gap-[8px] w-full">
+          <div className="flex flex-row gap-[2%] w-full overflow-x-visible">
 
             {/* Left Column - Quotations */}
-            <div className="w-full bg-[#e3f2ff] rounded-3xl p-3 sm:p-6 md:p-8 lg:p-[26px] min-h-[420px] sm:min-h-[450px] md:min-h-[400px] lg:h-[367px] flex flex-col relative mx-auto lg:mx-0">
-              <div className="flex flex-col gap-2 sm:gap-5 md:gap-6 lg:gap-[20px] mb-4 sm:mb-20 md:mb-24 lg:mb-[98px] ml-1 sm:ml-3 md:ml-4 lg:ml-[12px]">
-                <div className="flex items-center gap-1.5 sm:gap-3 md:gap-4 lg:gap-[8px]">
+            <div className="w-[48%] sm:w-[48%] md:w-[48%] lg:w-[560px] bg-[#e3f2ff] rounded-2xl sm:rounded-3xl p-2 sm:p-4 md:p-6 lg:p-[26px] h-[210px] sm:h-[280px] md:h-[320px] lg:h-[367px] flex flex-col relative shrink-0">
+              <div className="flex flex-col gap-1 sm:gap-2 md:gap-3 lg:gap-[20px] mb-2 sm:mb-8 md:mb-12 lg:mb-[98px] ml-0.5 sm:ml-2 md:ml-3 lg:ml-[12px]">
+                <div className="flex items-center gap-0.5 sm:gap-1.5 md:gap-2 lg:gap-[8px]">
                   <img
                     src="/images/file-icon.svg"
                     alt="Calendar icon"
-                    className="w-[14px] h-[13px] sm:w-[8px] sm:h-[8px] md:w-[10px] md:h-[10px] lg:w-[16px] lg:h-[14px]"
+                    className="w-[8px] h-[7px] sm:w-[12px] sm:h-[11px] md:w-[14px] md:h-[13px] lg:w-[16px] lg:h-[14px]"
                   />
-                  <h3 className="text-[10px] sm:text-[12px] md:text-[15px] lg:text-[18px] font-extrabold leading-tight sm:leading-[15px] md:leading-[18px] lg:leading-[22px] text-left text-[#007adb]"
+                  <h3 className="text-[7px] sm:text-[10px] md:text-[12px] lg:text-[18px] font-extrabold leading-tight sm:leading-[15px] md:leading-[18px] lg:leading-[22px] text-left text-[#007adb]"
                     style={{ fontFamily: 'Roboto' }}>
                     Cotizaciones con un clic
                   </h3>
                 </div>
                 <div className='relative'>
-                  <h4 className="text-[13px] sm:text-[17px] md:text-[21px] lg:text-[25px] font-medium leading-[16px] sm:leading-[21px] md:leading-[26px] lg:leading-[30px] text-left text-[#00355f] w-full lg:w-[86%] mb-0 sm:mb-0"
+                  <h4 className="text-[9px] sm:text-[13px] md:text-[15px] lg:text-[25px] font-medium leading-[11px] sm:leading-[16px] md:leading-[19px] lg:leading-[30px] text-left text-[#00355f] w-full lg:w-[86%]"
                     style={{ fontFamily: 'Roboto' }}>
                     Envía cotizaciones formales a tus clientes en segundos.
                   </h4>
                 </div>
               </div>
-              {/* Inner Image - Positioned at bottom */}
-              <div className="absolute bottom-0 left-0 w-full sm:w-[365px] h-auto sm:h-[114px] max-w-[300px] sm:max-w-none sm:left-[26px] lg:left-[38px]"
+              {/* Inner Image - Centered at bottom, touching container edge */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[150px] sm:w-[240px] md:w-[300px] lg:w-[365px] h-auto"
                 style={{
                   opacity: 1
                 }}>
@@ -323,45 +323,46 @@ export default function AdministratorSection() {
                   height={114}
                   className="w-full h-auto"
                   style={{
-                    objectFit: 'contain'
+                    objectFit: 'contain',
+                    display: 'block'
                   }}
                 />
               </div>
             </div>
 
             {/* Right Column - Tax Calculations */}
-            <div className="w-full bg-secondary-background border border-border-primary rounded-3xl p-4 sm:p-6 md:p-8 lg:p-[28px] lg:pr-[16px] min-h-[420px] sm:min-h-[450px] md:min-h-[400px] lg:h-[367px] mx-auto lg:mx-0">
-              <div className="flex flex-col lg:flex-row justify-start items-start gap-2 sm:gap-3 md:gap-4 lg:gap-[12px] ml-2 sm:ml-3 md:ml-4 lg:ml-[10px]">
-                <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-[12px] w-full lg:flex-1">
-                  <div className="flex items-start gap-2 sm:gap-3 md:gap-4 lg:gap-[8px]">
+            <div className="w-[48%] sm:w-[48%] md:w-[48%] lg:w-[560px] bg-secondary-background border border-border-primary rounded-2xl sm:rounded-3xl p-2 sm:p-4 md:p-6 lg:p-[28px] lg:pr-[16px] h-[210px] sm:h-[280px] md:h-[320px] lg:h-[367px] shrink-0 flex flex-col">
+              <div className="flex flex-col lg:flex-row justify-start items-start gap-1 sm:gap-2 md:gap-3 lg:gap-[12px] ml-0.5 sm:ml-2 md:ml-3 lg:ml-[10px] flex-1">
+                <div className="flex flex-col gap-0.5 sm:gap-2 md:gap-3 lg:gap-[12px] w-full lg:flex-1">
+                  <div className="flex items-start gap-0.5 sm:gap-1.5 md:gap-2 lg:gap-[8px]">
                     <img
                       src="/images/Impuestos.svg"
                       alt="Calendar icon"
-                      className="w-[16px] h-[14px] sm:w-[8px] sm:h-[8px] md:w-[10px] md:h-[10px] lg:w-[16px] lg:h-[14px] mt-1"
+                      className="w-[8px] h-[7px] sm:w-[12px] sm:h-[11px] md:w-[14px] md:h-[13px] lg:w-[16px] lg:h-[14px] mt-0.5"
                     />
-                    <h3 className="text-[9px] sm:text-[12px] md:text-[15px] lg:text-[18px] font-extrabold leading-[11px] sm:leading-[15px] md:leading-[18px] lg:leading-[22px] text-left text-text-muted self-center"
+                    <h3 className="text-[7px] sm:text-[10px] md:text-[12px] lg:text-[18px] font-extrabold leading-[9px] sm:leading-[13px] md:leading-[15px] lg:leading-[22px] text-left text-text-muted self-center"
                       style={{ fontFamily: 'Roboto' }}>
                       Impuestos calculados
                     </h3>
                   </div>
-                  <div className='flex flex-col items-center justify-between'>
-                    <h4 className="text-[12px] sm:text-[17px] md:text-[21px] lg:text-[25px] font-medium leading-[15px] sm:leading-[21px] md:leading-[26px] lg:leading-[30px] text-left text-[#1a2c3a] w-full"
+                  <div className='flex flex-col items-start justify-between'>
+                    <h4 className="text-[9px] sm:text-[11px] md:text-[13px] lg:text-[25px] font-medium leading-[11px] sm:leading-[14px] md:leading-[16px] lg:leading-[30px] text-left text-[#1a2c3a] w-full"
                       style={{ fontFamily: 'Roboto' }}>
                       Conoce tus impuesto antes que tu contador
                     </h4>
-                    <h5 className="text-[12px] sm:text-[17px] md:text-[21px] lg:text-[16px] font-normal text-left text-[#1a2c3a] w-full pt-14"
+                    <h5 className="text-[7px] sm:text-[9px] md:text-[11px] lg:text-[16px] font-normal text-left text-[#1a2c3a] w-full pt-1 sm:pt-2 md:pt-3 lg:pt-14 hidden lg:block"
                       style={{ fontFamily: 'Roboto' }}>
                       Prisma calcula tu IVA e ISR en tiempo real para que no tengas sorpresas
                     </h5>
                   </div>
                 </div>
 
-                {/* Tax Data Cards */}
-                <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-[14px] self-end w-full lg:w-[34%] mt-2 lg:mt-[8px]">
+                {/* Tax Data Cards - NOW VISIBLE ON MOBILE */}
+                <div className="flex lg:flex flex-col gap-1 sm:gap-2 md:gap-2.5 lg:gap-[14px] self-end w-full lg:w-[34%] mt-2 sm:mt-3 md:mt-4 lg:mt-[8px]">
                   {taxData.map((tax, index) => (
                     <motion.div 
                       key={index} 
-                      className="bg-secondary-background border border-border-primary rounded-base p-1 sm:p-2 md:p-3 lg:p-[6px] cursor-pointer"
+                      className="bg-secondary-background border border-border-primary rounded-md sm:rounded-lg md:rounded-xl lg:rounded-base p-1 sm:p-1.5 md:p-2 lg:p-[6px] cursor-pointer"
                       whileHover={{ 
                         y: -4,
                         boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
@@ -369,33 +370,33 @@ export default function AdministratorSection() {
                       }}
                       transition={{ duration: 0.2 }}
                     >
-                      <div className="flex flex-col gap-1 sm:gap-2 md:gap-3 lg:gap-[6px] ml-0.5 sm:ml-1 md:ml-1.5 lg:ml-[4px] mr-0.5 sm:mr-1 md:mr-1.5 lg:mr-[4px] mb-0.5 sm:mb-1 md:mb-1.5 lg:mb-[4px]">
-                        <div className="flex items-center gap-x-1 w-full">
-                          <h5 className="text-[7px] sm:text-[10px] md:text-[12px] lg:text-[14px] font-medium leading-[8px] sm:leading-[12px] md:leading-[14px] lg:leading-[17px] text-left text-text-muted"
+                      <div className="flex flex-col gap-0.5 sm:gap-1 md:gap-1.5 lg:gap-[6px] ml-0.5 sm:ml-1 md:ml-1.5 lg:ml-[4px] mr-0.5 sm:mr-1 md:mr-1.5 lg:mr-[4px] mb-0.5 sm:mb-1 md:mb-1.5 lg:mb-[4px]">
+                        <div className="flex items-center gap-x-0.5 sm:gap-x-1 w-full">
+                          <h5 className="text-[6px] sm:text-[8px] md:text-[10px] lg:text-[14px] font-medium leading-[7px] sm:leading-[9px] md:leading-[11px] lg:leading-[17px] text-left text-text-muted"
                             style={{ fontFamily: 'Inter' }}>
                             {tax.title}
                           </h5>
                           <img
                             src="/images/circle-info-solid (12) 7.svg"
                             alt="Expand icon"
-                            className="w-[4px] h-[4px] sm:w-[6px] sm:h-[6px] md:w-[7px] md:h-[7px] lg:w-[9px] lg:h-[9px]"
+                            className="w-[3px] h-[3px] sm:w-[4px] sm:h-[4px] md:w-[6px] md:h-[6px] lg:w-[9px] lg:h-[9px]"
                           />
                         </div>
-                        <p className="text-[8px] sm:text-[11px] md:text-[13px] lg:text-[16px] font-semibold leading-[10px] sm:leading-[14px] md:leading-[17px] lg:leading-[20px] text-left text-text-primary mt-2 lg:mt-[8px]"
+                        <p className="text-[7px] sm:text-[9px] md:text-[11px] lg:text-[16px] font-semibold leading-[8px] sm:leading-[10px] md:leading-[13px] lg:leading-[20px] text-left text-text-primary mt-0.5 sm:mt-1 lg:mt-[8px]"
                           style={{ fontFamily: 'Inter' }}>
                           {tax.amount}
                         </p>
-                        <div className="flex items-center gap-1 sm:gap-2 md:gap-3 lg:gap-[4px]">
+                        <div className="flex items-center gap-0.5 sm:gap-1 md:gap-1.5 lg:gap-[4px]">
                           <img
                             src="/images/Growth.svg"
                             alt="Trend icon"
-                            className="w-[8px] h-[8px] sm:w-[11px] sm:h-[11px] md:w-[13px] md:h-[13px] lg:w-[16px] lg:h-[16px]"
+                            className="w-[6px] h-[6px] sm:w-[8px] sm:h-[8px] md:w-[10px] md:h-[10px] lg:w-[16px] lg:h-[16px]"
                           />
-                          <span className="text-[6px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-normal leading-[7px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted"
+                          <span className="text-[5px] sm:text-[6px] md:text-[8px] lg:text-[12px] font-normal leading-[6px] sm:leading-[7px] md:leading-[9px] lg:leading-[15px] text-left text-text-muted"
                             style={{ fontFamily: 'Roboto' }}>
                             {tax.percentage}
                           </span>
-                          <span className="text-[6px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-medium leading-[7px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted"
+                          <span className="text-[5px] sm:text-[6px] md:text-[8px] lg:text-[12px] font-medium leading-[6px] sm:leading-[7px] md:leading-[9px] lg:leading-[15px] text-left text-text-muted whitespace-nowrap"
                             style={{ fontFamily: 'Inter' }}>
                             al periodo anterior
                           </span>
