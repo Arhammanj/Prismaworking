@@ -64,7 +64,7 @@ export default function AdministratorSection() {
 
   return (
     <section id="otras-soluciones" className="w-full bg-secondary-background overflow-x-hidden">
-      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-[56px] py-8 sm:py-12 md:py-16 lg:py-[42px]">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-[56px] py-8 sm:py-12 md:py-16 lg:py-[42px]">
 
         {/* Header Section */}
         <div className="relative w-full max-w-[1186px] mx-auto mb-16 sm:mb-20 md:mb-24 lg:mb-[90px] overflow-x-auto">
@@ -89,48 +89,47 @@ export default function AdministratorSection() {
         {/* Main Content Section */}
         <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-[14px] w-full mx-auto"
           style={{
-            width: '1130px',
-            height: '',
+            maxWidth: '1130px',
             borderRadius: '20px',
             opacity: 1
           }}>
 
           {/* Smart Notifications Section */}
-          <div className="w-full max-w-[1130px] rounded-3xl p-3 sm:p-6 md:p-8 lg:p-[32px] mx-auto min-h-[300px] sm:min-h-[400px] lg:min-h-0 flex items-center"
+          <div className="w-full rounded-3xl p-3 sm:p-6 md:p-8 lg:p-[32px] mx-auto min-h-[420px] sm:min-h-[450px] md:min-h-[400px] lg:h-[367px] pb-4 sm:pb-6 lg:pb-[32px]"
             style={{
               borderRadius: '20px',
               opacity: 1,
               background: '#E5FFF4'
             }}>
-            <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start w-full gap-3 sm:gap-4 md:gap-6 lg:gap-4">
+            <div className="flex flex-col lg:flex-row justify-between lg:justify-center items-start lg:items-start w-full h-full gap-3 sm:gap-4 md:gap-6 lg:gap-4">
 
               {/* Left Content - Full Screen Mobile Promo */}
-              <div className="w-full lg:w-[46%] mb-0 mt-0 lg:mt-[4px] shrink-0 flex flex-col justify-center items-center max-w-[340px] lg:max-w-none mx-auto lg:mx-0 text-center lg:text-left px-2 lg:px-0">
-                <div className="flex items-center justify-center lg:justify-start gap-1.5 sm:gap-3 md:gap-4 lg:gap-[8px] mb-2 sm:mb-4 md:mb-6 lg:mb-[22px]">
+              <div className="w-full lg:w-[46%] shrink-0 flex flex-col justify-start items-start lg:items-start lg:max-w-none px-2 lg:px-0 pt-4 sm:pt-6 lg:pt-0 lg:mt-[4px]">
+                <div className="flex items-center justify-start lg:justify-start gap-1.5 sm:gap-3 md:gap-4 lg:gap-[8px] mb-2 sm:mb-3 md:mb-4 lg:mb-[22px]">
                   <img
                     src="/images/message.svg"
                     alt="AI notification icon"
-                    className="w-[8px] h-[7px] sm:w-[14px] sm:h-[13px] md:w-[17px] md:h-[15px] lg:w-[20px] lg:h-[18px]"
+                    className="w-[12px] h-[11px] sm:w-[14px] sm:h-[13px] md:w-[17px] md:h-[15px] lg:w-[20px] lg:h-[18px]"
                   />
-                  <h3 className="text-[8px] sm:text-[12px] md:text-[15px] lg:text-[18px] font-extrabold leading-tight sm:leading-[15px] md:leading-[18px] lg:leading-[22px] text-[#047043]"
+                  <h3 className="text-[12px] sm:text-[12px] md:text-[15px] lg:text-[18px] font-extrabold leading-tight sm:leading-[15px] md:leading-[18px] lg:leading-[22px] text-[#047043]"
                     style={{ fontFamily: 'Roboto' }}>
                     Prisma te habla
                   </h3>
                 </div>
-                <h4 className="text-[13px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-medium leading-[18px] sm:leading-[27px] md:leading-[33px] lg:leading-[40px] text-[#033c24] mb-2 sm:mb-3 w-full lg:w-[84%]"
+                <h4 className="text-[13px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-medium leading-[18px] sm:leading-[27px] md:leading-[33px] lg:leading-[40px] text-[#033c24] mb-2 sm:mb-3 w-full lg:w-[84%] text-left"
                   style={{ fontFamily: 'Roboto' }}>
                   Tener tus números en tiempo real es un superpoder
                 </h4>
-                <p className="text-[10px] sm:text-base lg:text-[16px] font-normal leading-[13px] sm:leading-5 lg:leading-[20px] mb-3 sm:mb-4 lg:mb-6 w-full lg:w-[415px] line-clamp-2 lg:line-clamp-none"
+                <p className="text-[10px] sm:text-base lg:text-[16px] font-normal leading-[13px] sm:leading-5 lg:leading-[20px] mb-3 sm:mb-4 lg:mb-6 w-full lg:w-[415px] text-left"
                   style={{
                     fontFamily: 'Roboto',
                     opacity: 1,
                     letterSpacing: '0%',
                     color: '#033D25'
                   }}>
-                  Prisma no solo muestra tus resultados: te avisa cuando algo cambia.
+                  Prisma no solo muestra tus resultados: te avisa cuando algo cambia. Sabrás si tus ventas suben, si gastas más o si hay algo que revisar.
                 </p>
-                <div className="flex flex-col w-full sm:flex-row justify-center lg:justify-start items-center gap-2.5 sm:gap-4 md:gap-6 lg:gap-[36px]">
+                <div className="flex flex-col w-full sm:flex-row justify-start lg:justify-start items-start sm:items-center gap-2.5 sm:gap-4 md:gap-6 lg:gap-[36px]">
                   <motion.div
                     className="w-full sm:w-auto"
                     whileHover={{ 
@@ -149,11 +148,10 @@ export default function AdministratorSection() {
                       fill_background_color="bg-[#1daa61]"
                       border_border_radius="rounded-[50px]"
                       padding=""
-                      className="cursor-pointer transition-all duration-300 hover:brightness-110 active:brightness-95 shadow-[0_4px_12px_rgba(29,170,97,0.25)] hover:shadow-[0_6px_20px_rgba(29,170,97,0.35)] active:shadow-[0_2px_8px_rgba(29,170,97,0.3)] w-full sm:w-auto min-h-[44px] sm:min-h-0"
+                      className="cursor-pointer transition-all duration-300 hover:brightness-110 active:brightness-95 shadow-[0_4px_12px_rgba(29,170,97,0.25)] hover:shadow-[0_6px_20px_rgba(29,170,97,0.35)] active:shadow-[0_2px_8px_rgba(29,170,97,0.3)] w-full sm:w-auto"
                       style={{
-                        width: '100%',
-                        maxWidth: '280px',
-                        height: '44px',
+                        width: '151px',
+                        height: '34px',
                         borderRadius: '50px',
                         opacity: 1
                       }}
@@ -161,14 +159,23 @@ export default function AdministratorSection() {
                     />
                   </motion.div>
                   <motion.div 
-                    className="flex items-center justify-center gap-1.5 sm:gap-2 md:gap-4 lg:gap-[10px] cursor-pointer transition-all duration-300 min-h-[44px]"
+                    className="flex items-center justify-center gap-1.5 sm:gap-2 md:gap-4 lg:gap-[10px] cursor-pointer transition-all duration-300 px-4 py-2"
+                    style={{
+                      border: '3px solid white',
+                      borderRadius: '50px',
+                      boxShadow: '0 4px 12px rgba(255,255,255,0.3)',
+                      width: '151px',
+                      height: '34px'
+                    }}
                     whileHover={{ 
                       scale: 1.08,
+                      boxShadow: '0 6px 20px rgba(255,255,255,0.5)',
+                      backgroundColor: 'rgba(255,255,255,0.15)',
                       transition: { duration: 0.2, ease: "easeOut" }
                     }}
                     whileTap={{ 
                       scale: 0.95,
-                      color: '#189850',
+                      boxShadow: '0 2px 8px rgba(255,255,255,0.3)',
                       transition: { duration: 0.1 }
                     }}
                     onClick={handleScheduleDemo}
@@ -188,7 +195,7 @@ export default function AdministratorSection() {
               </div>
 
               {/* Right Content - Notifications - 2/3 width */}
-              <div className="hidden lg:flex w-2/3 lg:w-[574px] flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-3 px-0 lg:px-2 overflow-x-hidden">
+              <div className="flex lg:flex w-full lg:w-[574px] flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-3 px-0 lg:px-2 overflow-x-hidden">
 
                 {/* First Notification */}
                 <motion.div 
@@ -284,7 +291,7 @@ export default function AdministratorSection() {
           <div className="flex flex-col lg:flex-row gap-2 sm:gap-3 md:gap-4 lg:gap-[8px] w-full">
 
             {/* Left Column - Quotations */}
-            <div className="w-full lg:w-[560px] bg-[#e3f2ff] rounded-3xl p-3 sm:p-6 md:p-8 lg:p-[26px] min-h-[220px] sm:min-h-[280px] lg:min-h-0 flex flex-col relative">
+            <div className="w-full bg-[#e3f2ff] rounded-3xl p-3 sm:p-6 md:p-8 lg:p-[26px] min-h-[420px] sm:min-h-[450px] md:min-h-[400px] lg:h-[367px] flex flex-col relative mx-auto lg:mx-0">
               <div className="flex flex-col gap-2 sm:gap-5 md:gap-6 lg:gap-[20px] mb-4 sm:mb-20 md:mb-24 lg:mb-[98px] ml-1 sm:ml-3 md:ml-4 lg:ml-[12px]">
                 <div className="flex items-center gap-1.5 sm:gap-3 md:gap-4 lg:gap-[8px]">
                   <img
@@ -323,7 +330,7 @@ export default function AdministratorSection() {
             </div>
 
             {/* Right Column - Tax Calculations */}
-            <div className="w-full lg:w-[560px] bg-secondary-background border border-border-primary rounded-3xl p-4 sm:p-6 md:p-8 lg:p-[28px] lg:pr-[16px]">
+            <div className="w-full bg-secondary-background border border-border-primary rounded-3xl p-4 sm:p-6 md:p-8 lg:p-[28px] lg:pr-[16px] min-h-[420px] sm:min-h-[450px] md:min-h-[400px] lg:h-[367px] mx-auto lg:mx-0">
               <div className="flex flex-col lg:flex-row justify-start items-start gap-2 sm:gap-3 md:gap-4 lg:gap-[12px] ml-2 sm:ml-3 md:ml-4 lg:ml-[10px]">
                 <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-[12px] w-full lg:flex-1">
                   <div className="flex items-start gap-2 sm:gap-3 md:gap-4 lg:gap-[8px]">
