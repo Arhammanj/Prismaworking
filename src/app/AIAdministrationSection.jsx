@@ -21,13 +21,37 @@ export default function AIAdministrationSection() {
   const card2Ref = useRef(null);
   const card3Ref = useRef(null);
 
-  const [badgeText, setBadgeText] = useState('');
+  const [badgeText, setBadgeText] = useState('IA'); // Set directly to 'IA' for mobile
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleLearnMore = () => {
     console.log('IA button clicked');
   };
 
   useEffect(() => {
+    // Check if we're on mobile (screen width < 1024px for lg breakpoint)
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    
+    // Check on mount
+    checkMobile();
+    
+    // Add resize listener
+    window.addEventListener('resize', checkMobile);
+    
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Only run animations on desktop
+    if (isMobile) {
+      setBadgeText('IA'); // Set full text immediately on mobile
+      return; // Exit early on mobile - no animations
+    }
+
     const ctx = gsap.context(() => {
       // IA Badge typing effect when section enters viewport
       ScrollTrigger.create({
@@ -117,7 +141,7 @@ export default function AIAdministrationSection() {
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [isMobile]); // Add isMobile as dependency
 
   return (
     <section ref={sectionRef} className="w-full bg-secondary-background overflow-x-hidden">
@@ -141,8 +165,8 @@ export default function AIAdministrationSection() {
             </h2>
             <motion.div
               ref={iaBadgeRef}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={!isMobile ? { scale: 1.05 } : {}}
+              whileTap={!isMobile ? { scale: 0.95 } : {}}
               className="flex items-center gap-3 bg-[#edf1fe] text-[#353df0] rounded-full font-medium cursor-pointer"
               style={{
                 fontSize: 'clamp(20px, 40px, 2.78vw)',
@@ -168,16 +192,16 @@ export default function AIAdministrationSection() {
         {/* -------------------- CARDS CONTAINER (PINNED) -------------------- */}
         <div
           ref={cardsContainerRef}
-          className="relative w-full"
+          className="relative w-full pt-8 lg:pt-0"
           style={{ minHeight: 'clamp(10vh, 10vh, 10vh)' }}
         >
-          {/* All three cards stacked with offset positioning */}
-          <div className="relative w-full h-[40vh] lg:h-[100vh]">
+          {/* On mobile: cards displayed vertically one by one. On desktop: stacked with offset positioning */}
+          <div className="relative w-full flex flex-col lg:block lg:h-screen gap-4 lg:gap-0">
 
             {/* ==================== CARD 1 (Outer Blue Layer) ==================== */}
             <div
               ref={card1Ref}
-              className="absolute flex items-end justify-center"
+              className="relative lg:absolute flex items-end justify-center"
               style={{
                 top: 'auto',
                 bottom: '0',
@@ -191,10 +215,10 @@ export default function AIAdministrationSection() {
                 className="w-full flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8"
                 style={{
                   background: '#90A1FA',
-                  height: 'clamp(252px, 497px, 34.5vw)', 
-                  width: 'clamp(320px, 1120px, 77.78vw)',
+                  height: 'clamp(336px, 497px, 34.5vw)', 
+                  width: 'clamp(256px, 1120px, 77.78vw)',
                   maxWidth: '1120px',
-                  borderRadius: 'clamp(12px, 20px, 1.39vw) clamp(12px, 20px, 1.39vw) 0 0',
+                  borderRadius: 'clamp(12px, 20px, 1.39vw)',
                   overflow: 'hidden',
                   gap: 'clamp(16px, 32px, 2.22vw)',
                   paddingTop: 'clamp(16px, 32px, 2.22vw)'
@@ -261,7 +285,7 @@ export default function AIAdministrationSection() {
             {/* ==================== CARD 2 (Middle Layer) ==================== */}
             <div
               ref={card2Ref}
-              className="absolute flex items-end justify-center"
+              className="relative lg:absolute flex items-end justify-center"
               style={{
                 top: 'auto',
                 bottom: '0',
@@ -275,10 +299,10 @@ export default function AIAdministrationSection() {
                 className="w-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8"
                 style={{
                   background: '#E1EBFF',
-                  height: 'clamp(267px, 528px, 36.67vw)',
-                  width: 'clamp(320px, 1120px, 77.78vw)',
+                  height: 'clamp(336px, 528px, 36.67vw)',
+                  width: 'clamp(256px, 1120px, 77.78vw)',
                   maxWidth: '1120px',
-                  borderRadius: 'clamp(12px, 20px, 1.39vw) clamp(12px, 20px, 1.39vw) 0 0',
+                  borderRadius: 'clamp(12px, 20px, 1.39vw)',
                   overflow: 'hidden',
                   gap: 'clamp(12px, 24px, 1.67vw)',
                   paddingTop: 'clamp(16px, 32px, 2.22vw)',
@@ -351,7 +375,7 @@ export default function AIAdministrationSection() {
             {/* ==================== CARD 3 (Inner Layer with Content) ==================== */}
             <div
               ref={card3Ref}
-              className="absolute flex items-end justify-center"
+              className="relative lg:absolute flex items-end justify-center"
               style={{
                 top: 'auto',
                 bottom: '0',
@@ -365,10 +389,10 @@ export default function AIAdministrationSection() {
                 className="w-full flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8"
                 style={{
                   background: '#1A73E8',
-                  height: 'clamp(289px, 559px, 38.82vw)',
-                  width: 'clamp(320px, 1120px, 77.78vw)',
+                  height: 'clamp(336px, 559px, 38.82vw)',
+                  width: 'clamp(256px, 1120px, 77.78vw)',
                   maxWidth: '1120px',
-                  borderRadius: 'clamp(12px, 20px, 1.39vw) clamp(12px, 20px, 1.39vw) 0 0',
+                  borderRadius: 'clamp(12px, 20px, 1.39vw)',
                   overflow: 'visible',
                   gap: 'clamp(16px, 32px, 2.22vw)',
                   paddingTop: 'clamp(16px, 32px, 2.22vw)',
