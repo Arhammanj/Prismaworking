@@ -212,13 +212,12 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8"
+                className="w-full flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8 rounded-[clamp(12px,20px,1.39vw)] lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none"
                 style={{
                   background: '#90A1FA',
                   height: 'clamp(336px, 497px, 34.5vw)', 
                   width: 'clamp(256px, 1120px, 77.78vw)',
                   maxWidth: '1120px',
-                  borderRadius: 'clamp(12px, 20px, 1.39vw)',
                   overflow: 'hidden',
                   gap: 'clamp(16px, 32px, 2.22vw)',
                   paddingTop: 'clamp(16px, 32px, 2.22vw)'
@@ -296,13 +295,12 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8"
+                className="w-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 rounded-[clamp(12px,20px,1.39vw)] lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none"
                 style={{
                   background: '#E1EBFF',
                   height: 'clamp(336px, 528px, 36.67vw)',
                   width: 'clamp(256px, 1120px, 77.78vw)',
                   maxWidth: '1120px',
-                  borderRadius: 'clamp(12px, 20px, 1.39vw)',
                   overflow: 'hidden',
                   gap: 'clamp(12px, 24px, 1.67vw)',
                   paddingTop: 'clamp(16px, 32px, 2.22vw)',
@@ -386,13 +384,12 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8"
+                className="w-full flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8 rounded-[clamp(12px,20px,1.39vw)] lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none"
                 style={{
                   background: '#1A73E8',
                   height: 'clamp(336px, 559px, 38.82vw)',
                   width: 'clamp(256px, 1120px, 77.78vw)',
                   maxWidth: '1120px',
-                  borderRadius: 'clamp(12px, 20px, 1.39vw)',
                   overflow: 'visible',
                   gap: 'clamp(16px, 32px, 2.22vw)',
                   paddingTop: 'clamp(16px, 32px, 2.22vw)',

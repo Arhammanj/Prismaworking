@@ -125,9 +125,9 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.6, ease: "easeOut" }}
             className="absolute cursor-pointer" 
             style={{ 
-              width: 'clamp(120px, 356px, 24.72vw)', 
-              height: 'clamp(80px, 239px, 16.6vw)', 
-              left: 'clamp(5px, 13px, 0.9vw)', 
+              width: 'clamp(120px, 378px, 26.25vw)', 
+              height: 'clamp(80px, 253px, 17.57vw)', 
+              left: 'clamp(5px, 0px, 0vw)', 
               top: 'clamp(280px, 386px, 26.8vw)',
               opacity: 1,
               transform: 'rotate(0deg)',
@@ -154,9 +154,9 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.7, ease: "easeOut" }}
             className="absolute cursor-pointer" 
             style={{ 
-              width: 'clamp(50px, 151px, 10.49vw)', 
-              height: 'clamp(110px, 329px, 22.85vw)', 
-              left: 'clamp(130px, 380px, 26.39vw)', 
+              width: 'clamp(50px, 161px, 11.18vw)', 
+              height: 'clamp(110px, 349px, 24.24vw)', 
+              left: 'clamp(130px, 393px, 27.29vw)', 
               top: 'clamp(330px, 466px, 32.36vw)',
               opacity: 1,
               transform: 'rotate(0deg)',
@@ -183,9 +183,9 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
             className="absolute cursor-pointer" 
             style={{ 
-              width: 'clamp(120px, 357px, 24.79vw)', 
-              height: 'clamp(80px, 233px, 16.18vw)', 
-              left: 'clamp(185px, 550px, 38.19vw)', 
+              width: 'clamp(120px, 379px, 26.32vw)', 
+              height: 'clamp(80px, 247px, 17.15vw)', 
+              left: 'clamp(185px, 577px, 40.07vw)', 
               top: 'clamp(345px, 491px, 34.1vw)',
               opacity: 1,
               transform: 'rotate(0deg)',
@@ -212,9 +212,9 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.9, ease: "easeOut" }}
             className="absolute cursor-pointer" 
             style={{ 
-              width: 'clamp(52px, 155px, 10.76vw)', 
-              height: 'clamp(112px, 335px, 23.26vw)', 
-              left: 'clamp(310px, 925px, 64.24vw)', 
+              width: 'clamp(52px, 165px, 11.46vw)', 
+              height: 'clamp(112px, 355px, 24.65vw)', 
+              left: 'clamp(310px, 979px, 67.99vw)', 
               top: 'clamp(290px, 413px, 28.68vw)',
               opacity: 1,
               transform: 'rotate(0deg)',
@@ -241,9 +241,9 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 1, ease: "easeOut" }}
             className="absolute cursor-pointer" 
             style={{ 
-              width: 'clamp(123px, 367px, 25.49vw)', 
-              height: 'clamp(80px, 240px, 16.67vw)', 
-              left: 'clamp(365px, 1095px, 76.04vw)', 
+              width: 'clamp(123px, 389px, 27.01vw)', 
+              height: 'clamp(80px, 254px, 17.64vw)', 
+              left: 'clamp(365px, 1163px, 80.76vw)', 
               top: 'clamp(330px, 466px, 32.36vw)',
               opacity: 1,
               transform: 'rotate(0deg)',

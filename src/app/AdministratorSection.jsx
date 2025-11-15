@@ -291,8 +291,8 @@ export default function AdministratorSection() {
           <div className="flex flex-row gap-[2%] w-full overflow-x-visible">
 
             {/* Left Column - Quotations */}
-            <div className="w-[48%] sm:w-[48%] md:w-[48%] lg:w-[560px] bg-[#e3f2ff] rounded-2xl sm:rounded-3xl p-2 sm:p-4 md:p-6 lg:p-[26px] h-[210px] sm:h-[280px] md:h-[320px] lg:h-[367px] flex flex-col relative shrink-0">
-              <div className="flex flex-col gap-1 sm:gap-2 md:gap-3 lg:gap-[20px] mb-2 sm:mb-8 md:mb-12 lg:mb-[98px] ml-0.5 sm:ml-2 md:ml-3 lg:ml-[12px]">
+            <div className="w-[48%] sm:w-[48%] md:w-[48%] lg:w-[560px] bg-[#e3f2ff] rounded-2xl sm:rounded-3xl p-2 sm:p-4 md:p-6 lg:p-[26px] h-[210px] sm:h-[280px] md:h-[320px] lg:h-[261px] flex flex-col relative shrink-0">
+              <div className="flex flex-col gap-1 sm:gap-2 md:gap-3 lg:gap-[20px] mb-2 sm:mb-8 md:mb-12 lg:mb-0 ml-0.5 sm:ml-2 md:ml-3 lg:ml-[12px]">
                 <div className="flex items-center gap-0.5 sm:gap-1.5 md:gap-2 lg:gap-[8px]">
                   <img
                     src="/images/file-icon.svg"
@@ -311,8 +311,8 @@ export default function AdministratorSection() {
                   </h4>
                 </div>
               </div>
-              {/* Inner Image - Centered at bottom, touching container edge */}
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[150px] sm:w-[240px] md:w-[300px] lg:w-[365px] h-auto"
+              {/* Inner Image - Centered at bottom, moved left on desktop */}
+              <div className="absolute bottom-0 left-1/2 lg:left-[6%] -translate-x-1/2 lg:-translate-x-0 w-[150px] sm:w-[240px] md:w-[300px] lg:w-[365px] h-auto"
                 style={{
                   opacity: 1
                 }}>
@@ -331,7 +331,7 @@ export default function AdministratorSection() {
             </div>
 
             {/* Right Column - Tax Calculations */}
-            <div className="w-[48%] sm:w-[48%] md:w-[48%] lg:w-[560px] bg-secondary-background border border-border-primary rounded-2xl sm:rounded-3xl p-2 sm:p-4 md:p-6 lg:p-[28px] lg:pr-[16px] h-[210px] sm:h-[280px] md:h-[320px] lg:h-[367px] shrink-0 flex flex-col">
+            <div className="w-[48%] sm:w-[48%] md:w-[48%] lg:w-[560px] bg-secondary-background border border-border-primary rounded-2xl sm:rounded-3xl p-2 sm:p-4 md:p-6 lg:p-[28px] lg:pr-[16px] h-[210px] sm:h-[280px] md:h-[320px] lg:h-[261px] shrink-0 flex flex-col">
               <div className="flex flex-col lg:flex-row justify-start items-start gap-1 sm:gap-2 md:gap-3 lg:gap-[12px] ml-0.5 sm:ml-2 md:ml-3 lg:ml-[10px] flex-1">
                 <div className="flex flex-col gap-0.5 sm:gap-2 md:gap-3 lg:gap-[12px] w-full lg:flex-1">
                   <div className="flex items-start gap-0.5 sm:gap-1.5 md:gap-2 lg:gap-[8px]">
@@ -350,15 +350,15 @@ export default function AdministratorSection() {
                       style={{ fontFamily: 'Roboto' }}>
                       Conoce tus impuesto antes que tu contador
                     </h4>
-                    <h5 className="text-[7px] sm:text-[9px] md:text-[11px] lg:text-[16px] font-normal text-left text-[#1a2c3a] w-full pt-1 sm:pt-2 md:pt-3 lg:pt-14 hidden lg:block"
+                    <h5 className="text-[7px] sm:text-[9px] md:text-[11px] lg:text-[16px] font-normal text-left text-[#1a2c3a] w-full pt-1 sm:pt-2 md:pt-3 lg:pt-4 hidden lg:block"
                       style={{ fontFamily: 'Roboto' }}>
                       Prisma calcula tu IVA e ISR en tiempo real para que no tengas sorpresas
                     </h5>
                   </div>
                 </div>
 
-                {/* Tax Data Cards - NOW VISIBLE ON MOBILE */}
-                <div className="flex lg:flex flex-col gap-1 sm:gap-2 md:gap-2.5 lg:gap-[14px] self-end w-full lg:w-[34%] mt-2 sm:mt-3 md:mt-4 lg:mt-[8px]">
+                {/* Tax Data Cards - NOW VISIBLE ON MOBILE - Aligned parallel to text on desktop */}
+                <div className="flex lg:flex flex-col gap-1 sm:gap-2 md:gap-2.5 lg:gap-[14px] self-end lg:self-start w-full lg:w-[34%] mt-2 sm:mt-3 md:mt-4 lg:mt-0">
                   {taxData.map((tax, index) => (
                     <motion.div 
                       key={index} 

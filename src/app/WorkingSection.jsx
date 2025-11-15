@@ -80,7 +80,7 @@ export default function WorkingSection() {
                 boxShadow: "0 8px 24px rgba(0, 0, 0, 0.08)",
                 transition: { duration: 0.3, ease: "easeOut" }
               }}
-              className="bg-secondary-background border border-border-primary relative cursor-pointer w-full sm:w-[90%] md:w-[600px] lg:w-[710px] min-h-[480px] sm:min-h-[500px] md:min-h-[420px] lg:h-[367px]"
+              className="bg-secondary-background border border-border-primary relative cursor-pointer w-full sm:w-[90%] md:w-[600px] lg:w-[710px] min-h-[480px] sm:min-h-[500px] md:min-h-[420px] lg:min-h-0 lg:h-[367px]"
               style={{
                 borderRadius: '20px',
                 borderWidth: '1px',
@@ -161,7 +161,7 @@ export default function WorkingSection() {
                 boxShadow: "0 8px 24px rgba(3, 42, 72, 0.12)",
                 transition: { duration: 0.3, ease: "easeOut" }
               }}
-              className="relative bg-[#e3f2ff] cursor-pointer w-full sm:w-[90%] md:w-[600px] lg:w-[653px] min-h-[420px] sm:min-h-[450px] md:min-h-[400px] lg:h-[367px]"
+              className="relative bg-[#e3f2ff] cursor-pointer w-full sm:w-[90%] md:w-[600px] lg:w-[710px] min-h-[420px] sm:min-h-[450px] md:min-h-[400px] lg:min-h-0 lg:h-[367px]"
               style={{
                 borderRadius: '20px',
                 opacity: 1,
