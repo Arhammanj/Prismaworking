@@ -185,7 +185,7 @@ export default function AdministratorSection() {
                       alt="Calendar icon"
                       className="w-[10px] h-[10px] sm:w-[8px] sm:h-[8px] md:w-[10px] md:h-[10px] lg:w-[12px] lg:h-[12px]"
                     />
-                    <span className="text-sm sm:text-md font-medium leading-tight text-center text-[#1daa61]"
+                    <span className="text-sm sm:text-md font-medium leading-tight text-center text-[#1daa61] whitespace-nowrap"
                       style={{ fontFamily: 'Roboto' }}
                     >
                       Agendar demo
@@ -291,7 +291,7 @@ export default function AdministratorSection() {
           <div className="flex flex-row gap-[2%] w-full overflow-x-visible">
 
             {/* Left Column - Quotations */}
-            <div className="w-[48%] sm:w-[48%] md:w-[48%] lg:w-[560px] bg-[#e3f2ff] rounded-2xl sm:rounded-3xl p-2 sm:p-4 md:p-6 lg:p-[26px] h-[210px] sm:h-[280px] md:h-[320px] lg:h-[261px] flex flex-col relative shrink-0">
+            <div className="w-[48%] sm:w-[48%] md:w-[48%] lg:w-[560px] bg-[#e3f2ff] rounded-2xl sm:rounded-3xl p-2 sm:p-4 md:p-6 lg:p-[26px] h-[147px] sm:h-[196px] md:h-[224px] lg:h-[261px] flex flex-col relative shrink-0">
               <div className="flex flex-col gap-1 sm:gap-2 md:gap-3 lg:gap-[20px] mb-2 sm:mb-8 md:mb-12 lg:mb-0 ml-0.5 sm:ml-2 md:ml-3 lg:ml-[12px]">
                 <div className="flex items-center gap-0.5 sm:gap-1.5 md:gap-2 lg:gap-[8px]">
                   <img
@@ -331,7 +331,7 @@ export default function AdministratorSection() {
             </div>
 
             {/* Right Column - Tax Calculations */}
-            <div className="w-[48%] sm:w-[48%] md:w-[48%] lg:w-[560px] bg-secondary-background border border-border-primary rounded-2xl sm:rounded-3xl p-2 sm:p-4 md:p-6 lg:p-[28px] lg:pr-[16px] h-[210px] sm:h-[280px] md:h-[320px] lg:h-[261px] shrink-0 flex flex-col">
+            <div className="w-[48%] sm:w-[48%] md:w-[48%] lg:w-[560px] bg-secondary-background border border-border-primary rounded-2xl sm:rounded-3xl p-2 sm:p-4 md:p-6 lg:p-[28px] lg:pr-[16px] h-[147px] sm:h-[196px] md:h-[224px] lg:h-[261px] shrink-0 flex flex-col">
               <div className="flex flex-col lg:flex-row justify-start items-start gap-1 sm:gap-2 md:gap-3 lg:gap-[12px] ml-0.5 sm:ml-2 md:ml-3 lg:ml-[10px] flex-1">
                 <div className="flex flex-col gap-0.5 sm:gap-2 md:gap-3 lg:gap-[12px] w-full lg:flex-1">
                   <div className="flex items-start gap-0.5 sm:gap-1.5 md:gap-2 lg:gap-[8px]">
