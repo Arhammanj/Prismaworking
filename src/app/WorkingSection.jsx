@@ -102,7 +102,7 @@ export default function WorkingSection() {
                 Tus números, al instante
               </h3>
               
-              <p className="font-normal text-left text-text-muted absolute top-16 left-5 right-5 sm:top-20 sm:left-6 sm:right-6 md:top-20 md:left-8 md:right-8 lg:top-[80px] lg:left-[51px] lg:pr-[15px] text-sm sm:text-base md:text-base lg:text-[16.5px] leading-relaxed lg:leading-[24px] z-10 pb-56 sm:pb-56 md:pb-48 lg:pb-0 w-[calc(100%-40px)] sm:w-[calc(100%-48px)] md:w-[calc(100%-64px)] lg:w-[580px]"
+              <p className="font-normal text-left text-text-muted absolute top-16 left-5 right-5 sm:top-20 sm:left-6 sm:right-6 md:top-20 md:left-8 md:right-8 lg:top-[70px] lg:left-[51px] lg:pr-[15px] text-sm sm:text-base md:text-base lg:text-[16.5px] leading-relaxed lg:leading-[24px] z-10 pb-56 sm:pb-56 md:pb-48 lg:pb-0 w-[calc(100%-40px)] sm:w-[calc(100%-48px)] md:w-[calc(100%-64px)] lg:w-[580px]"
                 style={{ 
                   fontFamily: 'Roboto',
                   fontWeight: 400,
