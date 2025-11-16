@@ -194,19 +194,18 @@ export default function AdministratorSection() {
                 </div>
               </div>
 
-              {/* Right Content - Notifications - 2/3 width */}
-              <div className="flex lg:flex w-full lg:w-[574px] flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-3 px-0 lg:px-2 overflow-x-hidden">
+              {/* Right Content - Notifications - Zigzag on all devices */}
+              <div className="flex w-full lg:w-[574px] flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-3 px-0 lg:px-2 overflow-x-visible">
 
-                {/* First Notification */}
+                {/* First Notification - Left aligned */}
                 <motion.div 
-                  className="rounded-base p-1.5 sm:p-3 md:p-4 lg:p-[10px] cursor-pointer"
+                  className="rounded-base p-1.5 sm:p-3 md:p-4 lg:p-[10px] cursor-pointer mr-auto w-[85%]"
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.5, delay: 0 }}
+                  viewport={{ once: false, amount: 0.1 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
                   style={{
                     background: '#FFFFFFB2',
-                    width: '100%',
                     minHeight: '45px',
                     borderRadius: '5px',
                     opacity: 1
@@ -236,19 +235,20 @@ export default function AdministratorSection() {
                   </p>
                 </motion.div>
 
-                {/* Notifications List */}
+                {/* Notifications List - Zigzag pattern on all devices */}
                 <div className="flex flex-col gap-2 sm:gap-6 md:gap-7 lg:gap-[26px]">
                   {notifications.slice(1).map((notification, index) => (
                     <motion.div 
                       key={notification.id} 
-                      className="rounded-base p-1.5 sm:p-3 md:p-4 lg:p-[10px] cursor-pointer"
-                      initial={{ opacity: 0, x: -50 }}
+                      className={`rounded-base p-1.5 sm:p-3 md:p-4 lg:p-[10px] cursor-pointer w-[85%] ${
+                        index % 2 === 0 ? 'ml-auto' : 'mr-auto'
+                      }`}
+                      initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true, amount: 0.3 }}
-                      transition={{ duration: 0.5, delay: (index + 1) * 0.3 }}
+                      viewport={{ once: false, amount: 0.1 }}
+                      transition={{ duration: 0.6, ease: "easeOut" }}
                       style={{
                         background: '#FFFFFFB2',
-                        width: '100%',
                         minHeight: '45px',
                         borderRadius: '5px',
                         opacity: 1
