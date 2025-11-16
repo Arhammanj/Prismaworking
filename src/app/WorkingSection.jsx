@@ -226,14 +226,14 @@ export default function WorkingSection() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={isRightInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
                 transition={{ duration: 0.6, delay: 0.35, ease: "easeOut" }}
-                className="absolute bottom-0 right-5 sm:right-8 md:right-12 lg:right-[60px] w-40 sm:w-48 md:w-56 lg:w-[230px] h-auto lg:h-[322px] z-1"
+                className="absolute bottom-0 right-5 sm:right-8 md:right-12 lg:right-[60px] w-36 sm:w-[172px] md:w-[202px] lg:w-[230px] h-auto lg:h-[322px] z-1"
               >
                 <Image
                   src="/images/image772.svg"
                   alt="Mobile phone interface"
-                  width={230}
-                  height={322}
-                  className="rounded-lg w-full h-auto lg:w-full lg:h-full"
+                  width={180}
+                  height={252}
+                  className="rounded-lg w-full h-auto lg:w-[230px] lg:h-[322px]"
                   style={{
                     objectFit: 'contain'
                   }}
