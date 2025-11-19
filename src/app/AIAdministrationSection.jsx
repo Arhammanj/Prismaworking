@@ -145,7 +145,7 @@ export default function AIAdministrationSection() {
 
   return (
     <section ref={sectionRef} className="w-full bg-secondary-background overflow-x-hidden">
-      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full mx-auto px-2 sm:px-6 lg:px-8">
         {/* -------------------- HEADER -------------------- */}
         <div ref={headerRef} className="flex flex-col justify-start items-center w-full pt-2 sm:pt-4 lg:pt-16 pb-0 lg:pb-8"
           style={{
@@ -212,12 +212,11 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8 rounded-[clamp(12px,20px,1.39vw)] lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none"
+                className="w-full flex flex-col items-center justify-between px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,497px,34.5vw)]"
                 style={{
                   background: '#90A1FA',
-                  height: 'clamp(336px, 497px, 34.5vw)', 
-                  width: 'clamp(256px, 1120px, 77.78vw)',
-                  maxWidth: '1120px',
+                  minHeight: '425px',
+                  width: '100%',
                   overflow: 'hidden',
                   gap: 'clamp(16px, 32px, 2.22vw)',
                   paddingTop: 'clamp(16px, 32px, 2.22vw)'
@@ -295,12 +294,11 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 rounded-[clamp(12px,20px,1.39vw)] lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none"
+                className="w-full flex flex-col items-center justify-center px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,528px,36.67vw)]"
                 style={{
                   background: '#E1EBFF',
-                  height: 'clamp(336px, 528px, 36.67vw)',
-                  width: 'clamp(256px, 1120px, 77.78vw)',
-                  maxWidth: '1120px',
+                  minHeight: '425px',
+                  width: '100%',
                   overflow: 'hidden',
                   gap: 'clamp(12px, 24px, 1.67vw)',
                   paddingTop: 'clamp(16px, 32px, 2.22vw)',
@@ -384,12 +382,11 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8 rounded-[clamp(12px,20px,1.39vw)] lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none"
+                className="w-full flex flex-col items-center justify-between px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,559px,38.82vw)]"
                 style={{
                   background: '#1A73E8',
-                  height: 'clamp(336px, 559px, 38.82vw)',
-                  width: 'clamp(256px, 1120px, 77.78vw)',
-                  maxWidth: '1120px',
+                  minHeight: '425px',
+                  width: '100%',
                   overflow: 'visible',
                   gap: 'clamp(16px, 32px, 2.22vw)',
                   paddingTop: 'clamp(16px, 32px, 2.22vw)',
