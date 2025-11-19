@@ -144,7 +144,7 @@ export default function AIAdministrationSection() {
   }, [isMobile]); // Add isMobile as dependency
 
   return (
-    <section ref={sectionRef} className="w-full bg-secondary-background overflow-x-hidden">
+    <section ref={sectionRef} className="w-full bg-secondary-background overflow-hidden">
       <div className="w-full mx-auto px-2 sm:px-6 lg:px-8">
         {/* -------------------- HEADER -------------------- */}
         <div ref={headerRef} className="flex flex-col justify-start items-center w-full pt-2 sm:pt-4 lg:pt-16 pb-0 lg:pb-8"
