@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+/* Define CSS custom properties for your colors */
+:root {
+  /* Primary Colors */
+  --color-primary-background: #155dfc;
+  --color-primary-foreground: #ffffff;
+  --color-primary-light: #1a73e8;
+  --color-primary-dark: #003263;
+
+  /* Secondary Colors */
+  --color-secondary-background: #ffffff;
+  --color-secondary-foreground: #000000;
+  --color-secondary-light: #f4f5ff;
+  --color-secondary-dark: #1a2c3a;
+
+  /* Accent Colors */
+  --color-accent-green: #1daa61;
+  --color-accent-green-light: #05c776;
+  --color-accent-green-bg: #e5fff4;
+  --color-accent-blue: #4379ee;
+  --color-accent-purple: #7839c7;
+  --color-accent-orange: #d56e0c;
+
+  /* Text Colors */
+  --color-text-primary: #000000;
+  --color-text-secondary: #003263;
+  --color-text-tertiary: #00355f;
+  --color-text-accent: #155dfc;
+  --color-text-muted: #485164;
+  --color-text-light: #90a1fa;
+
+  /* Background Colors */
+  --color-bg-main: #ffffff;
+  --color-bg-secondary: #f4f5ff;
+  --color-bg-accent: #e1ebff;
+  --color-bg-success: #e5fff4;
+  --color-bg-warning: #fef7e0;
+  --color-bg-overlay: rgba(255, 255, 255, 0.5);
+
+  /* Border Colors */
+  --color-border-primary: #e0e0e0;
+  --color-border-secondary: #d2d2d2;
+  --color-border-accent: #00569b;
+  --color-border-error: #ff0000;
+
+  /* Component Colors */
+  --color-header-bg: #ffffff;
+  --color-header-text: #000000;
+  --color-button-primary-bg: #1daa61;
+  --color-button-primary-text: #ffffff;
+  --color-button-secondary-bg: #e5e6ff;
+  --color-button-secondary-text: #353df0;
+}
+
+/* Custom utility classes for your color scheme */
+@layer utilities {
+  /* Background utilities */
+  .bg-primary-background { background-color: var(--color-primary-background); }
+  .bg-secondary-background { background-color: var(--color-secondary-background); }
+  .bg-secondary-light { background-color: var(--color-secondary-light); }
+  .bg-accent-green { background-color: var(--color-accent-green); }
+  .bg-accent-green-bg { background-color: var(--color-accent-green-bg); }
+  .bg-accent-blue { background-color: var(--color-accent-blue); }
+  .bg-accent-purple { background-color: var(--color-accent-purple); }
+  .bg-bg-secondary { background-color: var(--color-bg-secondary); }
+  .bg-bg-accent { background-color: var(--color-bg-accent); }
+  .bg-bg-warning { background-color: var(--color-bg-warning); }
+  
+  /* Text color utilities */
+  .text-text-primary { color: var(--color-text-primary); }
+  .text-text-secondary { color: var(--color-text-secondary); }
+  .text-text-tertiary { color: var(--color-text-tertiary); }
+  .text-text-accent { color: var(--color-text-accent); }
+  .text-text-muted { color: var(--color-text-muted); }
+  .text-text-light { color: var(--color-text-light); }
+  .text-primary-foreground { color: var(--color-primary-foreground); }
+  .text-button-primary-text { color: var(--color-button-primary-text); }
+  .text-button-secondary-text { color: var(--color-button-secondary-text); }
+  
+  /* Border color utilities */
+  .border-border-primary { border-color: var(--color-border-primary); }
+  .border-border-secondary { border-color: var(--color-border-secondary); }
+  .border-border-accent { border-color: var(--color-border-accent); }
+  .border-border-error { border-color: var(--color-border-error); }
+  
+  /* Ring color utilities */
+  .ring-accent-blue { --tw-ring-color: var(--color-accent-blue); }
+  .ring-accent-green { --tw-ring-color: var(--color-accent-green); }
+}
