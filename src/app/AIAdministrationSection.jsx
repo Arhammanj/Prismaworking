@@ -314,7 +314,7 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-center px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,528px,36.67vw)]"
+                className="w-full flex flex-col items-center justify-start lg:justify-center px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,528px,36.67vw)]"
                 style={{
                   background: '#E1EBFF',
                   minHeight: '460px',
@@ -325,52 +325,77 @@ export default function AIAdministrationSection() {
                   paddingBottom: 'clamp(16px, 32px, 2.22vw)'
                 }}
               >
-                <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
+                <div className="flex flex-col items-center gap-2 lg:gap-[clamp(8px,32px,2.22vw)]" style={{ paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
                   <div
-                    className="bg-[#485264] text-[#E1EBFF] font-extrabold rounded-full flex items-center justify-center"
+                    className="bg-[#485264] text-[#E1EBFF] font-extrabold rounded-full flex items-center justify-center lg:hidden"
                     style={{
-                      fontSize: 'clamp(12px, 20px, 1.39vw)',
-                      width: 'clamp(20px, 30px, 2.08vw)',
-                      height: 'clamp(20px, 30px, 2.08vw)'
+                      fontSize: '20px',
+                      width: '30px',
+                      height: '30px',
+                      marginBottom: '12px'
                     }}
                   >
                     2
                   </div>
-                  <h3
+                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', marginBottom: '12px' }}>
+                    <div
+                      className="bg-[#485264] text-[#E1EBFF] font-extrabold rounded-full items-center justify-center hidden lg:flex"
+                      style={{
+                        fontSize: 'clamp(12px, 20px, 1.39vw)',
+                        width: 'clamp(20px, 30px, 2.08vw)',
+                        height: 'clamp(20px, 30px, 2.08vw)'
+                      }}
+                    >
+                      2
+                    </div>
+                    <h3
+                      className="text-[24px] lg:text-[clamp(16px,30px,2.08vw)] leading-[40px] lg:leading-[clamp(20px,40px,2.78vw)] font-extrabold lg:font-extrabold"
+                      style={{
+                        fontFamily: 'Roboto',
+                        color: '#485264',
+                        whiteSpace: 'nowrap',
+                        margin: 0,
+                        width: '352px',
+                        textAlign: 'center'
+                      }}
+                    >
+                      Tómale foto a tus recibos
+                    </h3>
+                  </div>
+
+                  <p
+                    className="text-[19px] lg:text-[clamp(11px,20px,1.39vw)] leading-[23px] lg:leading-[clamp(15px,26px,1.81vw)] pb-2 lg:pb-0 font-[400] lg:font-normal max-w-[334px] lg:max-w-[clamp(280px,575px,39.93vw)] px-0 lg:px-[clamp(8px,16px,1.11vw)]"
                     style={{
+                      width: '100%',
                       fontFamily: 'Roboto',
-                      fontWeight: 800,
-                      fontSize: 'clamp(16px, 30px, 2.08vw)',
-                      lineHeight: 'clamp(20px, 40px, 2.78vw)',
-                      color: '#485264',
-                      whiteSpace: 'nowrap',
+                      textAlign: 'center',
+                      color: '#1a3866',
                       margin: 0
                     }}
                   >
-                    Tómale foto a tus tickets
-                  </h3>
+                    Pagaste algo sin factura?  Solo <br /> tómale una foto. {' '}Prisma reconoce la información y {' '}
+                    <span style={{ fontWeight: 700, fontStyle: 'italic', color: '#485264', fontSize: '19px' }}>
+                      registra el gasto por ti.
+                    </span>
+                  </p>
                 </div>
 
-                <p
-                  style={{
-                    maxWidth: 'clamp(280px, 575px, 39.93vw)',
-                    fontFamily: 'Roboto',
-                    fontWeight: 400,
-                    fontSize: 'clamp(11px, 20px, 1.39vw)',
-                    lineHeight: 'clamp(15px, 26px, 1.81vw)',
-                    textAlign: 'center',
-                    color: '#1a3866',
-                    margin: 0,
-                    padding: '0 clamp(8px, 16px, 1.11vw)'
-                  }}
-                >
-                  Pagaste algo sin factura? Solo tómale una foto. {' '}Prisma reconoce la información y {' '}
-                  <span style={{ fontWeight: 700, fontStyle: 'italic', color: '#485264' }}>
-                    registra el gasto por ti.
-                  </span>
-                </p>
+                <div className="parallax-image lg:hidden" style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '12px', paddingTop: '16px' }}>
+                  <Image
+                    src="/images/2ff787b93c4e4adba399f7ac24d7545c84bb22b2 (1).png"
+                    alt="Intelligent classification system"
+                    width={320}
+                    height={320}
+                    style={{
+                      width: '246px',
+                      height: '246px',
+                      objectFit: 'contain',
+                      transform: 'rotate(-0.48deg)'
+                    }}
+                  />
+                </div>
 
-                <div className="parallax-image" style={{ width: 'clamp(160px, 320px, 22.22vw)', height: 'clamp(160px, 320px, 22.22vw)', maxWidth: '90%' }}>
+                <div className="parallax-image hidden lg:block" style={{ width: 'clamp(160px, 320px, 22.22vw)', height: 'clamp(160px, 320px, 22.22vw)', maxWidth: '90%' }}>
                   <Image
                     src="/images/2ff787b93c4e4adba399f7ac24d7545c84bb22b2 (1).png"
                     alt="Intelligent classification system"
@@ -413,10 +438,21 @@ export default function AIAdministrationSection() {
                   paddingBottom: '0'
                 }}
               >
-                <div className="flex flex-col items-center" style={{ gap: 'clamp(8px, 32px, 2.22vw)', paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
-                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)' }}>
+                <div className="flex flex-col items-center gap-2 lg:gap-[clamp(8px,32px,2.22vw)]" style={{ paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
+                  <div
+                    className="bg-white text-[#1A73E8] font-extrabold rounded-full flex items-center justify-center lg:hidden"
+                    style={{
+                      fontSize: '20px',
+                      width: '30px',
+                      height: '30px',
+                      marginBottom: '12px'
+                    }}
+                  >
+                    3
+                  </div>
+                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', marginBottom: '12px' }}>
                     <div
-                      className="bg-white text-[#1A73E8] font-extrabold rounded-full flex items-center justify-center"
+                      className="bg-white text-[#1A73E8] font-extrabold rounded-full items-center justify-center hidden lg:flex"
                       style={{
                         fontSize: 'clamp(12px, 20px, 1.39vw)',
                         width: 'clamp(20px, 30px, 2.08vw)',
@@ -426,45 +462,61 @@ export default function AIAdministrationSection() {
                       3
                     </div>
                     <h3
+                      className="text-[24px] lg:text-[clamp(16px,30px,2.08vw)] leading-[40px] lg:leading-[clamp(20px,40px,2.78vw)] font-extrabold lg:font-extrabold"
                       style={{
                         fontFamily: 'Roboto',
-                        fontWeight: 800,
-                        fontSize: 'clamp(16px, 30px, 2.08vw)',
-                        lineHeight: 'clamp(20px, 40px, 2.78vw)',
                         color: '#FFFFFF',
                         whiteSpace: 'nowrap',
-                        margin: 0
+                        margin: 0,
+                        width: '352px',
+                        textAlign: 'center'
                       }}
                     >
-                      Tus reportes hechos en automático
+                      Tus reportes hechos en <br /> automático
                     </h3>
                   </div>
 
-                  <div
+                  <p
+                    className="text-[19px] lg:text-[clamp(11px,23px,1.6vw)] leading-[23px] lg:leading-[clamp(15px,30px,2.08vw)] pb-2 lg:pb-0 font-[300] lg:font-normal max-w-[334px] lg:max-w-none px-0 lg:px-[clamp(8px,16px,1.11vw)]"
                     style={{
-                      maxWidth: '',
+                      width: '100%',
                       fontFamily: 'Roboto',
-                      fontWeight: 400,
-                      fontSize: 'clamp(11px, 23px, 1.6vw)',
-                      lineHeight: 'clamp(15px, 30px, 2.08vw)',
                       textAlign: 'center',
                       color: '#FFFFFF',
-                      padding: '0 clamp(8px, 16px, 1.11vw)'
+                      margin: 0
                     }}
                   >
-                    <p>Ve cuánto compraste, cuánto gastaste y cuánto vendiste este</p>
-                    <p> mes. Todo ordenado y actualizado automáticamente.</p>
-                  </div>
+                    Ve cuánto compraste, cuánto <br /> gastaste y cuánto vendiste este <br /> mes. Todo ordenado y {' '}
+                    <span style={{ fontWeight: 500, fontStyle: 'italic', color: '#FFFFFF', fontSize: '19px' }}>
+                      actualizado automáticamente.
+                    </span>
+                  </p>
                 </div>
 
-                <div className='flex justify-between items-end' style={{
-                  marginTop: 'clamp(8px, 70px, 4.86vw)',
+                <div className='flex justify-between items-end mt-0 lg:mt-[clamp(8px,70px,4.86vw)]' style={{
                   gap: 'clamp(8px, 40px, 2.78vw)',
                   width: '100%',
                   maxWidth: 'clamp(280px, 1000px, 69.44vw)',
-                  position: 'relative'
+                  position: 'relative',
+                  marginBottom: '-4px'
                 }}>
-                  <div className="parallax-image" style={{
+                  <div className="parallax-image lg:hidden" style={{
+                    width: '113px',
+                    height: '180px',
+                    flexShrink: 0,
+                    position: 'relative',
+                    marginBottom: '0',
+                    marginLeft: '-14px'
+                  }}>
+                    <Image
+                      src="/images/image772.svg"
+                      alt="Reports and analysis"
+                      width={113}
+                      height={180}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                    />
+                  </div>
+                  <div className="parallax-image hidden lg:block" style={{
                     width: 'clamp(90px, 273px, 18.96vw)',
                     flexShrink: 0,
                     position: 'relative',
@@ -478,10 +530,25 @@ export default function AIAdministrationSection() {
                       style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                     />
                   </div>
-                  <div className="parallax-image" style={{
+                  <div className="parallax-image lg:hidden" style={{
+                    width: '200px',
+                    height: '100px',
+                    flexShrink: 0,
+                    marginBottom: '60px',
+                    paddingLeft: '10px'
+                  }}>
+                    <Image
+                      src="/images/image 7733.svg"
+                      alt="Reports and analysis"
+                      width={200}
+                      height={100}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                    />
+                  </div>
+                  <div className="parallax-image hidden lg:block" style={{
                     width: 'clamp(180px, 600px, 41.67vw)',
                     flexShrink: 0,
-                    marginBottom: '0'
+                    marginBottom: '40px'
                   }}>
                     <Image
                       src="/images/image 7733.svg"
