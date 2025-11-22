@@ -295,25 +295,30 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 rounded-[clamp(12px,20px,1.39vw)] lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none"
+                className="w-full flex flex-col items-center justify-start px-4 sm:px-6 lg:px-8 rounded-[clamp(12px,20px,1.39vw)] lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none"
                 style={{
                   background: '#E1EBFF',
                   height: 'clamp(336px, 528px, 36.67vw)',
                   width: 'clamp(256px, 1120px, 77.78vw)',
                   maxWidth: '1120px',
-                  overflow: 'hidden',
-                  gap: 'clamp(12px, 24px, 1.67vw)',
+                  overflow: 'visible',
+                  gap: '0',
                   paddingTop: 'clamp(16px, 32px, 2.22vw)',
-                  paddingBottom: 'clamp(16px, 32px, 2.22vw)'
+                  paddingBottom: 'clamp(16px, 32px, 2.22vw)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center'
                 }}
               >
-                <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
+                {/* Heading */}
+                <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', paddingTop: 'clamp(12px, 24px, 1.67vw)', marginBottom: 'clamp(12px, 20px, 1.39vw)' }}>
                   <div 
                     className="bg-[#485264] text-[#E1EBFF] font-extrabold rounded-full flex items-center justify-center"
                     style={{
                       fontSize: 'clamp(12px, 20px, 1.39vw)',
                       width: 'clamp(20px, 30px, 2.08vw)',
-                      height: 'clamp(20px, 30px, 2.08vw)'
+                      height: 'clamp(20px, 30px, 2.08vw)',
+                      flexShrink: 0
                     }}
                   >
                     2
@@ -333,6 +338,7 @@ export default function AIAdministrationSection() {
                   </h3>
                 </div>
 
+                {/* Description Text */}
                 <p
                   style={{
                     maxWidth: 'clamp(280px, 575px, 39.93vw)',
@@ -342,8 +348,11 @@ export default function AIAdministrationSection() {
                     lineHeight: 'clamp(15px, 26px, 1.81vw)',
                     textAlign: 'center',
                     color: '#1a3866',
-                    margin: 0,
-                    padding: '0 clamp(8px, 16px, 1.11vw)'
+                    margin: '0',
+                    padding: '0 clamp(8px, 16px, 1.11vw)',
+                    visibility: 'visible',
+                    opacity: 1,
+                    marginBottom: 'clamp(12px, 20px, 1.39vw)'
                   }}
                 >
                   Pagaste algo sin factura? Solo tómale una foto. {' '}Prisma reconoce la información y {' '}
@@ -352,7 +361,8 @@ export default function AIAdministrationSection() {
                   </span>
                 </p>
 
-                <div className="parallax-image" style={{ width: 'clamp(160px, 320px, 22.22vw)', height: 'clamp(160px, 320px, 22.22vw)', maxWidth: '90%' }}>
+                {/* Image */}
+                <div className="parallax-image flex-1 flex items-center justify-center" style={{ width: 'clamp(160px, 320px, 22.22vw)', height: 'clamp(160px, 280px, 19.44vw)', maxWidth: '90%' }}>
                   <Image
                     src="/images/2ff787b93c4e4adba399f7ac24d7545c84bb22b2 (1).png"
                     alt="Intelligent classification system"
@@ -403,7 +413,8 @@ export default function AIAdministrationSection() {
                       style={{
                         fontSize: 'clamp(12px, 20px, 1.39vw)',
                         width: 'clamp(20px, 30px, 2.08vw)',
-                        height: 'clamp(20px, 30px, 2.08vw)'
+                        height: 'clamp(20px, 30px, 2.08vw)',
+                        flexShrink: 0
                       }}
                     >
                       3
@@ -425,53 +436,56 @@ export default function AIAdministrationSection() {
 
                   <div
                     style={{
-                      maxWidth: '',
                       fontFamily: 'Roboto',
                       fontWeight: 400,
-                      fontSize: 'clamp(11px, 23px, 1.6vw)',
-                      lineHeight: 'clamp(15px, 30px, 2.08vw)',
+                      fontSize: '20px',
+                      lineHeight: '25px',
                       textAlign: 'center',
                       color: '#FFFFFF',
-                      padding: '0 clamp(8px, 16px, 1.11vw)'
+                      padding: '0 clamp(8px, 16px, 1.11vw)',
+                      margin: 0,
+                      maxWidth: 'clamp(280px, 600px, 41.67vw)',
+                      verticalAlign: 'middle'
                     }}
                   >
-                    <p>Ve cuánto compraste, cuánto gastaste y cuánto vendiste este</p>
-                    <p> mes. Todo ordenado y actualizado automáticamente.</p>
+                    <p style={{ margin: '0' }}>Ve cuánto compraste, cuánto gastaste y cuánto vendiste estemes. Todo ordenado y actualizado automáticamente.</p>
                   </div>
                 </div>
 
-                <div className='flex justify-between items-end' style={{ 
-                  marginTop: 'clamp(8px, 70px, 4.86vw)',
-                  gap: 'clamp(8px, 40px, 2.78vw)',
+                <div className='flex justify-center items-center' style={{ 
+                  marginTop: 'clamp(16px, 40px, 2.78vw)',
+                  gap: 'clamp(12px, 30px, 2.08vw)',
                   width: '100%',
                   maxWidth: 'clamp(280px, 1000px, 69.44vw)',
-                  position: 'relative'
+                  position: 'relative',
+                  flexWrap: 'wrap'
                 }}>
                   <div className="parallax-image" style={{ 
-                    width: 'clamp(90px, 273px, 18.96vw)',
+                    width: 'clamp(90px, 250px, 17.36vw)',
+                    height: 'clamp(90px, 250px, 17.36vw)',
                     flexShrink: 0,
-                    position: 'relative',
-                    marginBottom: 'clamp(-20px, -50px, -3.47vw)'
+                    position: 'relative'
                   }}>
                     <Image
                       src="/images/image772.svg"
                       alt="Reports and analysis"
                       width={273}
-                      height={0}
-                      style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                      height={300}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                     />
                   </div>
                   <div className="parallax-image" style={{ 
-                    width: 'clamp(180px, 600px, 41.67vw)',
+                    width: 'clamp(90px, 250px, 17.36vw)',
+                    height: 'clamp(90px, 250px, 17.36vw)',
                     flexShrink: 0,
-                    marginBottom: '0'
+                    position: 'relative'
                   }}>
                     <Image
                       src="/images/image 7733.svg"
                       alt="Reports and analysis"
                       width={600}
                       height={700}
-                      style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                     />
                   </div>
                 </div>

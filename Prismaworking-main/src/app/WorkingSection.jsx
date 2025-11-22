@@ -80,17 +80,17 @@ export default function WorkingSection() {
                 boxShadow: "0 8px 24px rgba(0, 0, 0, 0.08)",
                 transition: { duration: 0.3, ease: "easeOut" }
               }}
-              className="bg-secondary-background border border-border-primary relative cursor-pointer w-full sm:w-[90%] md:w-[600px] lg:w-[710px] min-h-[480px] sm:min-h-[500px] md:min-h-[420px] lg:min-h-0 lg:h-[367px]"
+              className="bg-secondary-background border border-border-primary relative cursor-pointer w-full sm:w-[90%] md:w-[600px] lg:w-[800px] min-h-[480px] sm:min-h-[500px] md:min-h-[420px] lg:min-h-0 lg:h-[367px]"
               style={{
                 borderRadius: '20px',
                 borderWidth: '1px',
                 opacity: 1,
                 transform: 'rotate(0deg)',
-                overflow: 'visible'
+                overflow: 'hidden'
               }}
             >
 
-              <h3 className="font-medium text-left text-[#1a3866] absolute top-5 left-5 sm:top-6 sm:left-6 md:top-6 md:left-8 lg:top-[25px] lg:left-[51px] text-lg sm:text-xl md:text-2xl lg:text-[30px] leading-snug lg:leading-[40px] w-[calc(100%-40px)] sm:w-[calc(100%-48px)] md:w-[calc(100%-64px)] lg:w-[580px] z-10"
+              <h3 className="font-medium text-left text-[#1a3866] absolute top-5 left-5 sm:top-6 sm:left-6 md:top-6 md:left-8 lg:top-[25px] lg:left-[30px] text-lg sm:text-xl md:text-2xl lg:text-[30px] leading-snug lg:leading-[40px] w-[calc(100%-40px)] sm:w-[calc(100%-48px)] md:w-[calc(100%-64px)] lg:w-auto z-10"
                 style={{ 
                   fontFamily: 'Roboto', 
                   fontWeight: 500,
@@ -102,7 +102,7 @@ export default function WorkingSection() {
                 Tus números, al instante
               </h3>
               
-              <p className="font-normal text-left text-text-muted absolute top-16 left-5 right-5 sm:top-20 sm:left-6 sm:right-6 md:top-20 md:left-8 md:right-8 lg:top-[70px] lg:left-[51px] lg:pr-[15px] text-sm sm:text-base md:text-base lg:text-[16.5px] leading-relaxed lg:leading-[24px] z-10 pb-56 sm:pb-56 md:pb-48 lg:pb-0 w-[calc(100%-40px)] sm:w-[calc(100%-48px)] md:w-[calc(100%-64px)] lg:w-[580px]"
+              <p className="font-normal text-left text-text-muted absolute top-16 left-5 right-5 sm:top-20 sm:left-6 sm:right-6 md:top-20 md:left-8 md:right-8 lg:top-[70px] lg:left-[30px] lg:right-auto text-sm sm:text-base md:text-base lg:text-[16.5px] leading-relaxed lg:leading-[24px] z-10 pb-56 sm:pb-56 md:pb-48 lg:pb-0 w-[calc(100%-40px)] sm:w-[calc(100%-48px)] md:w-[calc(100%-64px)] lg:w-[450px]"
                 style={{ 
                   fontFamily: 'Roboto',
                   fontWeight: 400,
@@ -122,7 +122,7 @@ export default function WorkingSection() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isLeftInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                 transition={{ duration: 0.6, delay: 0.25, ease: "easeOut" }}
-                className="absolute bottom-0 left-5 sm:left-6 md:left-8 lg:left-[42px] w-[calc(100%-40px)] sm:w-[calc(100%-48px)] md:w-[400px] lg:w-[437px] h-auto lg:h-[191px] z-1"
+                className="absolute bottom-0 left-5 sm:left-6 md:left-8 lg:left-[30px] w-[calc(100%-40px)] sm:w-[calc(100%-48px)] md:w-[400px] lg:w-[280px] h-auto lg:h-auto z-1"
                 style={{
                   overflow: 'hidden',
                   opacity: 1,
@@ -134,11 +134,11 @@ export default function WorkingSection() {
                   alt="Business analytics dashboard"
                   width={437}
                   height={191}
-                  className="w-full h-auto lg:w-[437px] lg:h-[191px]"
+                  className="w-full h-auto lg:w-[280px] lg:h-auto"
                   style={{
                     opacity: 1,
-                    objectFit: 'cover',
-                    objectPosition: 'top left',
+                    objectFit: 'contain',
+                    objectPosition: 'bottom right',
                     transform: 'rotate(0deg)',
                     display: 'block',
                     boxShadow: 'none',
@@ -182,7 +182,6 @@ export default function WorkingSection() {
                 }}>
                 Lo que antes lo hacía una persona, Prisma lo hace solo. No pagas salarios, no das instrucciones, no corriges errores.
               </p>
-              </div>
 
               <p className="absolute bottom-24 left-5 sm:bottom-28 sm:left-6 md:bottom-24 md:left-8 lg:bottom-[75px] lg:left-[29px] text-sm sm:text-base lg:text-[16px]" style={{ 
                   fontFamily: 'Roboto',
@@ -227,14 +226,14 @@ export default function WorkingSection() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={isRightInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
                 transition={{ duration: 0.6, delay: 0.35, ease: "easeOut" }}
-                className="absolute bottom-0 right-5 sm:right-8 md:right-12 lg:right-[60px] w-36 sm:w-[172px] md:w-[202px] lg:w-[230px] h-auto lg:h-[322px] z-1"
+                className="absolute bottom-0 right-5 sm:right-8 md:right-12 lg:right-[20px] w-36 sm:w-[172px] md:w-[202px] lg:w-[200px] h-auto lg:h-[280px] z-1"
               >
                 <Image
                   src="/images/image772.svg"
                   alt="Mobile phone interface"
                   width={180}
                   height={252}
-                  className="rounded-lg w-full h-auto lg:w-[230px] lg:h-[322px]"
+                  className="rounded-lg w-full h-auto lg:w-[200px] lg:h-[280px]"
                   style={{
                     objectFit: 'contain'
                   }}

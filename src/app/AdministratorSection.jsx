@@ -158,10 +158,10 @@ export default function AdministratorSection() {
                       onClick={handleGetStarted}
                     />
                   </motion.div>
-                  <motion.div
+                  <motion.div 
                     className="flex items-center justify-center gap-1.5 sm:gap-2 md:gap-4 lg:gap-[10px] cursor-pointer transition-all duration-300 px-4 py-2"
                     style={{
-                      border: '3px solid white',
+                      border: 'none',
                       borderRadius: '50px',
                       boxShadow: '0 4px 12px rgba(255,255,255,0.3)',
                       width: '151px',
@@ -242,10 +242,14 @@ export default function AdministratorSection() {
                       key={notification.id}
                       className={`rounded-base p-1.5 sm:p-3 md:p-4 lg:p-[10px] cursor-pointer w-full lg:w-[85%] ${index % 2 === 0 ? 'lg:ml-auto' : 'lg:mr-auto'
                         }`}
-                      initial={{ opacity: 0, x: -50 }}
+                      initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: false, amount: 0.1 }}
-                      transition={{ duration: 0.6, ease: "easeOut" }}
+                      viewport={{ once: true, amount: 0.1 }}
+                      transition={{ 
+                        duration: 0.6, 
+                        ease: "easeOut",
+                        delay: 0.3 + (index * 0.3)
+                      }}
                       style={{
                         background: '#FFFFFFB2',
                         minHeight: '45px',
