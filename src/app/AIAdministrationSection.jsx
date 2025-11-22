@@ -147,7 +147,7 @@ export default function AIAdministrationSection() {
     <section ref={sectionRef} className="w-full bg-secondary-background overflow-hidden">
       <div className="w-full mx-auto px-2 sm:px-6 lg:px-8">
         {/* -------------------- HEADER -------------------- */}
-        <div ref={headerRef} className="flex flex-col justify-start items-center w-full pt-2 sm:pt-4 lg:pt-16 pb-0 lg:pb-8"
+        <div ref={headerRef} className="flex flex-col justify-start items-center w-full pt-2 sm:pt-4 lg:pt-16 pb-0 lg:pb-16"
           style={{
             gap: 'clamp(8px, 64px, 4.44vw)'
           }}
@@ -212,29 +212,30 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-start lg:justify-between px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,497px,34.5vw)]"
+                className="w-full flex flex-col items-center justify-start lg:justify-between px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,550px,38.19vw)]"
                 style={{
                   background: '#90A1FA',
                   minHeight: '460px',
                   width: '100%',
                   overflow: 'hidden',
                   gap: 'clamp(16px, 32px, 2.22vw)',
-                  paddingTop: 'clamp(16px, 32px, 2.22vw)'
+                  paddingTop: 'clamp(16px, 32px, 2.22vw)',
+                  paddingBottom: 'clamp(16px, 32px, 2.22vw)'
                 }}
               >
-                <div className="flex flex-col items-center gap-2 lg:gap-[clamp(8px,32px,2.22vw)]" style={{ paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
+                <div className="flex flex-col items-center gap-2 lg:gap-[clamp(2px,10px,0.69vw)]" style={{ paddingTop: 'clamp(4px, 10px, 0.69vw)' }}>
                   <div
                     className="bg-[#ABFC00] text-[#90A1FA] font-extrabold rounded-full flex items-center justify-center lg:hidden"
                     style={{
                       fontSize: '20px',
                       width: '30px',
                       height: '30px',
-                      marginBottom: '17px'
+                      marginBottom: '8px'
                     }}
                   >
                     1
                   </div>
-                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', marginBottom: '17px' }}>
+                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', marginBottom: 'clamp(4px, 8px, 0.56vw)' }}>
                     <div
                       className="bg-[#ABFC00] text-[#90A1FA] font-extrabold rounded-full items-center justify-center hidden lg:flex"
                       style={{
@@ -246,11 +247,10 @@ export default function AIAdministrationSection() {
                       1
                     </div>
                     <h3
-                      className="text-[23px] lg:text-[clamp(16px,30px,2.08vw)]"
+                      className="text-[23px] lg:text-[clamp(16px,30px,2.08vw)] leading-[28px] lg:leading-[clamp(20px,40px,2.78vw)]"
                       style={{
                         fontFamily: 'Roboto',
                         fontWeight: 700,
-                        lineHeight: '42px',
                         color: '#ADFF00',
                         whiteSpace: 'nowrap',
                         margin: 0
@@ -261,17 +261,16 @@ export default function AIAdministrationSection() {
                   </div>
 
                   <p
-                    className="text-[22px] lg:text-[clamp(12px,23px,1.6vw)] leading-[23px] lg:leading-[clamp(16px,30px,2.08vw)] pb-2 lg:pb-0"
+                    className="text-[22px] lg:text-[clamp(12px,18px,1.25vw)] leading-[23px] lg:leading-[clamp(16px,24px,1.67vw)] pb-2 lg:pb-0 max-w-[320px] lg:max-w-[clamp(280px,380px,26.39vw)]"
                     style={{
                       width: '100%',
-                      maxWidth: '320px',
                       fontFamily: 'Roboto',
                       fontWeight: 300,
                       textAlign: 'center',
                       color: '#FFFFFF'
                     }}
                   >
-                    Cada vez que emites o recibes una factura, Prisma la descarga <br className="lg:hidden" /> y la{' '}
+                    Cada vez que emites o recibes una factura, Prisma la <br className="lg:hidden" />descarga y la{' '}
                     <span style={{ fontWeight: 700, fontStyle: 'italic', color: '#ADFF00', fontSize: '21px' }}>
                       registra automáticamente.
                     </span>
@@ -288,13 +287,13 @@ export default function AIAdministrationSection() {
                   />
                 </div>
 
-                <div className="parallax-image hidden lg:block" style={{ width: 'clamp(280px, 833px, 57.85vw)', height: 'auto' }}>
+                <div className="parallax-image hidden lg:block" style={{ width: 'clamp(280px, 833px, 57.85vw)', height: 'auto', maxWidth: '90%' }}>
                   <Image
                     src="/images/image756.svg"
                     alt="Automatic reports generation"
                     width={833}
                     height={700}
-                    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                    style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                   />
                 </div>
               </div>
@@ -314,7 +313,7 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-start lg:justify-center px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,528px,36.67vw)]"
+                className="w-full flex flex-col items-center justify-start lg:justify-center px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,590px,40.97vw)]"
                 style={{
                   background: '#E1EBFF',
                   minHeight: '460px',
@@ -409,7 +408,7 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-between px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,559px,38.82vw)]"
+                className="w-full flex flex-col items-center justify-between px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,630px,43.75vw)]"
                 style={{
                   background: '#1A73E8',
                   minHeight: '460px',
@@ -449,43 +448,46 @@ export default function AIAdministrationSection() {
                       style={{
                         fontFamily: 'Roboto',
                         color: '#FFFFFF',
-                        whiteSpace: 'nowrap',
-                        margin: 0
+                        whiteSpace: 'normal',
+                        margin: 0,
+                        textAlign: 'center'
                       }}
                     >
-                      Tus reportes hechos en automático
+                      Tus reportes hechos en<br />
+                      automático
                     </h3>
                   </div>
 
-                  <div
+                  <p
+                    className="text-[22px] lg:text-[clamp(12px,18px,1.25vw)] leading-[23px] lg:leading-[clamp(16px,24px,1.67vw)] pb-2 lg:pb-0 max-w-[334px] lg:max-w-[clamp(280px,550px,38.19vw)]"
                     style={{
+                      width: '100%',
                       fontFamily: 'Roboto',
-                      fontWeight: 400,
-                      fontSize: '20px',
-                      lineHeight: '25px',
+                      fontWeight: 300,
                       textAlign: 'center',
                       color: '#FFFFFF',
-                      padding: '0 clamp(8px, 16px, 1.11vw)',
-                      margin: 0,
-                      maxWidth: 'clamp(280px, 600px, 41.67vw)',
-                      verticalAlign: 'middle'
+                      margin: 0
                     }}
                   >
-                    <p style={{ margin: '0' }}>Ve cuánto compraste, cuánto gastaste y cuánto vendiste este</p>
-                    <p style={{ margin: '0' }}>mes. Todo ordenado y actualizado automáticamente.</p>
-                  </div>
+                    Ve cuánto compraste, cuánto gastaste y cuánto vendiste este<br className="lg:hidden" />
+                    mes. Todo ordenado y{' '}
+                    <span style={{ fontWeight: 700, fontStyle: 'italic' }}>
+                      actualizado automáticamente.
+                    </span>
+                  </p>
                 </div>
 
-                <div className='flex justify-center items-center flex-wrap' style={{ 
+                <div className='flex justify-center items-center' style={{ 
                   marginTop: 'clamp(16px, 40px, 2.78vw)',
-                  gap: 'clamp(12px, 30px, 2.08vw)',
+                  gap: 'clamp(8px, 30px, 2.08vw)',
                   width: '100%',
                   maxWidth: 'clamp(280px, 1000px, 69.44vw)',
-                  position: 'relative'
+                  position: 'relative',
+                  flexWrap: 'nowrap'
                 }}>
                   <div className="parallax-image" style={{ 
-                    width: 'clamp(90px, 250px, 17.36vw)',
-                    height: 'clamp(90px, 250px, 17.36vw)',
+                    width: 'clamp(130px, 250px, 17.36vw)',
+                    height: 'clamp(130px, 250px, 17.36vw)',
                     flexShrink: 0,
                     position: 'relative'
                   }}>
@@ -498,8 +500,8 @@ export default function AIAdministrationSection() {
                     />
                   </div>
                   <div className="parallax-image" style={{ 
-                    width: 'clamp(90px, 250px, 17.36vw)',
-                    height: 'clamp(90px, 250px, 17.36vw)',
+                    width: 'clamp(130px, 250px, 17.36vw)',
+                    height: 'clamp(130px, 250px, 17.36vw)',
                     flexShrink: 0,
                     position: 'relative'
                   }}>
