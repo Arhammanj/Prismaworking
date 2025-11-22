@@ -95,7 +95,7 @@ export default function AdministratorSection() {
           }}>
 
           {/* Smart Notifications Section */}
-          <div className="w-full rounded-3xl p-3 sm:p-6 md:p-8 lg:p-[32px] mx-auto min-h-[420px] sm:min-h-[450px] md:min-h-[400px] lg:h-[367px] pb-4 sm:pb-6 lg:pb-[32px]"
+          <div className="w-full rounded-3xl p-3 sm:p-6 md:p-8 lg:p-[32px] mx-auto min-h-[570px] sm:min-h-[450px] md:min-h-[400px] lg:h-[367px] pb-4 sm:pb-6 lg:pb-[32px]"
             style={{
               borderRadius: '20px',
               opacity: 1,
@@ -105,22 +105,22 @@ export default function AdministratorSection() {
 
               {/* Left Content - Full Screen Mobile Promo */}
               <div className="w-full lg:w-[46%] shrink-0 flex flex-col justify-start items-start lg:items-start lg:max-w-none px-2 lg:px-0 pt-4 sm:pt-6 lg:pt-0 lg:mt-[4px]">
-                <div className="flex items-center justify-start lg:justify-start gap-1.5 sm:gap-3 md:gap-4 lg:gap-[8px] mb-2 sm:mb-3 md:mb-4 lg:mb-[22px]">
+                <div className="flex items-center justify-start lg:justify-start gap-1.5 sm:gap-3 md:gap-4 lg:gap-[8px] mb-[18px] sm:mb-3 md:mb-4 lg:mb-[22px]">
                   <img
                     src="/images/message.svg"
                     alt="AI notification icon"
-                    className="w-[12px] h-[11px] sm:w-[14px] sm:h-[13px] md:w-[17px] md:h-[15px] lg:w-[20px] lg:h-[18px]"
+                    className="w-[14px] h-[13px] sm:w-[14px] sm:h-[13px] md:w-[17px] md:h-[15px] lg:w-[20px] lg:h-[18px]"
                   />
-                  <h3 className="text-[12px] sm:text-[12px] md:text-[15px] lg:text-[18px] font-extrabold leading-tight sm:leading-[15px] md:leading-[18px] lg:leading-[22px] text-[#047043]"
+                  <h3 className="text-[15px] sm:text-[12px] md:text-[15px] lg:text-[18px] font-extrabold leading-[18px] sm:leading-[15px] md:leading-[18px] lg:leading-[22px] text-[#047043]"
                     style={{ fontFamily: 'Roboto' }}>
                     Prisma te habla
                   </h3>
                 </div>
-                <h4 className="text-[13px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-medium leading-[18px] sm:leading-[27px] md:leading-[33px] lg:leading-[40px] text-[#033c24] mb-2 sm:mb-3 w-full lg:w-[84%] text-left"
+                <h4 className="text-[21px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-medium leading-[32px] sm:leading-[27px] md:leading-[33px] lg:leading-[40px] text-[#033c24] mb-2 sm:mb-3 w-full lg:w-[84%] text-left"
                   style={{ fontFamily: 'Roboto' }}>
                   Tener tus números en tiempo real es un superpoder
                 </h4>
-                <p className="text-[10px] sm:text-base lg:text-[16px] font-normal leading-[13px] sm:leading-5 lg:leading-[20px] mb-3 sm:mb-4 lg:mb-6 w-full lg:w-[415px] text-left"
+                <p className="text-[13px] sm:text-base lg:text-[16px] font-normal leading-[18px] sm:leading-5 lg:leading-[20px] mb-3 sm:mb-4 lg:mb-6 w-full lg:w-[415px] text-left pt-[19px] sm:pt-0 pb-[12px] sm:pb-0"
                   style={{
                     fontFamily: 'Roboto',
                     opacity: 1,
@@ -129,14 +129,14 @@ export default function AdministratorSection() {
                   }}>
                   Prisma no solo muestra tus resultados: te avisa cuando algo cambia. Sabrás si tus ventas suben, si gastas más o si hay algo que revisar.
                 </p>
-                <div className="flex flex-col w-full sm:flex-row justify-start lg:justify-start items-start sm:items-center gap-2.5 sm:gap-4 md:gap-6 lg:gap-[36px]">
+                <div className="hidden lg:flex flex-col w-full sm:flex-row justify-start lg:justify-start items-start sm:items-center gap-2.5 sm:gap-4 md:gap-6 lg:gap-[36px]">
                   <motion.div
                     className="w-full sm:w-auto"
-                    whileHover={{ 
+                    whileHover={{
                       scale: 1.08,
                       transition: { duration: 0.2, ease: "easeOut" }
                     }}
-                    whileTap={{ 
+                    whileTap={{
                       scale: 0.95,
                       transition: { duration: 0.1 }
                     }}
@@ -158,7 +158,7 @@ export default function AdministratorSection() {
                       onClick={handleGetStarted}
                     />
                   </motion.div>
-                  <motion.div 
+                  <motion.div
                     className="flex items-center justify-center gap-1.5 sm:gap-2 md:gap-4 lg:gap-[10px] cursor-pointer transition-all duration-300 px-4 py-2"
                     style={{
                       border: '3px solid white',
@@ -167,13 +167,13 @@ export default function AdministratorSection() {
                       width: '151px',
                       height: '34px'
                     }}
-                    whileHover={{ 
+                    whileHover={{
                       scale: 1.08,
                       boxShadow: '0 6px 20px rgba(255,255,255,0.5)',
                       backgroundColor: 'rgba(255,255,255,0.15)',
                       transition: { duration: 0.2, ease: "easeOut" }
                     }}
-                    whileTap={{ 
+                    whileTap={{
                       scale: 0.95,
                       boxShadow: '0 2px 8px rgba(255,255,255,0.3)',
                       transition: { duration: 0.1 }
@@ -198,8 +198,8 @@ export default function AdministratorSection() {
               <div className="flex w-full lg:w-[574px] flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-3 px-0 lg:px-2 overflow-x-visible">
 
                 {/* First Notification - Left aligned */}
-                <motion.div 
-                  className="rounded-base p-1.5 sm:p-3 md:p-4 lg:p-[10px] cursor-pointer mr-auto w-[85%]"
+                <motion.div
+                  className="rounded-base p-1.5 sm:p-3 md:p-4 lg:p-[10px] cursor-pointer w-full lg:w-[85%] lg:mr-auto"
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: false, amount: 0.1 }}
@@ -214,36 +214,35 @@ export default function AdministratorSection() {
                     <div className="flex items-start gap-1 sm:gap-2 md:gap-3 lg:gap-[6px]">
                       <div className="w-[5px] h-[5px] sm:w-[6px] sm:h-[6px] md:w-[6px] md:h-[6px] lg:w-[6px] lg:h-[6px] rounded-full mt-0.5 sm:mt-1 md:mt-1.5 lg:mt-[4px]"
                         style={{ background: '#FF0000' }}></div>
-                      <h5 className="text-[5px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-bold leading-[6px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted"
-                        style={{ fontFamily: 'Inter' }}>
+                      <h5 className="text-[10px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-bold leading-[12px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted"
+                        style={{ fontFamily: 'Inter', fontWeight: 700 }}>
                         Gasto inusualmente alto
                       </h5>
-                      <span className="text-[6px] font-bold leading-[20px] text-center bg-[#0080ff] rounded-[5px] px-0.5 sm:px-1.5 md:px-2 lg:px-[4px]"
-                        style={{ fontFamily: 'Inter', width: '28px', height: '9px', opacity: 1, letterSpacing: '0%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', paddingBottom: '1px' }}>
+                      <span className="text-[7px] font-bold leading-[20px] text-center bg-[#0080ff] rounded-[5px] px-0.5 sm:px-1.5 md:px-2 lg:px-[4px] ml-1 sm:ml-0"
+                        style={{ fontFamily: 'Inter', width: '31px', height: '10px', opacity: 1, fontWeight: 600, letterSpacing: '0%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF' }}>
                         Nuevo
                       </span>
                     </div>
                     <img
                       src="/images/search.svg"
                       alt="Search icon"
-                      className="w-[6px] h-[6px] sm:w-[10px] sm:h-[10px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px] self-end"
+                      className="w-[18px] h-[18px] sm:w-[14px] sm:h-[14px] md:w-[14px] md:h-[14px] lg:w-[14px] lg:h-[14px] self-end pt-1 sm:pt-0"
                     />
                   </div>
-                  <p className="text-[5px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-normal leading-[6px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted -mt-0.5 sm:-mt-1 md:-mt-1.5 lg:-mt-[2px]"
+                  <p className="text-[9px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-normal leading-[11px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted -mt-0.5 sm:-mt-1 md:-mt-1.5 lg:-mt-[2px]"
                     style={{ fontFamily: 'Inter' }}>
                     Erus  | $18,000.00 |  Walmart sa de cv |  14/03/2025  |  G00003
                   </p>
                 </motion.div>
 
-                {/* Notifications List - Zigzag pattern on all devices */}
+                {/* Notifications List - Vertical on mobile, Zigzag on desktop */}
                 <div className="flex flex-col gap-2 sm:gap-6 md:gap-7 lg:gap-[26px]">
                   {notifications.slice(1).map((notification, index) => (
-                    <motion.div 
-                      key={notification.id} 
-                      className={`rounded-base p-1.5 sm:p-3 md:p-4 lg:p-[10px] cursor-pointer w-[85%] ${
-                        index % 2 === 0 ? 'ml-auto' : 'mr-auto'
-                      }`}
-                      initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
+                    <motion.div
+                      key={notification.id}
+                      className={`rounded-base p-1.5 sm:p-3 md:p-4 lg:p-[10px] cursor-pointer w-full lg:w-[85%] ${index % 2 === 0 ? 'lg:ml-auto' : 'lg:mr-auto'
+                        }`}
+                      initial={{ opacity: 0, x: -50 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: false, amount: 0.1 }}
                       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -257,13 +256,13 @@ export default function AdministratorSection() {
                         <div className="flex items-start gap-1 sm:gap-2 md:gap-3 lg:gap-[6px]">
                           <div className={`w-[5px] h-[5px] sm:w-[6px] sm:h-[6px] md:w-[6px] md:h-[6px] lg:w-[6px] lg:h-[6px] rounded-full mt-0.5 sm:mt-1 md:mt-1.5 lg:mt-[4px]`}
                             style={{ backgroundColor: notification.color }}></div>
-                          <h5 className="text-[5px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-bold leading-[6px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted"
-                            style={{ fontFamily: 'Inter' }}>
+                          <h5 className="text-[10px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-bold leading-[12px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted"
+                            style={{ fontFamily: 'Inter', fontWeight: 700 }}>
                             {notification.title}
                           </h5>
                           {notification.isNew && (
-                            <span className="text-[6px] font-bold leading-[20px] text-center bg-[#0080ff] rounded-[5px] px-0.5 sm:px-1.5 md:px-2 lg:px-[4px]"
-                              style={{ fontFamily: 'Inter', width: '28px', height: '9px', opacity: 1, letterSpacing: '0%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', paddingBottom: '2px' }}>
+                            <span className="text-[7px] leading-[20px] text-center bg-[#0080ff] rounded-[5px] px-0.5 sm:px-1.5 md:px-2 lg:px-[4px] ml-1 sm:ml-0"
+                              style={{ fontFamily: 'Inter', width: '31px', height: '10px', fontWeight: 600, opacity: 1, letterSpacing: '0%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF' }}>
                               Nuevo
                             </span>
                           )}
@@ -271,11 +270,11 @@ export default function AdministratorSection() {
                         <img
                           src="/images/search.svg"
                           alt="Search icon"
-                          className="w-[6px] h-[6px] sm:w-[10px] sm:h-[10px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px]"
+                          className="w-[18px] h-[18px] sm:w-[14px] sm:h-[14px] md:w-[14px] md:h-[14px] lg:w-[14px] lg:h-[14px] pt-1 sm:pt-0"
                         />
                       </div>
                       <div className="flex justify-between items-start w-full -mt-0.5 sm:-mt-1 md:-mt-1.5 lg:-mt-[4px]">
-                        <p className="text-[5px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-normal leading-[6px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted self-end mt-2 lg:mt-[8px]"
+                        <p className="text-[9px] sm:text-[8px] md:text-[10px] lg:text-[12px] font-normal leading-[11px] sm:leading-[10px] md:leading-[12px] lg:leading-[15px] text-left text-text-muted lg:mt-[8px]"
                           style={{ fontFamily: 'Inter' }}>
                           {notification.description}
                         </p>
@@ -283,6 +282,68 @@ export default function AdministratorSection() {
                     </motion.div>
                   ))}
                 </div>
+              </div>
+
+              {/* Mobile Buttons - Bottom of Tab */}
+              <div className="flex lg:hidden flex-row w-full justify-center items-center gap-2.5 mt-auto pt-12 lg:pt-0">
+                <motion.div
+                  className="w-[48%]"
+                  whileHover={{
+                    scale: 1.08,
+                    transition: { duration: 0.2, ease: "easeOut" }
+                  }}
+                  whileTap={{
+                    scale: 0.95,
+                    transition: { duration: 0.1 }
+                  }}
+                >
+                  <Button
+                    text="Comenzar"
+                    text_font_size="text-xs"
+                    text_font_weight="font-medium"
+                    fill_background_color="bg-[#1daa61]"
+                    border_border_radius="rounded-[50px]"
+                    padding=""
+                    className="cursor-pointer transition-all duration-300 hover:brightness-110 active:brightness-95 shadow-[0_4px_12px_rgba(29,170,97,0.25)] hover:shadow-[0_6px_20px_rgba(29,170,97,0.35)] active:shadow-[0_2px_8px_rgba(29,170,97,0.3)] w-full"
+                    style={{
+                      height: '28px',
+                      borderRadius: '50px',
+                      opacity: 1
+                    }}
+                    onClick={handleGetStarted}
+                  />
+                </motion.div>
+                <motion.div
+                  className="flex items-center justify-center gap-1.5 cursor-pointer transition-all duration-300 px-4 py-2 w-[48%]"
+                  style={{
+                    borderRadius: '50px',
+                    boxShadow: '0 4px 12px rgba(255,255,255,0.3)',
+                    height: '28px'
+                  }}
+                  whileHover={{
+                    scale: 1.08,
+                    boxShadow: '0 6px 20px rgba(255,255,255,0.5)',
+                    backgroundColor: 'rgba(255,255,255,0.15)',
+                    transition: { duration: 0.2, ease: "easeOut" }
+                  }}
+                  whileTap={{
+                    scale: 0.95,
+                    boxShadow: '0 2px 8px rgba(255,255,255,0.3)',
+                    transition: { duration: 0.1 }
+                  }}
+                  onClick={handleScheduleDemo}
+                >
+                  <img
+                    src="/images/phone.svg"
+                    alt="Calendar icon"
+                    className="w-[8px] h-[8px]"
+                  />
+                  <span className="text-xs font-medium leading-tight text-center text-[#1daa61] whitespace-nowrap"
+                    style={{ fontFamily: 'Roboto' }}
+                  >
+                    Agendar demo
+                  </span>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -360,10 +421,10 @@ export default function AdministratorSection() {
                 {/* Tax Data Cards - NOW VISIBLE ON MOBILE - Aligned parallel to text on desktop */}
                 <div className="flex lg:flex flex-col gap-1 sm:gap-2 md:gap-2.5 lg:gap-[14px] self-end lg:self-start w-full lg:w-[34%] mt-2 sm:mt-3 md:mt-4 lg:mt-0">
                   {taxData.map((tax, index) => (
-                    <motion.div 
-                      key={index} 
+                    <motion.div
+                      key={index}
                       className="bg-secondary-background border border-border-primary rounded-md sm:rounded-lg md:rounded-xl lg:rounded-base p-1 sm:p-1.5 md:p-2 lg:p-[6px] cursor-pointer"
-                      whileHover={{ 
+                      whileHover={{
                         y: -4,
                         boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
                         transition: { duration: 0.2, ease: "easeOut" }
