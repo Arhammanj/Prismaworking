@@ -315,11 +315,9 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-start lg:justify-center px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,528px,36.67vw)]"
+                className="w-full flex flex-col items-center justify-start lg:justify-center px-4 sm:px-6 rounded-[20px] h-[480px] lg:h-[528px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none"
                 style={{
                   background: '#E1EBFF',
-                  minHeight: '460px',
-                  height: '480px',
                   width: '100%',
                   overflow: 'hidden',
                   gap: 'clamp(16px, 32px, 2.22vw)',
@@ -429,11 +427,9 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-start lg:justify-between px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,559px,38.82vw)]"
+                className="w-full flex flex-col items-center justify-start lg:justify-between px-4 sm:px-6 rounded-[20px] h-[480px] lg:h-[559px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none"
                 style={{
                   background: '#1A73E8',
-                  minHeight: '460px',
-                  height: '480px',
                   width: '100%',
                   overflow: 'hidden',
                   gap: 'clamp(16px, 32px, 2.22vw)',
