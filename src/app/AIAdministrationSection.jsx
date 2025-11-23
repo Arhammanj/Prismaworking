@@ -320,9 +320,8 @@ export default function AIAdministrationSection() {
                   minHeight: '460px',
                   width: '100%',
                   overflow: 'hidden',
-                  gap: 'clamp(12px, 24px, 1.67vw)',
-                  paddingTop: 'clamp(16px, 32px, 2.22vw)',
-                  paddingBottom: 'clamp(16px, 32px, 2.22vw)'
+                  gap: 'clamp(16px, 32px, 2.22vw)',
+                  paddingTop: 'clamp(16px, 32px, 2.22vw)'
                 }}
               >
                 <div className="flex flex-col items-center gap-2 lg:gap-[clamp(8px,32px,2.22vw)]" style={{ paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
@@ -332,12 +331,12 @@ export default function AIAdministrationSection() {
                       fontSize: '20px',
                       width: '30px',
                       height: '30px',
-                      marginBottom: '12px'
+                      marginBottom: '17px'
                     }}
                   >
                     2
                   </div>
-                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', marginBottom: '12px' }}>
+                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', marginBottom: '17px' }}>
                     <div
                       className="bg-[#485264] text-[#E1EBFF] font-extrabold rounded-full items-center justify-center hidden lg:flex"
                       style={{
@@ -427,15 +426,14 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-between px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,559px,38.82vw)]"
+                className="w-full flex flex-col items-center justify-start lg:justify-between px-4 sm:px-6 rounded-[20px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none lg:h-[clamp(336px,559px,38.82vw)]"
                 style={{
                   background: '#1A73E8',
                   minHeight: '460px',
                   width: '100%',
-                  overflow: 'visible',
+                  overflow: 'hidden',
                   gap: 'clamp(16px, 32px, 2.22vw)',
-                  paddingTop: 'clamp(16px, 32px, 2.22vw)',
-                  paddingBottom: '0'
+                  paddingTop: 'clamp(16px, 32px, 2.22vw)'
                 }}
               >
                 <div className="flex flex-col items-center gap-2 lg:gap-[clamp(8px,32px,2.22vw)]" style={{ paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
@@ -445,12 +443,12 @@ export default function AIAdministrationSection() {
                       fontSize: '20px',
                       width: '30px',
                       height: '30px',
-                      marginBottom: '12px'
+                      marginBottom: '17px'
                     }}
                   >
                     3
                   </div>
-                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', marginBottom: '12px' }}>
+                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', marginBottom: '17px' }}>
                     <div
                       className="bg-white text-[#1A73E8] font-extrabold rounded-full items-center justify-center hidden lg:flex"
                       style={{

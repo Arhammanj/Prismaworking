@@ -37,8 +37,8 @@ export default function WorkingSection() {
               maxWidth: '1260px',
               minHeight: '71px'
             }}>
-            <h2 className="font-medium text-center text-[#1a3866] whitespace-nowrap text-[15px] sm:text-xl md:text-2xl lg:text-[45px] leading-snug sm:leading-[50px] md:leading-[60px] lg:leading-[70.4px]"
-              style={{ 
+            <h2 className="font-medium text-center text-[#1a3866] whitespace-nowrap text-[13px] sm:text-xl md:text-2xl lg:text-[45px] leading-snug sm:leading-[50px] md:leading-[60px] lg:leading-[70.4px]"
+              style={{
                 fontFamily: 'Roboto',
                 fontWeight: 500,
                 letterSpacing: '0%',
@@ -47,8 +47,8 @@ export default function WorkingSection() {
                 opacity: 1,
                 transform: 'rotate(0deg)'
               }}>
-              Mientras tu <span className="inline-flex items-center align-middle relative px-2 py-0.5 sm:px-3 sm:py-0.5 md:px-6 md:py-1 lg:px-[30px] lg:py-[2px]" style={{ 
-              
+              Mientras tu <span className="inline-flex items-center align-middle relative px-2 py-0.5 sm:px-3 sm:py-0.5 md:px-6 md:py-1 lg:px-[30px] lg:py-[2px]" style={{
+
                 backgroundColor: '#FFF4E6',
                 borderRadius: '50px',
                 position: 'relative',
@@ -75,7 +75,7 @@ export default function WorkingSection() {
               initial={{ opacity: 0, y: 50 }}
               animate={isLeftInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-              whileHover={{ 
+              whileHover={{
                 y: -3,
                 boxShadow: "0 8px 24px rgba(0, 0, 0, 0.08)",
                 transition: { duration: 0.3, ease: "easeOut" }
@@ -91,8 +91,8 @@ export default function WorkingSection() {
             >
 
               <h3 className="font-medium text-left text-[#1a3866] absolute top-5 left-5 sm:top-6 sm:left-6 md:top-6 md:left-8 lg:top-[25px] lg:left-[51px] text-lg sm:text-xl md:text-2xl lg:text-[30px] leading-snug lg:leading-[40px] w-[calc(100%-40px)] sm:w-[calc(100%-48px)] md:w-[calc(100%-64px)] lg:w-[580px] z-10"
-                style={{ 
-                  fontFamily: 'Roboto', 
+                style={{
+                  fontFamily: 'Roboto',
                   fontWeight: 500,
                   letterSpacing: '0%',
                   verticalAlign: 'middle',
@@ -101,9 +101,9 @@ export default function WorkingSection() {
                 }}>
                 Tus números, al instante
               </h3>
-              
+
               <p className="font-normal text-left text-text-muted absolute top-16 left-5 right-5 sm:top-20 sm:left-6 sm:right-6 md:top-20 md:left-8 md:right-8 lg:top-[70px] lg:left-[51px] lg:pr-[15px] text-sm sm:text-base md:text-base lg:text-[16.5px] leading-relaxed lg:leading-[24px] z-10 pb-56 sm:pb-56 md:pb-48 lg:pb-0 w-[calc(100%-40px)] sm:w-[calc(100%-48px)] md:w-[calc(100%-64px)] lg:w-[580px]"
-                style={{ 
+                style={{
                   fontFamily: 'Roboto',
                   fontWeight: 400,
                   letterSpacing: '0%',
@@ -154,7 +154,7 @@ export default function WorkingSection() {
               initial={{ opacity: 0, y: 50 }}
               animate={isRightInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-              whileHover={{ 
+              whileHover={{
                 y: -3,
                 boxShadow: "0 8px 24px rgba(3, 42, 72, 0.12)",
                 transition: { duration: 0.3, ease: "easeOut" }
@@ -168,38 +168,38 @@ export default function WorkingSection() {
               }}
             >
               <h3 className="font-medium text-left text-[#032a48] absolute top-5 left-5 sm:top-6 sm:left-6 md:top-6 md:left-8 lg:top-[29px] lg:left-[29px] text-lg sm:text-xl md:text-2xl lg:text-[30px] leading-snug lg:leading-[40px] w-[calc(100%-140px)] sm:w-[calc(100%-48px)] md:w-[calc(100%-220px)] lg:w-[361px]"
-                style={{ 
+                style={{
                   fontFamily: 'Roboto',
                   fontWeight: 500
                 }}>
                 Sin exceles, desde tu teléfono.
               </h3>
-              
+
               <p className="font-normal text-left text-[#032a48] absolute top-20 left-5 right-5 sm:top-24 sm:left-6 sm:right-6 md:top-24 md:left-8 md:right-8 lg:top-[133px] lg:left-[29px] text-base sm:text-lg md:text-lg lg:text-[18px] leading-relaxed lg:leading-[23px] w-[calc(100%-150px)] sm:w-[calc(100%-60px)] md:w-[calc(100%-240px)] lg:w-[314px]"
-                style={{ 
+                style={{
                   fontFamily: 'Roboto',
                   fontWeight: 400
                 }}>
                 Lo que antes lo hacía una persona, Prisma lo hace solo. No pagas salarios, no das instrucciones, no corriges errores.
               </p>
 
-              <p className="absolute bottom-24 left-5 sm:bottom-28 sm:left-6 md:bottom-24 md:left-8 lg:bottom-[75px] lg:left-[29px] text-sm sm:text-base lg:text-[16px]" style={{ 
-                  fontFamily: 'Roboto',
-                  fontWeight: 400,
-                  lineHeight: '24px',
-                  opacity: 1,
-                  color: '#032a48'
-                }}>
+              <p className="absolute bottom-24 left-5 sm:bottom-28 sm:left-6 md:bottom-24 md:left-8 lg:bottom-[75px] lg:left-[29px] text-sm sm:text-base lg:text-[16px]" style={{
+                fontFamily: 'Roboto',
+                fontWeight: 400,
+                lineHeight: '24px',
+                opacity: 1,
+                color: '#032a48'
+              }}>
                 ✨ Así de fácil.
               </p>
 
-              <motion.div 
+              <motion.div
                 className="absolute bottom-5 left-5 sm:bottom-6 sm:left-6 md:bottom-7 md:left-8 lg:bottom-[28px] lg:left-[29px]"
-                whileHover={{ 
+                whileHover={{
                   scale: 1.08,
                   transition: { duration: 0.2, ease: "easeOut" }
                 }}
-                whileTap={{ 
+                whileTap={{
                   scale: 0.95,
                   transition: { duration: 0.1 }
                 }}
@@ -221,7 +221,7 @@ export default function WorkingSection() {
                   }}
                 />
               </motion.div>
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={isRightInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
