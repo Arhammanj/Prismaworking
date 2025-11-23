@@ -271,7 +271,7 @@ export default function AIAdministrationSection() {
                       letterSpacing: '0%'
                     }}
                   >
-                    Cada vez que emites o recibes una factura,<br className="hidden lg:block" /> Prisma la descarga <br className="lg:hidden" /> y la{' '}
+                    Cada vez que emites o recibes una factura, Prisma la<br className="hidden lg:block" /> descarga <br className="lg:hidden" /> y la{' '}
                     <span style={{ fontWeight: 700, fontStyle: 'italic', color: '#ADFF00', fontSize: '21px' }}>
                       registra automáticamente.
                     </span>
@@ -287,13 +287,13 @@ export default function AIAdministrationSection() {
                     style={{ width: '100%', height: '160px', objectFit: 'cover', objectPosition: 'top', paddingLeft: '24%', paddingRight: '8%' }}
                   />                </div>
 
-                <div className="parallax-image hidden lg:block" style={{ width: 'clamp(280px, 833px, 57.85vw)', height: 'auto' }}>
+                <div className="parallax-image hidden lg:block" style={{ width: '650px', height: '300px' }}>
                   <Image
                     src="/images/image756.svg"
                     alt="Automatic reports generation"
                     width={833}
                     height={700}
-                    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
                   />
                 </div>
               </div>
