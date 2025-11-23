@@ -184,7 +184,7 @@ export default function WorkingSection() {
                 Lo que antes lo hacía una persona, Prisma lo hace solo. No pagas salarios, no das instrucciones, no corriges errores.
               </p>
 
-              <p className="absolute bottom-24 left-5 sm:bottom-28 sm:left-6 md:bottom-24 md:left-8 lg:bottom-[75px] lg:left-[29px] text-sm sm:text-base lg:text-[16px]" style={{
+              <p className="absolute bottom-32 left-5 sm:bottom-36 sm:left-6 md:bottom-32 md:left-8 lg:bottom-[105px] lg:left-[29px] text-sm sm:text-base lg:text-[16px]" style={{
                 fontFamily: 'Roboto',
                 fontWeight: 400,
                 lineHeight: '24px',
