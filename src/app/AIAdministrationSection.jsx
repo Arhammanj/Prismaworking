@@ -415,7 +415,7 @@ export default function AIAdministrationSection() {
                   paddingTop: 'clamp(16px, 32px, 2.22vw)'
                 }}
               >
-                <div className="flex flex-col items-center gap-2 lg:gap-[clamp(8px,32px,2.22vw)]" style={{ paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
+                <div className="flex flex-col items-center gap-2 lg:gap-[clamp(8px,32px,2.22vw)] pt-[12px] lg:pt-2">
                   <div
                     className="bg-white text-[#1A73E8] font-extrabold rounded-full flex items-center justify-center lg:hidden"
                     style={{
@@ -427,7 +427,7 @@ export default function AIAdministrationSection() {
                   >
                     3
                   </div>
-                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', marginBottom: '17px' }}>
+                  <div className="flex items-center justify-center mb-[17px] lg:mb-0" style={{ gap: 'clamp(6px, 10px, 0.69vw)' }}>
                     <div
                       className="bg-white text-[#1A73E8] font-extrabold rounded-full items-center justify-center hidden lg:flex"
                       style={{
@@ -445,25 +445,26 @@ export default function AIAdministrationSection() {
                         color: '#FFFFFF',
                         whiteSpace: 'nowrap',
                         margin: 0,
-                        width: '352px',
                         textAlign: 'center'
                       }}
                     >
-                      Tus reportes hechos en <br /> automático
+                      Tus reportes hechos en <br className="lg:hidden" /> automático
                     </h3>
                   </div>
 
                   <p
-                    className="text-[19px] lg:text-[clamp(11px,23px,1.6vw)] leading-[23px] lg:leading-[clamp(15px,30px,2.08vw)] pb-2 lg:pb-0 font-[300] lg:font-normal max-w-[334px] lg:max-w-none px-0 lg:px-[clamp(8px,16px,1.11vw)]"
+                    className="text-[19px] lg:text-[20px] leading-[23px] lg:leading-[25px] pb-2 lg:pb-0 font-[300] lg:font-[400] max-w-[334px] lg:max-w-none px-0 lg:px-[clamp(8px,16px,1.11vw)]"
                     style={{
                       width: '100%',
                       fontFamily: 'Roboto',
                       textAlign: 'center',
                       color: '#FFFFFF',
-                      margin: 0
+                      margin: 0,
+                      letterSpacing: '0%',
+                      verticalAlign: 'middle'
                     }}
                   >
-                    Ve cuánto compraste, cuánto <br /> gastaste y cuánto vendiste este <br /> mes. Todo ordenado y {' '}
+                    Ve cuánto compraste, cuánto <br className="lg:hidden" /> gastaste y cuánto vendiste este <br /> mes. Todo ordenado y {' '}
                     <span style={{ fontWeight: 500, fontStyle: 'italic', color: '#FFFFFF', fontSize: '19px' }}>
                       actualizado automáticamente.
                     </span>
@@ -493,18 +494,21 @@ export default function AIAdministrationSection() {
                       style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                     />
                   </div>
-                  <div className="parallax-image hidden lg:block" style={{
-                    width: 'clamp(90px, 273px, 18.96vw)',
+                  <div className="hidden lg:block" style={{
+                    width: '273px',
+                    height: '295.5px',
                     flexShrink: 0,
                     position: 'relative',
-                    marginBottom: 'clamp(-20px, -50px, -3.47vw)'
+                    marginBottom: 'clamp(-20px, -50px, -3.47vw)',
+                    transform: 'rotate(0deg)',
+                    opacity: 1
                   }}>
                     <Image
                       src="/images/image772.svg"
                       alt="Reports and analysis"
                       width={273}
-                      height={0}
-                      style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                      height={295.5}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                     />
                   </div>
                   <div className="parallax-image lg:hidden" style={{
@@ -523,16 +527,19 @@ export default function AIAdministrationSection() {
                     />
                   </div>
                   <div className="parallax-image hidden lg:block" style={{
-                    width: 'clamp(180px, 600px, 41.67vw)',
+                    width: '548px',
+                    height: '295px',
                     flexShrink: 0,
-                    marginBottom: '40px'
+                    marginBottom: '40px',
+                    transform: 'rotate(0deg)',
+                    opacity: 1
                   }}>
                     <Image
                       src="/images/image 7733.svg"
                       alt="Reports and analysis"
-                      width={600}
-                      height={700}
-                      style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                      width={548}
+                      height={295}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                     />
                   </div>
                 </div>
