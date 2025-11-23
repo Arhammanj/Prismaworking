@@ -322,7 +322,7 @@ export default function AIAdministrationSection() {
                   paddingTop: 'clamp(16px, 32px, 2.22vw)'
                 }}
               >
-                <div className="flex flex-col items-center gap-2 lg:gap-[clamp(8px,32px,2.22vw)]" style={{ paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
+                <div className="flex flex-col items-center gap-2 lg:gap-[clamp(8px,32px,2.22vw)] pt-[12px] lg:pt-0">
                   <div
                     className="bg-[#485264] text-[#E1EBFF] font-extrabold rounded-full flex items-center justify-center lg:hidden"
                     style={{
@@ -334,7 +334,7 @@ export default function AIAdministrationSection() {
                   >
                     2
                   </div>
-                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', marginBottom: '17px' }}>
+                  <div className="flex items-center justify-center mb-[17px] lg:mb-0" style={{ gap: 'clamp(6px, 10px, 0.69vw)' }}>
                     <div
                       className="bg-[#485264] text-[#E1EBFF] font-extrabold rounded-full items-center justify-center hidden lg:flex"
                       style={{
@@ -370,41 +370,22 @@ export default function AIAdministrationSection() {
                       margin: 0
                     }}
                   >
-                    Pagaste algo sin factura?  Solo <br /> tómale una foto. {' '}Prisma reconoce la información y {' '}
+                    Pagaste algo sin factura?  Solo <br className="lg:hidden" /> tómale una foto.<br className="hidden lg:block" /> {' '}Prisma reconoce la información y {' '}
                     <span style={{ fontWeight: 700, fontStyle: 'italic', color: '#485264', fontSize: '19px' }}>
                       registra el gasto por ti.
                     </span>
                   </p>
                 </div>
 
-                <div className="parallax-image lg:hidden" style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '12px', paddingTop: '16px' }}>
+                <div className="flex justify-center items-center w-full mb-3 pt-4 lg:mb-0 lg:pt-[13px] lg:block lg:w-[376px] lg:h-[376px] lg:-mt-10">
                   <Image
                     src="/images/2ff787b93c4e4adba399f7ac24d7545c84bb22b2 (1).png"
                     alt="Intelligent classification system"
-                    width={320}
-                    height={320}
+                    width={376}
+                    height={376}
+                    className="w-[221px] h-[221px] lg:w-full lg:h-full object-contain mt-[-20px] lg:mt-0"
                     style={{
-                      width: '221px',
-                      height: '221px',
-                      objectFit: 'contain',
                       transform: 'rotate(-0.48deg)',
-                      marginTop: '-20px'
-                    }}
-                  />
-                </div>
-
-                <div className="parallax-image hidden lg:block" style={{ width: 'clamp(160px, 320px, 22.22vw)', height: 'clamp(160px, 320px, 22.22vw)', maxWidth: '90%' }}>
-                  <Image
-                    src="/images/2ff787b93c4e4adba399f7ac24d7545c84bb22b2 (1).png"
-                    alt="Intelligent classification system"
-                    width={320}
-                    height={320}
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'contain',
-                      transform: 'rotate(-0.48deg)',
-                      opacity: 1
                     }}
                   />
                 </div>
