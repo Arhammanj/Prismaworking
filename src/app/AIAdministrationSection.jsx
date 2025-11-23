@@ -223,7 +223,7 @@ export default function AIAdministrationSection() {
                   paddingTop: 'clamp(16px, 32px, 2.22vw)'
                 }}
               >
-                <div className="flex flex-col items-center gap-2 lg:gap-[clamp(8px,32px,2.22vw)]" style={{ paddingTop: 'clamp(12px, 24px, 1.67vw)' }}>
+                <div className="flex flex-col items-center gap-2 lg:gap-[clamp(8px,32px,2.22vw)] pt-[12px] lg:pt-0">
                   <div
                     className="bg-[#ABFC00] text-[#90A1FA] font-extrabold rounded-full flex items-center justify-center lg:hidden"
                     style={{
@@ -235,7 +235,7 @@ export default function AIAdministrationSection() {
                   >
                     1
                   </div>
-                  <div className="flex items-center justify-center" style={{ gap: 'clamp(6px, 10px, 0.69vw)', marginBottom: '17px' }}>
+                  <div className="flex items-center justify-center mb-[17px] lg:mb-0" style={{ gap: 'clamp(6px, 10px, 0.69vw)' }}>
                     <div
                       className="bg-[#ABFC00] text-[#90A1FA] font-extrabold rounded-full items-center justify-center hidden lg:flex"
                       style={{
@@ -262,17 +262,16 @@ export default function AIAdministrationSection() {
                   </div>
 
                   <p
-                    className="text-[22px] lg:text-[clamp(12px,23px,1.6vw)] leading-[23px] lg:leading-[clamp(16px,30px,2.08vw)] pb-2 lg:pb-0"
+                    className="text-[22px] lg:text-[23px] leading-[23px] lg:leading-[23px] pb-2 lg:pb-0 max-w-[320px] lg:max-w-[575px] font-[300] lg:font-normal lg:-mt-2"
                     style={{
                       width: '100%',
-                      maxWidth: '320px',
                       fontFamily: 'Roboto',
-                      fontWeight: 300,
                       textAlign: 'center',
-                      color: '#FFFFFF'
+                      color: '#FFFFFF',
+                      letterSpacing: '0%'
                     }}
                   >
-                    Cada vez que emites o recibes una factura, Prisma la descarga <br className="lg:hidden" /> y la{' '}
+                    Cada vez que emites o recibes una factura,<br className="hidden lg:block" /> Prisma la descarga <br className="lg:hidden" /> y la{' '}
                     <span style={{ fontWeight: 700, fontStyle: 'italic', color: '#ADFF00', fontSize: '21px' }}>
                       registra automáticamente.
                     </span>
@@ -286,8 +285,7 @@ export default function AIAdministrationSection() {
                     width={833}
                     height={700}
                     style={{ width: '100%', height: '160px', objectFit: 'cover', objectPosition: 'top', paddingLeft: '24%', paddingRight: '8%' }}
-                  />
-                </div>
+                  />                </div>
 
                 <div className="parallax-image hidden lg:block" style={{ width: 'clamp(280px, 833px, 57.85vw)', height: 'auto' }}>
                   <Image
