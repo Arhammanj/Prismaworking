@@ -464,14 +464,15 @@ export default function AIAdministrationSection() {
                   <div className="parallax-image" style={{ 
                     width: 'clamp(180px, 600px, 41.67vw)',
                     flexShrink: 0,
-                    marginBottom: '0'
+                    marginBottom: '0',
+                    alignSelf: 'flex-end'
                   }}>
                     <Image
                       src="/images/image 7733.svg"
                       alt="Reports and analysis"
                       width={600}
                       height={700}
-                      style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                      style={{ width: '100%', height: 'auto', objectFit: 'contain', display: 'block' }}
                     />
                   </div>
                 </div>

@@ -102,7 +102,7 @@ export default function WorkingSection() {
                 Tus números, al instante
               </h3>
               
-              <p className="font-normal text-left text-text-muted absolute top-16 left-5 right-5 sm:top-20 sm:left-6 sm:right-6 md:top-20 md:left-8 md:right-8 lg:top-[70px] lg:left-[51px] lg:pr-[15px] text-sm sm:text-base md:text-base lg:text-[16.5px] leading-relaxed lg:leading-[24px] z-10 pb-56 sm:pb-56 md:pb-48 lg:pb-0 w-[calc(100%-40px)] sm:w-[calc(100%-48px)] md:w-[calc(100%-64px)] lg:w-[580px]"
+              <p className="font-normal text-left text-text-muted absolute top-16 left-5 right-5 sm:top-20 sm:left-6 sm:right-6 md:top-20 md:left-8 md:right-8 lg:top-[70px] lg:left-[51px] lg:right-[51px] text-sm sm:text-base md:text-base lg:text-[15px] leading-relaxed lg:leading-[22px] z-10 pb-56 sm:pb-56 md:pb-48 lg:pb-0"
                 style={{ 
                   fontFamily: 'Roboto',
                   fontWeight: 400,
@@ -111,7 +111,8 @@ export default function WorkingSection() {
                   opacity: 1,
                   transform: 'rotate(0deg)',
                   whiteSpace: 'normal',
-                  wordWrap: 'break-word'
+                  wordWrap: 'break-word',
+                  wordBreak: 'break-word'
                 }}>
                 Lo que antes lo hacía una persona, Prisma lo hace solo. No pagas salarios, no das instrucciones, no corriges errores.
                 <br /><br />
@@ -175,14 +176,15 @@ export default function WorkingSection() {
                 Sin exceles, desde tu teléfono.
               </h3>
               
-              <p className="font-normal text-left text-[#032a48] absolute top-20 left-5 right-5 sm:top-24 sm:left-6 sm:right-6 md:top-24 md:left-8 md:right-8 lg:top-[133px] lg:left-[29px] text-base sm:text-lg md:text-lg lg:text-[18px] leading-relaxed lg:leading-[23px] w-[calc(100%-150px)] sm:w-[calc(100%-60px)] md:w-[calc(100%-240px)] lg:w-[314px] pb-56 sm:pb-56 md:pb-48 lg:pb-0"
+              <p className="font-normal text-left text-[#032a48] absolute top-20 left-5 right-5 sm:top-24 sm:left-6 sm:right-6 md:top-24 md:left-8 md:right-8 lg:top-[133px] lg:left-[29px] text-base sm:text-lg md:text-lg lg:text-[16px] leading-relaxed lg:leading-[22px] w-[calc(100%-150px)] sm:w-[calc(100%-60px)] md:w-[calc(100%-240px)] lg:w-[314px] pb-56 sm:pb-56 md:pb-48 lg:pb-0"
                 style={{
                   fontFamily: 'Roboto',
-                  fontWeight: 400
+                  fontWeight: 400,
+                  wordWrap: 'break-word',
+                  wordBreak: 'break-word'
                 }}>
                 Lo que antes lo hacía una persona, Prisma lo hace solo. No pagas salarios, no das instrucciones, no corriges errores.
               </p>
-              </div>
 
               <p className="absolute bottom-24 left-5 sm:bottom-28 sm:left-6 md:bottom-24 md:left-8 lg:bottom-[75px] lg:left-[29px] text-sm sm:text-base lg:text-[16px]" style={{ 
                   fontFamily: 'Roboto',

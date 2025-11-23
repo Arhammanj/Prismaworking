@@ -472,7 +472,7 @@ export default function AIAdministrationSection() {
                 </div>
 
                 <div className='flex justify-between items-end mt-0 lg:mt-[clamp(8px,70px,4.86vw)]' style={{
-                  gap: 'clamp(8px, 40px, 2.78vw)',
+                  gap: 'clamp(8px, 15px, 1.04vw)',
                   width: '100%',
                   maxWidth: 'clamp(280px, 1000px, 69.44vw)',
                   position: 'relative',
@@ -499,16 +499,17 @@ export default function AIAdministrationSection() {
                     height: '295.5px',
                     flexShrink: 0,
                     position: 'relative',
-                    marginBottom: 'clamp(-20px, -50px, -3.47vw)',
+                    marginBottom: '0',
                     transform: 'rotate(0deg)',
-                    opacity: 1
+                    opacity: 1,
+                    alignSelf: 'flex-end'
                   }}>
                     <Image
                       src="/images/image772.svg"
                       alt="Reports and analysis"
                       width={273}
                       height={295.5}
-                      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
                     />
                   </div>
                   <div className="parallax-image lg:hidden" style={{
@@ -528,18 +529,19 @@ export default function AIAdministrationSection() {
                   </div>
                   <div className="parallax-image hidden lg:block" style={{
                     width: '548px',
-                    height: '295px',
+                    height: '295.5px',
                     flexShrink: 0,
-                    marginBottom: '40px',
+                    marginBottom: '0',
                     transform: 'rotate(0deg)',
-                    opacity: 1
+                    opacity: 1,
+                    alignSelf: 'flex-end'
                   }}>
                     <Image
                       src="/images/image 7733.svg"
                       alt="Reports and analysis"
                       width={548}
-                      height={295}
-                      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                      height={295.5}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
                     />
                   </div>
                 </div>

@@ -161,7 +161,6 @@ export default function AdministratorSection() {
                   <motion.div 
                     className="flex items-center justify-center gap-1.5 sm:gap-2 md:gap-4 lg:gap-[10px] cursor-pointer transition-all duration-300 px-4 py-2"
                     style={{
-                      border: '3px solid white',
                       borderRadius: '50px',
                       boxShadow: '0 4px 12px rgba(255,255,255,0.3)',
                       width: '151px',
@@ -202,8 +201,8 @@ export default function AdministratorSection() {
                   className="rounded-base p-1.5 sm:p-3 md:p-4 lg:p-[10px] cursor-pointer mr-auto w-[85%]"
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: false, amount: 0.1 }}
-                  transition={{ duration: 0.6, ease: "easeOut" }}
+                  viewport={{ once: true, amount: 0.1 }}
+                  transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
                   style={{
                     background: '#FFFFFFB2',
                     minHeight: '45px',
@@ -245,8 +244,8 @@ export default function AdministratorSection() {
                       }`}
                       initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: false, amount: 0.1 }}
-                      transition={{ duration: 0.6, ease: "easeOut" }}
+                      viewport={{ once: true, amount: 0.1 }}
+                      transition={{ duration: 0.5, delay: 0.9 + (index * 0.6), ease: "easeOut" }}
                       style={{
                         background: '#FFFFFFB2',
                         minHeight: '45px',
