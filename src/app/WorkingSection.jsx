@@ -25,7 +25,7 @@ export default function WorkingSection() {
   return (
     <section id="como-funciona" ref={ref} className="w-full bg-secondary-background overflow-x-hidden pt-8 sm:pt-12 md:pt-16 lg:pt-20 pb-16 sm:pb-20 md:pb-24 lg:pb-32">
       <div className="w-full max-w-[1382px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-start items-center gap-12 sm:gap-16 md:gap-20 lg:gap-[64px] w-full">
+        <div className="flex flex-col justify-start items-center gap-4 sm:gap-16 md:gap-20 lg:gap-[64px] w-full">
 
           {/* Header Section with Badge */}
           <motion.div
@@ -47,7 +47,7 @@ export default function WorkingSection() {
                 opacity: 1,
                 transform: 'rotate(0deg)'
               }}>
-              Mientras tu <span className="inline-flex items-center align-middle relative px-2 py-0.5 sm:px-3 sm:py-0.5 md:px-6 md:py-1 lg:px-[30px] lg:py-[2px]" style={{
+              Mientras tu <span className="inline-flex items-center align-middle relative px-2 pt-0 pb-0 sm:px-3 sm:py-0.5 md:px-6 md:py-1 lg:px-[30px] lg:py-[2px]" style={{
 
                 backgroundColor: '#FFF4E6',
                 borderRadius: '50px',
