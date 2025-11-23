@@ -196,7 +196,7 @@ export default function AIAdministrationSection() {
           style={{ minHeight: 'clamp(10vh, 10vh, 10vh)' }}
         >
           {/* On mobile: cards displayed vertically one by one. On desktop: stacked with offset positioning */}
-          <div className="relative w-full flex flex-col lg:block lg:h-screen gap-4 lg:gap-0">
+          <div className="relative w-full flex flex-col lg:block lg:h-screen gap-1.5 lg:gap-0">
 
             {/* ==================== CARD 1 (Outer Blue Layer) ==================== */}
             <div
@@ -216,6 +216,7 @@ export default function AIAdministrationSection() {
                 style={{
                   background: '#90A1FA',
                   minHeight: '460px',
+                  height: '480px',
                   width: '100%',
                   overflow: 'hidden',
                   gap: 'clamp(16px, 32px, 2.22vw)',
@@ -318,6 +319,7 @@ export default function AIAdministrationSection() {
                 style={{
                   background: '#E1EBFF',
                   minHeight: '460px',
+                  height: '480px',
                   width: '100%',
                   overflow: 'hidden',
                   gap: 'clamp(16px, 32px, 2.22vw)',
@@ -386,10 +388,11 @@ export default function AIAdministrationSection() {
                     width={320}
                     height={320}
                     style={{
-                      width: '246px',
-                      height: '246px',
+                      width: '221px',
+                      height: '221px',
                       objectFit: 'contain',
-                      transform: 'rotate(-0.48deg)'
+                      transform: 'rotate(-0.48deg)',
+                      marginTop: '-20px'
                     }}
                   />
                 </div>
@@ -430,6 +433,7 @@ export default function AIAdministrationSection() {
                 style={{
                   background: '#1A73E8',
                   minHeight: '460px',
+                  height: '480px',
                   width: '100%',
                   overflow: 'hidden',
                   gap: 'clamp(16px, 32px, 2.22vw)',
