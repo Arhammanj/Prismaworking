@@ -315,7 +315,7 @@ export default function AIAdministrationSection() {
               }}
             >
               <div
-                className="w-full flex flex-col items-center justify-start lg:justify-center px-4 sm:px-6 rounded-[20px] h-[480px] lg:h-[528px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none"
+                className="w-full flex flex-col items-center justify-start lg:justify-between px-4 sm:px-6 rounded-[20px] h-[480px] lg:h-[528px] lg:max-w-[1120px] lg:px-8 lg:rounded-t-[clamp(12px,20px,1.39vw)] lg:rounded-b-none"
                 style={{
                   background: '#E1EBFF',
                   width: '100%',
